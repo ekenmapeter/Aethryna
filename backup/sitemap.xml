@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://aethryna.com/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Pages -->
+    <url>
+        <loc>https://aethryna.com/about/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/about/mission-vision/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/about/team/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/about/partners/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Programs & Pathways -->
+    <url>
+        <loc>https://aethryna.com/programs/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/programs/digital-pathway/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/programs/web-development/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/programs/digital-design/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/programs/it-support/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Get Involved -->
+    <url>
+        <loc>https://aethryna.com/get-involved/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/get-involved/mentor/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/get-involved/volunteer/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/get-involved/partner/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Impact & Stories -->
+    <url>
+        <loc>https://aethryna.com/impact/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/impact/success-stories/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/impact/statistics/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Resources -->
+    <url>
+        <loc>https://aethryna.com/resources/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/resources/blog/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/resources/learning-materials/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Support -->
+    <url>
+        <loc>https://aethryna.com/donate/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/fundraising/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact & Legal -->
+    <url>
+        <loc>https://aethryna.com/contact/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/privacy-policy/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/terms-of-service/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://aethryna.com/careers/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>
