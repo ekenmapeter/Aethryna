@@ -1,5 +1,8 @@
-<x-aethryna-layout>
-    <x-slot name="title">Skills Pathway Programs | Aethryna Foundation</x-slot>
+@extends('layouts.aethryna')
+
+@section('title', 'Skills Pathway Programs | Aethryna Foundation')
+
+@section('content')
 
     <!-- Hero Section -->
     <section class="programs-hero">
@@ -1039,4 +1042,4 @@
         });
     </script>
     @endpush
-</x-aethryna-layout>
+@endsection

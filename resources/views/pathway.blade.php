@@ -1,5 +1,8 @@
-<x-aethryna-layout>
-    <x-slot name="title">Digital Transformation Pathway | Aethryna Foundation</x-slot>
+@extends('layouts.aethryna')
+
+@section('title', 'Digital Transformation Pathway | Aethryna Foundation')
+
+@section('content')
 
     <!-- Hero Section -->
     <section class="pathway-hero">
@@ -949,4 +952,4 @@
         });
     </script>
     @endpush
-</x-aethryna-layout>
+@endsection

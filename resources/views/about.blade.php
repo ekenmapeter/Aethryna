@@ -1,5 +1,8 @@
-<x-aethryna-layout>
-    <x-slot name="title">About Aethryna | Empowering Youth Through Digital Skills & Mentorship</x-slot>
+@extends('layouts.aethryna')
+
+@section('title', 'About Aethryna | Empowering Youth Through Digital Skills & Mentorship')
+
+@section('content')
 
     <!-- Hero Section -->
     <section class="about-hero">
@@ -197,7 +200,7 @@
             <p>Whether you're a young person seeking growth or a professional wanting to mentor, there's a place for you at Aethryna.</p>
             <div class="cta-buttons">
                 <a href="{{ route('register') }}" class="btn btn-primary">Become a Mentee</a>
-                <a href="{{ route('contact') }}" class="btn btn-outline">Become a Mentor</a>
+                <a href="mailto:mentor@aethryna.org" class="btn btn-outline">Become a Mentor</a>
             </div>
         </div>
     </section>
@@ -761,4 +764,4 @@
         });
     </script>
     @endpush
-</x-aethryna-layout>
+@endsection

@@ -1,5 +1,8 @@
-<x-aethryna-layout>
-    <x-slot name="title">Success Stories | Aethryna Foundation</x-slot>
+@extends('layouts.aethryna')
+
+@section('title', 'Success Stories | Aethryna Foundation')
+
+@section('content')
 
     <!-- Hero Section -->
     <section class="stories-hero">
@@ -1215,4 +1218,4 @@
         });
     </script>
     @endpush
-</x-aethryna-layout>
+@endsection

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AssessmentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -25,6 +26,16 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::get('/admin/dashboard', function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
+});
+
+// Assessment Routes
+Route::prefix('assessment')->name('assessment.')->group(function () {
+    Route::get('/', [AssessmentController::class, 'index'])->name('index');
+    Route::match(['GET', 'POST'], '/start', [AssessmentController::class, 'start'])->name('start');
+    Route::get('/question/{question}', [AssessmentController::class, 'question'])->name('question');
+    Route::post('/question/{question}/answer', [AssessmentController::class, 'answer'])->name('answer');
+    Route::get('/results', [AssessmentController::class, 'results'])->name('results');
+    Route::post('/reset', [AssessmentController::class, 'reset'])->name('reset');
 });
 
 require __DIR__.'/auth.php';

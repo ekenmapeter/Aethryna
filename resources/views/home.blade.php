@@ -1,5 +1,8 @@
-<x-aethryna-layout>
-    <x-slot name="title">Aethryna | Empowering Youth Through Digital Skills & Mentorship</x-slot>
+@extends('layouts.aethryna')
+
+@section('title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')
+
+@section(section: 'content')
 
     <!-- Hero Section -->
     <section class="hero">
@@ -1400,4 +1403,4 @@
         });
     </script>
     @endpush
-</x-aethryna-layout>
+@endsection
