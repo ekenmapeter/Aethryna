@@ -17,17 +17,17 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         // Create Admin Users (only if they don't exist)
-        if (!User::where('email', 'admin@aethryna.org')->exists()) {
+        if (!User::where('email', 'admin@aethryna.com')->exists()) {
             User::create([
                 'name' => 'Aethryna Admin',
-                'email' => 'admin@aethryna.org',
+                'email' => 'admin@aethryna.com',
                 'password' => Hash::make('password'),
                 'role' => 'admin',
                 'email_verified_at' => now(),
             ]);
         }
 
-        if (!User::where('email', 'system@aethryna.org')->exists()) {
+        if (!User::where('email', 'system@aethryna.com')->exists()) {
             User::create([
                 'name' => 'System Administrator',
                 'email' => 'system@aethryna.org',
