@@ -32,7 +32,14 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @if(app()->environment('local'))
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @else
+        <!-- Production assets -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/aethryna.css') }}">
+    @endif
 
     @stack('styles')
         <!-- CSRF Token -->
@@ -44,9 +51,6 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<script src="https://cdn.tailwindcss.com"></script>
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/css/aethryna.css', 'resources/js/app.js'])
 
 </head>
 <body class="font-sans antialiased bg-dark-gray text-light">

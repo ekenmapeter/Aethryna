@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations and styles that can't be done with Tailwind alone */
+@layer utilities {
+    .bg-gradient-teal-gold {
+        background: linear-gradient(135deg, #2F6E7F, #E8B647);
+    }
+
+    .text-gradient {
+        background: linear-gradient(135deg, #2F6E7F, #E8B647, #ff6b6b, #4ecdc4);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradientShift 4s ease-in-out infinite;
+    }
+
+    .backdrop-blur-custom {
+        backdrop-filter: blur(20px);
+    }
+
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
