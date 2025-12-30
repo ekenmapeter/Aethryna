@@ -481,7 +481,7 @@
         /* Impact Hero */
         .impact-hero {
             height: 70vh;
-            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(47, 110, 127, 0.4)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(47, 110, 127, 0.4)), url('https://plus.unsplash.com/premium_photo-1681494370365-6bc631f820e9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;
             display: flex;

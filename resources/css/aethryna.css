@@ -25,7 +25,7 @@
     align-items: center;
     z-index: 1000;
     transition: var(--transition);
-    background: transparent;
+    background: linear-gradient(135deg, var(--teal), var(--gold));
 }
 
 #navbar.scrolled {

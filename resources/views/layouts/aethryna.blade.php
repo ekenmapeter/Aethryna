@@ -50,12 +50,15 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/css/aethryna.css', 'resources/js/app.js'])
+<script src="https://cdn.tailwindcss.com"></script>
 
     @stack('styles')
 </head>
 <body class="font-sans antialiased">
     @include('layouts.navigation')
-
+<br />
+<br />
+<br />
     <main>
         @yield('content')
     </main>

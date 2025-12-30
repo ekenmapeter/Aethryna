@@ -28,8 +28,8 @@
                     <button type="submit" class="btn btn-primary">Logout</button>
                 </form>
             @else
-                <a href="{{ route('login') }}" class="btn btn-outline">Login</a>
-                <a href="{{ route('register') }}" class="btn btn-primary">Get Started</a>
+                <a href="{{ route('login') }}" class="text-white btn btn-outline">Login</a>
+                <a href="{{ route('register') }}" class="text-white btn btn-primary">Get Started</a>
             @endauth
         </div>
 

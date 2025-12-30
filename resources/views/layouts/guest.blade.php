@@ -35,13 +35,26 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @stack('styles')
+        <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/css/aethryna.css', 'resources/js/app.js'])
+
 </head>
 <body class="font-sans antialiased bg-dark-gray text-light">
     <!-- Navigation -->
     @include('layouts.navigation')
-
+    <div class="pt-20"></div>
     <!-- Auth Page Hero Section -->
-    <section class="min-h-screen bg-gradient-to-b from-dark-gray/90 to-teal/30 bg-cover bg-center bg-fixed flex items-center justify-center relative overflow-hidden pt-24 md:pt-16 text-light" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')">
+    <section class="min-h-screen bg-gradient-to-b from-dark-gray/90 to-teal/30 bg-cover bg-center bg-fixed flex items-center justify-center relative overflow-hidden pt-20 text-light" style="background-image: url('https://plus.unsplash.com/premium_photo-1681494370365-6bc631f820e9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
 
         <!-- Floating Shapes -->
         <div class="absolute inset-0 pointer-events-none">
@@ -51,8 +64,8 @@
         </div>
 
         <div class="auth-hero-content w-full">
-            <div class="auth-container max-w-6xl mx-auto px-8 w-full">
-                <div class="auth-wrapper grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-16 items-stretch min-h-[calc(100vh-100px)] w-full">
+            <div class="auth-container max-w-6xl mx-auto px-2 w-full">
+                <div class="auth-wrapper grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-16 items-stretch min-h-[calc(100vh-80px)] w-full">
 
                     <!-- Auth Form Section -->
                     <div class="auth-form-section flex justify-center items-center">
