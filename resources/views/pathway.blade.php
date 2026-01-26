@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('layouts.aethryna')
 
 @section('title', 'Digital Transformation Pathway | Aethryna Foundation')
 
@@ -325,11 +325,11 @@
     @push('styles')
     <style>
         :root {
-            --teal: #2F6E7F;
-            --gold: #E8B647;
-            --black: #0C0C0C;
+            --teal: #038b89;
+            --gold: #ee9d1d;
+            --black: #055860;
             --light: #F5F5F5;
-            --dark-gray: #1a1a1a;
+            --dark-gray: #404952;
             --transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
             --radius: 20px;
             --shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
@@ -339,7 +339,7 @@
         /* Pathway Hero */
         .pathway-hero {
             height: 70vh;
-            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(47, 110, 127, 0.4)), url('hhttps://plus.unsplash.com/premium_photo-1681494370365-6bc631f820e9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background: linear-gradient(135deg, var(--black), var(--teal));
             background-size: cover;
             background-position: center;
             display: flex;
@@ -788,7 +788,7 @@
 
         /* CTA Section */
         .pathway-cta {
-            background: linear-gradient(135deg, var(--teal), #1a4a5a);
+            background: linear-gradient(135deg, var(--teal), #055860);
             color: white;
             text-align: center;
             padding: 8rem 2rem;

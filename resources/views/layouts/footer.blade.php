@@ -1,0 +1,278 @@
+
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="{{ asset('images/logo_white.png') }}" alt="Aethryna Foundation">
+                    </div>
+                    <p class="brand-desc">
+                        Empowering the next generation through digital skills, mentorship, and career pathways. Join us in transforming potential into professional excellence.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
+                        <li><a href="{{ route('pathway') }}">Transformation Pathway</a></li>
+                        <li><a href="{{ route('impact') }}">Our Impact</a></li>
+                        <li><a href="{{ route('stories') }}">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="footer-links">
+                    <h4>Learning Tracks</h4>
+                    <ul>
+                        <li><a href="{{ route('programs') }}#web-dev">Web Development</a></li>
+                        <li><a href="{{ route('programs') }}#digital-design">Digital Design</a></li>
+                        <li><a href="{{ route('programs') }}#it-support">IT Support</a></li>
+                        <li><a href="{{ route('programs') }}#digital-sales">Digital Sales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@aethryna.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lagos, Nigeria | London, UK</span>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe to our newsletter</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-container">
+            <div class="bottom-content">
+                <p>&copy; {{ date('Y') }} Aethryna Foundation. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        background: var(--black);
+        color: var(--light);
+        padding-top: 5rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .footer-logo img {
+        height: 50px;
+        margin-bottom: 1.5rem;
+    }
+
+    .brand-desc {
+        color: rgba(245, 245, 245, 0.7);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: var(--white);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .social-icon:hover {
+        background: var(--gold);
+        color: var(--black);
+        transform: translateY(-5px);
+    }
+
+    .footer-links h4, .footer-contact h4 {
+        color: var(--gold);
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .footer-links h4::after, .footer-contact h4::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: var(--teal);
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+        color: rgba(245, 245, 245, 0.7);
+        text-decoration: none;
+        transition: var(--transition);
+        font-size: 0.95rem;
+    }
+
+    .footer-links a:hover {
+        color: var(--teal);
+        padding-left: 5px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        color: rgba(245, 245, 245, 0.7);
+    }
+
+    .contact-item i {
+        color: var(--teal);
+    }
+
+    .newsletter p {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .newsletter-form {
+        display: flex;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.3rem;
+        border-radius: 50px;
+    }
+
+    .newsletter-form input {
+        background: transparent;
+        border: none;
+        padding: 0.6rem 1rem;
+        color: white;
+        width: 100%;
+        outline: none;
+    }
+
+    .newsletter-form button {
+        background: var(--teal);
+        color: white;
+        border: none;
+        width: 45px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter-form button:hover {
+        background: var(--gold);
+        color: var(--black);
+    }
+
+    .footer-bottom {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .bottom-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        color: rgba(245, 245, 245, 0.5);
+    }
+
+    .legal-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .legal-links a {
+        color: rgba(245, 245, 245, 0.5);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .legal-links a:hover {
+        color: var(--teal);
+    }
+
+    @media (max-width: 992px) {
+        .footer-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        .bottom-content {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+    }
+</style>

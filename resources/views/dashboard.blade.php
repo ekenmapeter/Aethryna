@@ -23,8 +23,8 @@
 @endphp
 
     <!-- Dashboard Header -->
-    <section class="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-12 px-8 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-400 opacity-10 rounded-full -mr-48 -mt-48"></div>
+    <section class="bg-gradient-to-r from-[#055860] to-[#038b89] text-white py-12 px-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold opacity-10 rounded-full -mr-48 -mt-48"></div>
 
        <br>
        <br>
@@ -39,13 +39,13 @@
                 <p class="text-lg opacity-90">Your pathway to digital transformation</p>
             </div>
             <div class="flex items-center gap-4">
-                <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-black text-2xl font-bold">
+                <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center text-black text-2xl font-bold">
                     {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold">{{ Auth::user()->name }}</h3>
                     <p class="text-sm opacity-80">{{ Auth::user()->email }}</p>
-                    <span class="inline-block mt-1 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">{{ Auth::user()->role === 'admin' ? 'Administrator' : 'Student' }}</span>
+                    <span class="inline-block mt-1 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">{{ Auth::user()->role === 'admin' ? 'Administrator' : 'Student' }}</span>
                 </div>
             </div>
         </div>

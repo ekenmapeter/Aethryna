@@ -2,1404 +2,903 @@
 
 @section('title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')
 
-@section(section: 'content')
+@section('content')
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="floating-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
+    <section class="ath-hero" id="hero">
+        <div class="ath-hero-bg">
+            <div class="ath-blob ath-blob-1"></div>
+            <div class="ath-blob ath-blob-2"></div>
+            <div class="ath-blob ath-blob-3"></div>
+            <div class="ath-grid-layer"></div>
         </div>
-        <div class="sunrise-animation"></div>
-        <div class="hero-content">
-            <h1>Rise. Learn. Become.</h1>
-            <p>Empowering young people to unlock their potential through mentorship, learning, and leadership.</p>
-            <div class="hero-buttons">
-                <a href="{{ route('login') }}" class="btn btn-primary">Start Your Journey</a>
-                <a href="{{ route('about') }}" class="btn btn-outline">Learn More</a>
+        <div class="ath-container">
+            <div class="ath-hero-slider">
+                <!-- Slide 1 -->
+                <div class="ath-hero-content active" data-index="0">
+                    <div class="ath-hero-badge">Empowering Tomorrow's Leaders</div>
+                    <h1 class="ath-title">Rise. Learn. <span class="ath-gradient-text">Become.</span></h1>
+                    <p>Empowering young people to unlock their potential through mentorship, learning, and leadership. Your professional journey starts with Aethryna.</p>
+                    <div class="ath-hero-btns">
+                        <a href="{{ route('login') }}" class="ath-btn ath-btn-primary">Start Your Journey</a>
+                        <a href="{{ route('about') }}" class="ath-btn ath-btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="ath-hero-content" data-index="1">
+                    <div class="ath-hero-badge">Bridging the Tech Gap</div>
+                    <h1 class="ath-title">Tech. Future. <span class="ath-gradient-text">Mastery.</span></h1>
+                    <p>Equipping the next generation with cutting-edge digital skills to thrive in a global economy. Master Web Development, Design, and more.</p>
+                    <div class="ath-hero-btns">
+                        <a href="{{ route('register') }}" class="ath-btn ath-btn-primary">View Programs</a>
+                        <a href="{{ route('pathway') }}" class="ath-btn ath-btn-outline">Our Pathway</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="ath-hero-content" data-index="2">
+                    <div class="ath-hero-badge">Building Community</div>
+                    <h1 class="ath-title">Connect. Lead. <span class="ath-gradient-text">Impact.</span></h1>
+                    <p>Building a community of mentored professionals who create lasting change. Mentorship that transforms potential into excellence.</p>
+                    <div class="ath-hero-btns">
+                        <a href="{{ route('stories') }}" class="ath-btn ath-btn-primary">Success Stories</a>
+                        <a href="{{ route('impact') }}" class="ath-btn ath-btn-outline">Explore Impact</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Slider Navigation -->
+            <div class="ath-slider-dots">
+                <span class="ath-dot active" data-slide="0"></span>
+                <span class="ath-dot" data-slide="1"></span>
+                <span class="ath-dot" data-slide="2"></span>
+            </div>
+        </div>
+        <div class="ath-scroll-indicator reveal-fade">
+            <div class="ath-mouse"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
-        <div class="section-title">
-            <h2>About Aethryna</h2>
-            <p>Our mission is to empower the next generation through meaningful connections and transformative experiences.</p>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Building Futures Together</h3>
-                <p>Aethryna Foundation is a modern youth empowerment nonprofit dedicated to creating pathways to success for young people from all backgrounds. Through our innovative mentorship programs, we connect aspiring youth with experienced professionals who guide them toward achieving their personal and professional goals.</p>
-                <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare youth for the challenges of tomorrow.</p>
+    <section class="ath-section ath-about" id="about">
+        <div class="ath-container">
+            <div class="ath-section-header reveal-fade-up">
+                <span class="ath-sub">Our Vision</span>
+                <h2>About Aethryna</h2>
+                <p>Our mission is to empower the next generation through meaningful connections and transformative experiences.</p>
             </div>
-            <div class="about-icons">
-                <div class="icon-box">
-                    <i class="fas fa-hands-helping"></i>
-                    <h4>Mentorship</h4>
-                    <p>Personalized guidance from industry professionals</p>
+            <div class="ath-about-grid">
+                <div class="ath-about-card reveal-fade-right">
+                    <h3>Building Futures Together</h3>
+                    <p>Aethryna Foundation is a modern youth empowerment nonprofit dedicated to creating pathways to success for young people from all backgrounds. Through our innovative mentorship programs, we connect aspiring youth with experienced professionals who guide them toward achieving their personal and professional goals.</p>
+                    <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare youth for the challenges of tomorrow.</p>
                 </div>
-                <div class="icon-box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Leadership</h4>
-                    <p>Developing the next generation of change-makers</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-rocket"></i>
-                    <h4>Empowerment</h4>
-                    <p>Building confidence and skills for success</p>
+                <div class="ath-about-features">
+                    <div class="ath-feature reveal-fade-left" style="--delay: 1">
+                        <div class="ath-feature-icon"><i class="fas fa-hands-helping"></i></div>
+                        <div class="ath-feature-body">
+                            <h4>Mentorship</h4>
+                            <p>Personalized guidance from industry professionals</p>
+                        </div>
+                    </div>
+                    <div class="ath-feature reveal-fade-left" style="--delay: 2">
+                        <div class="ath-feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="ath-feature-body">
+                            <h4>Leadership</h4>
+                            <p>Developing the next generation of change-makers</p>
+                        </div>
+                    </div>
+                    <div class="ath-feature reveal-fade-left" style="--delay: 3">
+                        <div class="ath-feature-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="ath-feature-body">
+                            <h4>Empowerment</h4>
+                            <p>Building confidence and skills for success</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Assessment Tool -->
-    <section class="about">
-        <div class="assessment-tool">
-            <h3>Discover Your Digital Future</h3>
-            <p>Take our 2-minute assessment to match with the perfect tech career path and mentorship program.</p>
-            <button class="btn btn-primary" id="assessmentToolBtn">Start Free Assessment</button>
+    <!-- Interactive Assessment Box -->
+    <section class="ath-section ath-interactive">
+        <div class="ath-container">
+            <div class="ath-assessment-box reveal-zoom">
+                <div class="ath-assessment-content">
+                    <h3 class="reveal-fade-up">Discover Your Digital Future</h3>
+                    <p class="reveal-fade-up" style="--delay: 1">Take our 2-minute assessment to match with the perfect tech career path and mentorship program tailored to your unique strengths.</p>
+                    <button class="ath-btn ath-btn-primary reveal-fade-up" style="--delay: 2" id="assessmentToolBtn">Start Free Assessment</button>
+                </div>
+                <div class="ath-assessment-shapes">
+                    <div class="ath-shape-1"></div>
+                    <div class="ath-shape-2"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Digital Pathway Section -->
-    <section class="pathway" id="pathway">
-        <div class="section-title">
-            <h2>The Digital Transformation Pathway</h2>
-            <p>Our proven three-phase approach turns potential into professional success</p>
-        </div>
-        <div class="pathway-steps">
-            <div class="pathway-step">
-                <div class="step-number">01</div>
-                <h3>Digital Foundations</h3>
-                <p>3-6 months of building confidence, basic digital literacy, and growth mindset. Perfect for beginners with limited tech exposure.</p>
+    <!-- Pathway Section -->
+    <section class="ath-section ath-pathway" id="pathway">
+        <div class="ath-container">
+            <div class="ath-section-header reveal-fade-up">
+                <span class="ath-sub">The Journey</span>
+                <h2>The Transformation Pathway</h2>
+                <p>A structured three-phase approach that turns potential into professional success</p>
             </div>
-            <div class="pathway-step">
-                <div class="step-number">02</div>
-                <h3>Skill Specialization</h3>
-                <p>Choose your track: Web Development, Digital Design, IT Support, or Digital Sales. 6-12 months of project-based learning.</p>
-            </div>
-            <div class="pathway-step">
-                <div class="step-number">03</div>
-                <h3>Economic Independence</h3>
-                <p>Start earning through freelance projects (£50-£200) and job placement. Ongoing mentorship and career advancement support.</p>
+            <div class="ath-grid-3">
+                <div class="ath-step-card reveal-fade-up" style="--delay: 1">
+                    <div class="ath-step-num">01</div>
+                    <h4>Digital Foundations</h4>
+                    <p>3-6 months of building confidence, basic digital literacy, and growth mindset. Perfect for beginners with limited tech exposure.</p>
+                </div>
+                <div class="ath-step-card ath-highlight reveal-fade-up" style="--delay: 2">
+                    <div class="ath-step-num">02</div>
+                    <h4>Skill Specialization</h4>
+                    <p>Choose your track: Web Development, Digital Design, IT Support, or Digital Sales. 6-12 months of project-based learning.</p>
+                </div>
+                <div class="ath-step-card reveal-fade-up" style="--delay: 3">
+                    <div class="ath-step-num">03</div>
+                    <h4>Economic Independence</h4>
+                    <p>Start earning through freelance projects (£50-£200) and job placement. Ongoing mentorship and career advancement support.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Transition Banner -->
-    <div class="transition-banner">
-        <div class="transition-banner-shapes">
-            <div class="transition-shape"></div>
-            <div class="transition-shape"></div>
-            <div class="transition-shape"></div>
-        </div>
-        <div class="transition-pattern"></div>
-        <div class="transition-banner-content">
-            <h2>Empowering Tomorrow's Tech Leaders Today</h2>
-            <p>Join a community where potential meets opportunity, and every aspiring professional finds their path to success in the digital world.</p>
+    <div class="ath-brand-banner">
+        <div class="ath-container">
+            <div class="ath-banner-content reveal-fade-up">
+                <h2>Empowering Tomorrow's Tech Leaders Today</h2>
+                <p>Join a community where potential meets opportunity, and every aspiring professional finds their path to success in the digital world.</p>
+            </div>
         </div>
     </div>
 
-    <!-- Skills Pathway Section -->
-    <section class="programs" id="programs">
-        <div class="section-title">
-            <h2>Our Skills Pathway</h2>
-            <p>Structured learning paths designed for real-world success</p>
-        </div>
-        <div class="program-cards">
-            <div class="program-card">
-                <div class="card-content">
-                    <h3>Web Development Track</h3>
+    <!-- Programs Section -->
+    <section class="ath-section ath-programs" id="programs">
+        <div class="ath-container">
+            <div class="ath-section-header reveal-fade-up">
+                <span class="ath-sub">Choose Your Path</span>
+                <h2>Our Skills Pathway</h2>
+                <p>Structured learning paths designed for real-world excellence</p>
+            </div>
+            <div class="ath-grid-3">
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 1">
+                    <div class="ath-prog-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
                     <p>Master HTML, CSS, JavaScript and build real websites. Perfect for creative problem-solvers who want to build the digital world.</p>
-                    <a href="#" class="card-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="program-card">
-                <div class="card-content">
-                    <h3>Digital Design Track</h3>
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 2">
+                    <div class="ath-prog-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Digital Design</h3>
                     <p>Learn UI/UX design, branding, and visual communication. Create stunning digital experiences that users love.</p>
-                    <a href="#" class="card-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="program-card">
-                <div class="card-content">
-                    <h3>IT Support Track</h3>
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 3">
+                    <div class="ath-prog-icon"><i class="fas fa-tools"></i></div>
+                    <h3>IT Support</h3>
                     <p>Develop troubleshooting skills, customer service, and technical support expertise. High-demand roles with clear career paths.</p>
-                    <a href="#" class="card-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Impact Section -->
-    <section class="impact" id="impact">
-        <div class="section-title">
-            <h2>Our Impact</h2>
-            <p>Real numbers, real change, real futures transformed</p>
-        </div>
-        <div class="stats-container">
-            <div class="stat-box">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Youth Empowered</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">95%</div>
-                <div class="stat-label">Employment Rate</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">£25K</div>
-                <div class="stat-label">Average Starting Salary</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Partner Companies</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stories Section -->
-    <section class="stories" id="stories">
-        <div class="section-title">
-            <h2>Success Stories</h2>
-            <p>Inspiring journeys from our community members</p>
-        </div>
-        <div class="testimonial-container">
-            <div class="testimonial active">
-                <p class="testimonial-text">"Aethryna didn't just teach me coding – they taught me to believe in myself. Today, I'm a full-stack developer earning £35k, and I mentor others just like they mentored me."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Sarah Johnson">
+    <section class="ath-section ath-impact" id="impact">
+        <div class="ath-container">
+            <div class="ath-impact-grid">
+                <div class="ath-impact-info reveal-fade-right">
+                    <h2>Our Growing Impact</h2>
+                    <p>We measure success through the lives we transform and the careers we launch. Every number tells a story of perseverance and growth.</p>
+                </div>
+                <div class="ath-stats-grid">
+                    <div class="ath-stat reveal-zoom" style="--delay: 1">
+                        <div class="ath-stat-val counter" data-target="500">0</div>
+                        <div class="ath-stat-lab">Youth Empowered</div>
                     </div>
-                    <div class="author-info">
-                        <h4>Sarah Johnson</h4>
-                        <p>Full-Stack Developer at TechCorp</p>
+                    <div class="ath-stat reveal-zoom" style="--delay: 2">
+                        <div class="ath-stat-val counter" data-target="95">0</div>
+                        <div class="ath-stat-lab">Success Rate (%)</div>
+                    </div>
+                    <div class="ath-stat reveal-zoom" style="--delay: 3">
+                        <div class="ath-stat-val counter" data-target="25000">0</div>
+                        <div class="ath-stat-lab">Average Salary (£)</div>
+                    </div>
+                    <div class="ath-stat reveal-zoom" style="--delay: 4">
+                        <div class="ath-stat-val counter" data-target="50">0</div>
+                        <div class="ath-stat-lab">Partner Companies</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="testimonial-nav">
-            <div class="testimonial-dot active"></div>
-            <div class="testimonial-dot"></div>
-            <div class="testimonial-dot"></div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="ath-section ath-stories" id="stories">
+        <div class="ath-container">
+            <div class="ath-section-header reveal-fade-up">
+                <span class="ath-sub">Success Stories</span>
+                <h2>Potential to Professional</h2>
+            </div>
+            <div class="ath-testimonial reveal-zoom">
+                <div class="ath-testi-box">
+                    <p class="ath-quote">"Aethryna didn't just teach me coding – they taught me to believe in myself. Today, I'm a full-stack developer earning £35k, and I mentor others just like they mentored me."</p>
+                    <div class="ath-testi-user">
+                        <div class="ath-user-avatar">S</div>
+                        <div class="ath-user-info">
+                            <h5>Sarah Johnson</h5>
+                            <p>Full-Stack Developer at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-content">
-            <h2>Ready to Transform Your Future?</h2>
-            <p>Join thousands of young people who have discovered their potential and built successful careers in tech.</p>
-            <a href="{{ route('register') }}" class="cta-button">Start Your Journey Today</a>
+    <!-- Final CTA -->
+    <section class="ath-cta-section">
+        <div class="ath-container">
+            <div class="ath-cta-card reveal-zoom">
+                <h2>Ready to Transform Your Future?</h2>
+                <p>Join thousands of young people who have discovered their potential and built successful careers in tech.</p>
+                <a href="{{ route('register') }}" class="ath-btn ath-btn-gold">Start Your Journey Today</a>
+            </div>
         </div>
     </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
     @push('styles')
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        /* Scoped variables and resets */
         :root {
-            --teal: #2F6E7F;
-            --gold: #E8B647;
-            --black: #0C0C0C;
-            --light: #F5F5F5;
-            --dark-gray: #1a1a1a;
-            --transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-            --radius: 20px;
-            --shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 40px 80px rgba(0, 0, 0, 0.12);
-            --glass: rgba(255, 255, 255, 0.08);
-            --glass-border: rgba(255, 255, 255, 0.12);
+            --ath-teal: #038b89;
+            --ath-gold: #ee9d1d;
+            --ath-deep: #055860;
+            --ath-light: #F8FBFB;
+            --ath-white: #ffffff;
+            --ath-text: #404952;
+            --ath-muted: #57616a;
+            --ath-trans: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --ath-radius: 24px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
+        .ath-section {
+            padding: 100px 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .ath-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--light);
-            color: var(--black);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Premium Hero Section */
-        .hero {
+        /* Hero Fixes */
+        .ath-hero {
             height: 100vh;
-            background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(47, 110, 127, 0.3)), url('https://plus.unsplash.com/premium_photo-1681494370365-6bc631f820e9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            min-height: 700px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
             position: relative;
+            background: var(--ath-deep);
+            color: var(--ath-white);
             overflow: hidden;
         }
 
-        .hero-content {
-            max-width: 900px;
-            padding: 0 2rem;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 4.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transform: translateY(50px);
-            animation: fadeInUp 1.2s ease 1s forwards;
-        }
-
-        .hero p {
-            font-size: 1.4rem;
-            margin-bottom: 2.5rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1.2s ease 1.3s forwards;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            margin-top: 3rem;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1.2s ease 1.6s forwards;
-        }
-
-        /* Advanced Prox-style Animations */
-        .floating-shapes {
+        .ath-hero-bg {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
-
-        .shape {
-            position: absolute;
-            background: linear-gradient(135deg, var(--teal), transparent);
-            border-radius: 50%;
-            filter: blur(40px);
-            opacity: 0.3;
-            animation: float 8s ease-in-out infinite;
-        }
-
-        .shape:nth-child(1) {
-            width: 300px;
-            height: 300px;
-            top: 10%;
-            left: 5%;
-            animation-delay: 0s;
-        }
-
-        .shape:nth-child(2) {
-            width: 200px;
-            height: 200px;
-            top: 60%;
-            right: 10%;
-            animation-delay: 2s;
-            background: linear-gradient(135deg, var(--gold), transparent);
-        }
-
-        .shape:nth-child(3) {
-            width: 150px;
-            height: 150px;
-            bottom: 20%;
-            left: 20%;
-            animation-delay: 4s;
-            background: linear-gradient(135deg, var(--teal), transparent);
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px) rotate(0deg) scale(1);
-            }
-            50% {
-                transform: translateY(-40px) rotate(180deg) scale(1.1);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Premium Section Styles */
-        section {
-            padding: 8rem 5%;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
-        }
-
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 5rem;
-        }
-
-        .section-title h2 {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--teal);
-            margin-bottom: 1.5rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--teal), var(--gold));
-            border-radius: 2px;
-        }
-
-        .section-title p {
-            max-width: 700px;
-            margin: 0 auto;
-            color: var(--dark-gray);
-            font-size: 1.2rem;
-        }
-
-        /* Interactive Assessment Tool */
-        .assessment-tool {
-            background: linear-gradient(135deg, var(--teal), #1a4a5a);
-            color: white;
-            border-radius: var(--radius);
-            padding: 4rem;
-            margin: 4rem auto;
-            max-width: 800px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .assessment-tool::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            animation: shine 3s infinite;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        .assessment-tool h3 {
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .assessment-tool p {
-            margin-bottom: 2.5rem;
-            opacity: 0.9;
-        }
-
-        /* Digital Pathway Section */
-        .pathway {
-            background: var(--light);
-        }
-
-        .pathway-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .pathway-step {
-            background: white;
-            padding: 3rem 2rem;
-            border-radius: var(--radius);
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pathway-step::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--teal), var(--gold));
-        }
-
-        .pathway-step:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .step-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--teal);
-            margin-bottom: 1rem;
-            opacity: 0.7;
-        }
-
-        .pathway-step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--black);
-        }
-
-        .pathway-step p {
-            color: var(--dark-gray);
-            line-height: 1.7;
-        }
-
-        /* Transition Banner */
-        .transition-banner {
-            position: relative;
-            padding: 6rem 5%;
-            background: linear-gradient(135deg, var(--teal), var(--dark-gray));
-            overflow: hidden;
+            inset: 0;
             z-index: 1;
         }
 
-        .transition-banner-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            color: white;
+        .ath-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.25;
+            animation: athDrift 20s infinite alternate linear;
         }
 
-        .transition-banner h2 {
-            font-size: 2.5rem;
+        .ath-blob-1 { width: 500px; height: 500px; background: var(--ath-teal); top: -100px; right: -50px; }
+        .ath-blob-2 { width: 400px; height: 400px; background: var(--ath-gold); bottom: -100px; left: -50px; animation-delay: -5s; }
+        .ath-blob-3 { width: 300px; height: 300px; background: var(--ath-teal); top: 40%; right: 15%; animation-delay: -10s; }
+
+        @keyframes athDrift {
+            from { transform: translate(0,0) rotate(0); }
+            to { transform: translate(50px, 50px) rotate(90deg); }
+        }
+
+        .ath-grid-layer {
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .ath-hero-content {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            z-index: 10;
+            max-width: 800px;
+            text-align: left;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .ath-hero-content.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .ath-hero-slider {
+            position: relative;
+            height: 450px; /* Fixed height for slider stability */
+            width: 100%;
+        }
+
+        .ath-hero-content h1, 
+        .ath-hero-content p, 
+        .ath-hero-content .ath-hero-badge, 
+        .ath-hero-content .ath-hero-btns {
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .ath-hero-content.active h1, 
+        .ath-hero-content.active p, 
+        .ath-hero-content.active .ath-hero-badge, 
+        .ath-hero-content.active .ath-hero-btns {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .ath-hero-content.active .ath-hero-badge { transition-delay: 0.1s; }
+        .ath-hero-content.active h1 { transition-delay: 0.2s; }
+        .ath-hero-content.active p { transition-delay: 0.3s; }
+        .ath-hero-content.active .ath-hero-btns { transition-delay: 0.4s; }
+
+        .ath-slider-dots {
+            position: absolute;
+            bottom: -50px;
+            left: 20px;
+            display: flex;
+            gap: 12px;
+            z-index: 20;
+        }
+
+        .ath-dot {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: var(--ath-trans);
+        }
+
+        .ath-dot.active {
+            background: var(--ath-gold);
+            width: 30px;
+            border-radius: 10px;
+        }
+
+        .ath-hero-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 100px;
+            color: var(--ath-gold);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .ath-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
             font-weight: 800;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--gold), #fff);
-            background-clip: text;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .ath-gradient-text {
+            background: linear-gradient(135deg, var(--ath-gold), #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .transition-banner p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            line-height: 1.8;
+        .ath-hero-btns {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
         }
 
-        .transition-banner-shapes {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            overflow: hidden;
+        /* Buttons */
+        .ath-btn {
+            padding: 14px 35px;
+            border-radius: 100px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--ath-trans);
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            text-align: center;
         }
 
-        .transition-shape {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(60px);
-            opacity: 0.2;
-            animation: transitionFloat 12s ease-in-out infinite;
+        .ath-btn-primary { background: var(--ath-teal); color: #fff; }
+        .ath-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(3, 139, 137, 0.3); }
+        .ath-btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.3); }
+        .ath-btn-outline:hover { border-color: var(--ath-gold); color: var(--ath-gold); }
+        .ath-btn-gold { background: var(--ath-gold); color: var(--ath-deep); }
+        .ath-btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(238, 157, 29, 0.4); }
+
+        /* General Section Header */
+        .ath-section-header {
+            text-align: center;
+            margin-bottom: 60px;
         }
 
-        .transition-shape:nth-child(1) {
-            width: 400px;
-            height: 400px;
-            background: var(--gold);
-            top: -10%;
-            left: -5%;
-            animation-delay: 0s;
+        .ath-sub {
+            color: var(--ath-teal);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 10px;
         }
 
-        .transition-shape:nth-child(2) {
-            width: 300px;
-            height: 300px;
-            background: var(--teal);
-            bottom: -10%;
-            right: -5%;
-            animation-delay: 2s;
+        .ath-section-header h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 15px;
         }
 
-        .transition-shape:nth-child(3) {
-            width: 250px;
-            height: 250px;
-            background: rgba(232, 182, 71, 0.5);
-            top: 50%;
-            left: 50%;
-            animation-delay: 4s;
-        }
-
-        @keyframes transitionFloat {
-            0%, 100% {
-                transform: translateY(0px) translateX(0px) scale(1);
-            }
-            33% {
-                transform: translateY(-30px) translateX(20px) scale(1.1);
-            }
-            66% {
-                transform: translateY(30px) translateX(-20px) scale(0.9);
-            }
-        }
-
-        .transition-pattern {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-image:
-                linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%),
-                linear-gradient(-45deg, rgba(255,255,255,0.03) 25%, transparent 25%),
-                linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.03) 75%),
-                linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.03) 75%);
-            background-size: 40px 40px;
-            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
-            animation: patternMove 30s linear infinite;
-        }
-
-        @keyframes patternMove {
-            0% {
-                background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
-            }
-            100% {
-                background-position: 40px 0, 40px 20px, 60px -20px, 20px 0px;
-            }
-        }
-
-        /* Programs Section */
-        .programs {
-            background: linear-gradient(135deg, #f5f5f5, #e9ecef);
-        }
-
-        .program-cards {
+        /* Grids */
+        .ath-grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
 
-        .program-card {
-            background: white;
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+        .ath-about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .ath-about-card {
+            background: #fff;
+            padding: 50px;
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+        }
+
+        /* About Features Card Style */
+        .ath-about-features {
+            display: grid;
+            gap: 20px;
+        }
+
+        .ath-feature {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            background: #fff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            transition: var(--ath-trans);
+            border: 1px solid transparent;
+        }
+        
+        .ath-feature:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+            border-color: rgba(3, 139, 137, 0.1);
+        }
+
+        .ath-feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(3, 139, 137, 0.1); /* Light Teal Bg */
+            color: var(--ath-teal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            transition: var(--ath-trans);
+        }
+        
+        .ath-feature:hover .ath-feature-icon {
+            background: var(--ath-teal);
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+        
+        .ath-feature-body h4 { font-size: 1.2rem; margin: 0 0 5px; color: var(--ath-deep); font-weight: 700; }
+        .ath-feature-body p { margin: 0; font-size: 0.95rem; color: var(--ath-muted); }
+        
+        /* Program Cards Enhanced */
+        .ath-prog-item {
+            background: #fff;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05); /* Softer, deeper shadow */
+            transition: var(--ath-trans);
+            border: 1px solid rgba(238, 157, 29, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             position: relative;
-            opacity: 0;
-            transform: translateY(50px);
+            overflow: hidden;
         }
-
-        .program-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .program-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .program-card::before {
+        
+        .ath-prog-item::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--teal), var(--gold));
+            top: 0; left: 0; width: 4px; height: 0;
+            background: var(--ath-gold);
+            transition: height 0.4s ease;
         }
-
-        .card-content {
-            padding: 3rem 2.5rem;
+        
+        .ath-prog-item:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 25px 60px rgba(5, 88, 96, 0.1);
         }
+        
+        .ath-prog-item:hover::before { height: 100%; }
 
-        .program-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--teal);
+        .ath-prog-icon { 
+            font-size: 2.5rem; 
+            color: var(--ath-gold); 
+            margin-bottom: 25px; 
+            background: rgba(238, 157, 29, 0.1);
+            width: 70px; height: 70px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 18px;
+            transition: var(--ath-trans);
         }
-
-        .program-card p {
-            margin-bottom: 2rem;
-            color: var(--dark-gray);
-            line-height: 1.8;
+        
+        .ath-prog-item:hover .ath-prog-icon {
+            background: var(--ath-gold);
+            color: #fff;
+            transform: scale(1.1) rotate(10deg);
         }
-
-        .card-link {
+        
+        .ath-prog-item h3 { font-size: 1.6rem; margin-bottom: 15px; color: var(--ath-text); font-weight: 700; }
+        .ath-prog-item p { color: var(--ath-muted); line-height: 1.6; margin-bottom: 25px; }
+        
+        .ath-link {
+            color: var(--ath-teal);
+            font-weight: 700;
+            text-decoration: none;
             display: inline-flex;
             align-items: center;
-            color: var(--teal);
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
+            gap: 8px;
+            font-size: 1rem;
+            margin-top: auto; /* Push to bottom */
+            transition: transform 0.3s ease;
+        }
+        
+        .ath-link:hover { transform: translateX(5px); color: var(--ath-gold); }
+
+        /* Assessment Card */
+        .ath-assessment-box {
+            background: linear-gradient(135deg, var(--ath-teal), var(--ath-deep));
+            border-radius: var(--ath-radius);
+            padding: 80px 40px;
+            color: #fff;
+            text-align: center;
             position: relative;
+            overflow: hidden;
         }
 
-        .card-link::after {
+        .ath-assessment-content { position: relative; z-index: 5; max-width: 700px; margin: 0 auto; }
+
+        .ath-assessment-box h3 { font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; }
+
+        /* Pathway Cards with Enhanced UI */
+        .ath-step-card {
+            background: #fff;
+            padding: 50px 30px;
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            text-align: center;
+            transition: var(--ath-trans);
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            z-index: 1;
+        }
+
+        .ath-step-card:hover { 
+            transform: translateY(-15px); 
+            box-shadow: 0 20px 50px rgba(3, 139, 137, 0.1);
+            border-color: rgba(3, 139, 137, 0.2);
+        }
+        
+        .ath-highlight { 
+            background: linear-gradient(to bottom right, #fff, #fffbf0);
+            border: 2px solid var(--ath-gold); 
+            transform: scale(1.05); /* Slight default scale */
+        }
+        
+        .ath-highlight:hover { transform: scale(1.05) translateY(-15px); }
+
+        .ath-step-num { 
+            font-size: 5rem; 
+            font-weight: 900; 
+            color: rgba(238, 157, 29, 0.15); /* Gold tint */
+            margin-bottom: -30px; 
+            position: relative; 
+            z-index: -1; 
+            transition: var(--ath-trans);
+        }
+        
+        .ath-step-card:hover .ath-step-num {
+            transform: scale(1.1);
+            color: rgba(3, 139, 137, 0.15); /* Change to Teal on hover */
+        }
+        
+        .ath-step-card h4 { font-size: 1.5rem; color: var(--ath-deep); margin-bottom: 15px; font-weight: 700; }
+        .ath-step-card p { color: var(--ath-muted); line-height: 1.6; }
+
+        /* Impact Section Stats with Cards */
+        .ath-impact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .ath-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .ath-stat {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--ath-trans);
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ath-stat::after {
             content: '';
             position: absolute;
-            bottom: -2px;
+            bottom: 0;
             left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: var(--transition);
-        }
-
-        .card-link:hover::after {
             width: 100%;
-        }
-
-        .card-link i {
-            margin-left: 0.5rem;
-            transition: var(--transition);
-        }
-
-        .card-link:hover i {
-            transform: translateX(8px);
-        }
-
-        /* Impact Section */
-        .impact {
-            background: linear-gradient(135deg, var(--teal), #1a4a5a);
-            color: white;
-            text-align: center;
-        }
-
-        .impact .section-title h2 {
-            color: white;
-        }
-
-        .impact .section-title p {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .stat-box {
-            padding: 3rem 2rem;
-            border-radius: var(--radius);
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            transition: var(--transition);
+            height: 4px;
+            background: linear-gradient(90deg, var(--ath-teal), var(--ath-gold));
             opacity: 0;
-            transform: translateY(50px);
+            transition: opacity 0.3s;
         }
 
-        .stat-box.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .ath-stat:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 40px rgba(3, 139, 137, 0.1); 
         }
+        
+        .ath-stat:hover::after { opacity: 1; }
+        
+        .ath-stat-val { font-size: 3.5rem; font-weight: 800; color: var(--ath-teal); margin-bottom: 10px; line-height: 1; }
+        .ath-stat-lab { font-weight: 600; color: var(--ath-muted); letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; }
 
-        .stat-box:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .stat-number {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: var(--gold);
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .stat-label {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-
-        /* Stories Section */
-        .stories {
-            background: linear-gradient(135deg, var(--teal), var(--gold));
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stories .section-title h2 {
-            color: white;
-        }
-
-        .testimonial-container {
+        /* Stories with Enhanced UI */
+        .ath-testi-box {
+            background: #fff;
+            padding: 60px;
+            border-radius: var(--ath-radius);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.08); /* Enhanced shadow */
             max-width: 900px;
             margin: 0 auto;
+            text-align: center;
+            border-top: 5px solid var(--ath-gold); /* Brand detail */
             position: relative;
         }
-
-        .testimonial {
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            padding: 4rem 3rem;
-            border-radius: var(--radius);
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateX(100px);
-            transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+        
+        .ath-testi-box::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-size: 8rem;
+            color: rgba(238, 157, 29, 0.1);
+            font-family: serif;
+            line-height: 1;
         }
 
-        .testimonial.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .testimonial-text {
-            font-size: 1.3rem;
-            font-style: italic;
-            margin-bottom: 2.5rem;
-            line-height: 1.8;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-
-        .author-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid var(--gold);
-            transition: var(--transition);
-        }
-
-        .testimonial:hover .author-avatar {
-            transform: scale(1.1);
-        }
-
-        .author-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .author-info h4 {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .author-info p {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        .testimonial-nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 3rem;
-        }
-
-        .testimonial-dot {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .testimonial-dot.active {
-            background: white;
-            transform: scale(1.3);
-        }
-
-        /* CTA Section */
-        .cta {
-            background: linear-gradient(135deg, var(--teal), #1a4a5a);
-            color: white;
-            text-align: center;
-            padding: 8rem 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-content {
-            max-width: 800px;
-            margin: 0 auto;
+        .ath-quote { 
+            font-size: 1.6rem; 
+            font-style: italic; 
+            line-height: 1.6; 
+            color: var(--ath-deep); 
+            margin-bottom: 30px; 
             position: relative;
             z-index: 2;
         }
-
-        .cta h2 {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeInUp 1s ease 0.2s forwards;
+        
+        .ath-testi-user { display: flex; align-items: center; justify-content: center; gap: 15px; }
+        
+        .ath-user-avatar { 
+            width: 60px; 
+            height: 60px; 
+            background: linear-gradient(135deg, var(--ath-gold), #ffb347); 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-weight: 800; 
+            color: var(--ath-deep); 
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(238, 157, 29, 0.3);
         }
+        
+        .ath-user-info h5 { margin: 0; font-size: 1.1rem; color: var(--ath-text); font-weight: 700; }
+        .ath-user-info p { margin: 0; font-size: 0.9rem; color: var(--ath-muted); }
 
-        .cta p {
-            font-size: 1.4rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-            opacity: 0;
-            animation: fadeInUp 1s ease 0.4s forwards;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1.2rem 3rem;
-            background: linear-gradient(135deg, var(--gold), #d4a123);
-            color: var(--dark-gray);
-            font-weight: 700;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: var(--transition);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            animation: fadeInUp 1s ease 0.6s forwards;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: var(--transition);
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-        }
-
-        /* About Section */
-        .about {
-            background-color: var(--light);
-        }
-
-        .about-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
-        }
-
-        .about-text h3 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: var(--teal);
-            line-height: 1.2;
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: var(--dark-gray);
-        }
-
-        .about-icons {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 2rem;
-            width: 100%;
-        }
-
-        .icon-box {
+        /* CTA */
+        .ath-cta-card {
+            background: linear-gradient(135deg, var(--ath-teal), var(--ath-deep));
+            padding: 100px 40px;
+            border-radius: var(--ath-radius);
             text-align: center;
-            padding: 2.5rem 1.5rem;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            background: white;
-            box-shadow: var(--shadow);
-            position: relative;
-            overflow: hidden;
+            color: #fff;
+            transform: translateY(50px);
         }
 
-        .icon-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(232, 182, 71, 0.1), transparent);
-            transition: var(--transition);
+        /* Banner */
+        .ath-brand-banner { background: var(--ath-deep); padding: 80px 0; color: #fff; text-align: center; }
+
+        /* Reveal Logic */
+        .reveal-fade, .reveal-fade-up, .reveal-fade-right, .reveal-fade-left, .reveal-zoom {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .reveal-visible {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translate(0,0) scale(1) !important;
+            transition-delay: calc(var(--delay, 0) * 0.1s);
         }
 
-        .icon-box:hover::before {
-            left: 100%;
+        @media screen and (min-width: 992px) {
+            .reveal-fade, .reveal-fade-up, .reveal-fade-right, .reveal-fade-left, .reveal-zoom {
+                transform: translateY(30px);
+                transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s;
+            }
+            .reveal-fade-right { transform: translateX(-40px); }
+            .reveal-fade-left { transform: translateX(40px); }
+            .reveal-zoom { transform: scale(0.95); }
         }
 
-        .icon-box:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .icon-box i {
-            font-size: 3rem;
-            color: var(--teal);
-            margin-bottom: 1.5rem;
-            transition: var(--transition);
-        }
-
-        .icon-box:hover i {
-            color: var(--gold);
-            transform: scale(1.1);
-        }
-
-        .icon-box h4 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--black);
-        }
-
-        .icon-box p {
-            color: var(--dark-gray);
-            font-size: 0.95rem;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 1200px) {
-            .hero h1 {
-                font-size: 4rem;
-            }
-
-            .about-content {
-                gap: 4rem;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .about-icons {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .pathway-steps {
-                grid-template-columns: 1fr;
-            }
-
-            .program-cards {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
-            }
-
-            .section-title h2 {
-                font-size: 2.5rem;
-            }
-
-            .stats-container {
-                gap: 2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .btn {
-                width: 250px;
-            }
-
-            .section-title h2 {
-                font-size: 2.2rem;
-            }
-
-            .program-cards {
-                grid-template-columns: 1fr;
-            }
-
-            .about-icons {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .section-title h2 {
-                font-size: 2.2rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            section {
-                padding: 6rem 5%;
-            }
-
-            .section-title h2 {
-                font-size: 2rem;
-            }
-
-            .card-content {
-                padding: 2rem 1.5rem;
-            }
-
-            .stat-box {
-                padding: 2rem 1rem;
-            }
-
-            .stat-number {
-                font-size: 3rem;
-            }
-
-            .testimonial {
-                padding: 2.5rem 1.5rem;
-            }
-
-            .testimonial-text {
-                font-size: 1.1rem;
-            }
-
-            .cta h2 {
-                font-size: 2.5rem;
-            }
-
-            .cta p {
-                font-size: 1.2rem;
-            }
-
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-            }
-
-            .about-text h3 {
-                font-size: 2rem;
-            }
-
-            .about-text p {
-                font-size: 1rem;
-            }
-
-            .icon-box {
-                padding: 2rem 1.5rem;
-            }
-
-            .icon-box i {
-                font-size: 2.5rem;
-            }
-
-            .icon-box h4 {
-                font-size: 1.2rem;
-            }
-
-            .pathway-step {
-                padding: 2rem 1.5rem;
-            }
-
-            .step-number {
-                font-size: 2.5rem;
-            }
-
-            .pathway-step h3 {
-                font-size: 1.3rem;
-            }
-
-            .program-card h3 {
-                font-size: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-            }
-
-            .stat-label {
-                font-size: 1rem;
-            }
-
-            .testimonial-text {
-                font-size: 1rem;
-            }
-
-            .author-info h4 {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .hero p {
-                font-size: 0.95rem;
-            }
-
-            section {
-                padding: 4rem 5%;
-            }
-
-            .section-title {
-                margin-bottom: 3rem;
-            }
-
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-
-            .section-title p {
-                font-size: 1rem;
-            }
-
-            .about-text h3 {
-                font-size: 1.6rem;
-            }
-
-            .about-text p {
-                font-size: 0.95rem;
-            }
-
-            .icon-box {
-                padding: 1.5rem 1rem;
-            }
-
-            .icon-box i {
-                font-size: 2rem;
-            }
-
-            .pathway-step {
-                padding: 1.5rem 1rem;
-            }
-
-            .step-number {
-                font-size: 2.5rem;
-            }
-
-            .pathway-step h3 {
-                font-size: 1.3rem;
-            }
-
-            .program-card h3 {
-                font-size: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-            }
-
-            .stat-label {
-                font-size: 1rem;
-            }
-
-            .testimonial {
-                padding: 2rem 1.5rem;
-            }
-
-            .testimonial-text {
-                font-size: 1rem;
-            }
-
-            .cta h2 {
-                font-size: 2rem;
-            }
-
-            .cta p {
-                font-size: 1rem;
-            }
-
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-            }
+        /* Mobile specific fixes for scattered items */
+        @media (max-width: 991px) {
+            .ath-about-grid, .ath-impact-grid { grid-template-columns: 1fr; text-align: center; }
+            .ath-about-card { padding: 30px; }
+            .ath-hero-content { text-align: center; margin: 0 auto; }
+            .ath-hero-btns { justify-content: center; }
+            .ath-section { padding: 80px 0; }
+            .ath-hero { height: auto; min-height: 600px; padding: 120px 0 80px; }
+            .ath-stats-grid { grid-template-columns: 1fr; }
         }
     </style>
     @endpush
 
     @push('scripts')
     <script>
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for Reveal
+            const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        const counter = entry.target.classList.contains('counter') ? entry.target : entry.target.querySelector('.counter');
+                        if (counter) startCounter(counter);
+                    }
+                });
+            }, observerOptions);
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+            document.querySelectorAll('.reveal-fade, .reveal-fade-up, .reveal-fade-right, .reveal-fade-left, .reveal-zoom').forEach(el => revealObserver.observe(el));
+
+            // Counter Logic
+            function startCounter(el) {
+                if (el.dataset.started) return;
+                el.dataset.started = 'true';
+                const target = parseInt(el.dataset.target);
+                let current = 0;
+                const duration = 2000;
+                const step = target / (duration / 16);
+                
+                const update = () => {
+                    current += step;
+                    if (current < target) {
+                        el.textContent = Math.floor(current).toLocaleString();
+                        requestAnimationFrame(update);
+                    } else {
+                        if (target === 25000) el.textContent = '£25K';
+                        else if (target === 95) el.textContent = '95%';
+                        else if (target === 50) el.textContent = '50+';
+                        else if (target === 500) el.textContent = '500+';
+                        else el.textContent = target.toLocaleString();
+                    }
+                };
+                update();
+            }
+
+            // Cleanup potential scroll bottlenecks
+            document.getElementById('assessmentToolBtn')?.addEventListener('click', () => {
+                window.location.href = '{{ route("register") }}';
             });
-        }, observerOptions);
 
-        // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
+            // Hero Slider Logic
+            const slides = document.querySelectorAll('.ath-hero-content');
+            const dots = document.querySelectorAll('.ath-dot');
+            let currentSlide = 0;
+            let slideInterval;
 
-        // Observe program cards
-        document.querySelectorAll('.program-card').forEach(card => {
-            observer.observe(card);
-        });
-
-        // Observe stat boxes
-        document.querySelectorAll('.stat-box').forEach(box => {
-            observer.observe(box);
-        });
-
-        // Testimonial navigation
-        let currentTestimonial = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        const dots = document.querySelectorAll('.testimonial-dot');
-
-        function showTestimonial(index) {
-            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-
-            testimonials[index].classList.add('active');
-            dots[index].classList.add('active');
-            currentTestimonial = index;
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showTestimonial(index));
-        });
-
-        // Auto-rotate testimonials
-        setInterval(() => {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }, 5000);
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            const logo = document.getElementById('siteLogo');
-
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-                logo.querySelector('.default-logo').style.display = 'none';
-                logo.querySelector('.scrolled-logo').style.display = 'block';
-            } else {
-                navbar.classList.remove('scrolled');
-                logo.querySelector('.default-logo').style.display = 'block';
-                logo.querySelector('.scrolled-logo').style.display = 'none';
+            function goToSlide(n) {
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
             }
-        });
 
-        // Mobile menu toggle
-        document.getElementById('mobileMenu').addEventListener('click', () => {
-            document.getElementById('mobileNav').classList.add('active');
-        });
-
-        document.getElementById('closeMobileMenu').addEventListener('click', () => {
-            document.getElementById('mobileNav').classList.remove('active');
-        });
-
-        // Assessment modal
-        document.getElementById('openAssessment').addEventListener('click', () => {
-            document.getElementById('assessmentModal').classList.add('active');
-        });
-
-        document.getElementById('assessmentToolBtn').addEventListener('click', () => {
-            document.getElementById('assessmentModal').classList.add('active');
-        });
-
-        document.getElementById('closeModal').addEventListener('click', () => {
-            document.getElementById('assessmentModal').classList.remove('active');
-        });
-
-        // Smart CTA visibility
-        window.addEventListener('scroll', () => {
-            const cta = document.getElementById('smartCTA');
-            if (window.scrollY > 500) {
-                cta.classList.add('visible');
-            } else {
-                cta.classList.remove('visible');
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
             }
-        });
 
-        // Loading screen
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('loadingScreen').style.display = 'none';
-            }, 2000);
+            function startSlideShow() {
+                slideInterval = setInterval(nextSlide, 6000); // 6 seconds per slide
+            }
+
+            function stopSlideShow() {
+                clearInterval(slideInterval);
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    stopSlideShow();
+                    goToSlide(parseInt(dot.dataset.slide));
+                    startSlideShow();
+                });
+            });
+
+            // Start the slider
+            startSlideShow();
         });
     </script>
     @endpush

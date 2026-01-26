@@ -34,8 +34,8 @@
     <meta property="twitter:image" content="@yield('twitter_image', asset('images/og-image.png'))">
 
     <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#2F6E7F">
-    <meta name="msapplication-TileColor" content="#2F6E7F">
+    <meta name="theme-color" content="#038b89">
+    <meta name="msapplication-TileColor" content="#038b89">
     <meta name="apple-mobile-web-app-title" content="Aethryna Foundation">
 
     <!-- CSRF Token -->
@@ -59,12 +59,12 @@
 </head>
 <body class="font-sans antialiased">
     @include('layouts.navigation')
-<br />
-<br />
-<br />
+
     <main>
         @yield('content')
     </main>
+
+    @include('layouts.footer')
 
     @stack('scripts')
 </body>

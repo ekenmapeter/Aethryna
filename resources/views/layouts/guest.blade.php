@@ -32,25 +32,27 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Scripts -->
-    @if(app()->environment('local'))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @else
-        <!-- Production assets -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/aethryna.css') }}">
-    @endif
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        teal: '#055860',
+                        gold: '#ee9d1d',
+                        'dark-gray': '#404952',
+                        light: '#F8FBFB',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/aethryna.css') }}">
 
     @stack('styles')
-        <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body class="font-sans antialiased bg-dark-gray text-light">
@@ -58,7 +60,7 @@
     @include('layouts.navigation')
     <div class="pt-20"></div>
     <!-- Auth Page Hero Section -->
-    <section class="min-h-screen bg-gradient-to-b from-dark-gray/90 to-teal/30 bg-cover bg-center bg-fixed flex items-center justify-center relative overflow-hidden pt-20 text-light" style="background-image: url('https://plus.unsplash.com/premium_photo-1681494370365-6bc631f820e9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+    <section class="min-h-screen bg-gradient-to-b from-[#055860] to-[#038b89] flex items-center justify-center relative overflow-hidden pt-20 text-light py-10">
 
         <!-- Floating Shapes -->
         <div class="absolute inset-0 pointer-events-none">
@@ -107,7 +109,11 @@
                 </div>
             </div>
         </div>
+        <br/>
+<br />
     </section>
+
+    @include('layouts.footer')
 
     @stack('scripts')
 </body>

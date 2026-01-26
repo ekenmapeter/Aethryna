@@ -4,7 +4,7 @@
 
 @section('content')
 <section class="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-16 px-8 relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-400 opacity-10 rounded-full -mr-48 -mt-48"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold opacity-10 rounded-full -mr-48 -mt-48"></div>
     <div class="max-w-4xl mx-auto text-center relative z-10">
         <h1 class="text-5xl font-bold mb-6">Your Recommended Pathway</h1>
         <p class="text-xl opacity-90">Based on your responses, your strengths align with the pathway profile below.</p>
@@ -106,7 +106,7 @@
             @endforeach
         @else
             <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
-                <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-black text-2xl mx-auto mb-4">
+                <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center text-black text-2xl mx-auto mb-4">
                     <i class="fas fa-exclamation-triangle"></i>
                 </div>
                 <h2 class="text-2xl font-bold text-teal-700 mb-4">Assessment Incomplete</h2>

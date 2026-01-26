@@ -340,7 +340,7 @@
     <style>
         /* Custom styles that can't be easily done with Tailwind alone */
         .chart-bar {
-            background: #2F6E7F;
+            background: #038b89;
             border-radius: 4px 4px 0 0;
             width: 100%;
             transition: height 1s ease;
@@ -359,7 +359,7 @@
             background: #F5F5F5;
             border-radius: 20px;
             font-weight: 600;
-            color: #2F6E7F;
+            color: #038b89;
             margin-bottom: 0.5rem;
         }
 
@@ -379,7 +379,7 @@
         .user-avatar {
             width: 40px;
             height: 40px;
-            background: #2F6E7F;
+            background: #038b89;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -396,12 +396,12 @@
         }
 
         .role-badge.user {
-            background: #E8B647;
+            background: #ee9d1d;
             color: #0C0C0C;
         }
 
         .role-badge.admin {
-            background: #2F6E7F;
+            background: #038b89;
             color: white;
         }
 
@@ -421,7 +421,7 @@
             border: none;
             border-radius: 50%;
             background: transparent;
-            color: #2F6E7F;
+            color: #038b89;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
@@ -430,7 +430,7 @@
         }
 
         .btn-icon:hover {
-            background: #2F6E7F;
+            background: #038b89;
             color: white;
         }
 
@@ -454,9 +454,9 @@
         }
 
         .page-btn:hover, .page-btn.active {
-            background: #2F6E7F;
+            background: #038b89;
             color: white;
-            border-color: #2F6E7F;
+            border-color: #038b89;
         }
 
         .page-btn.disabled {
@@ -486,7 +486,7 @@
 
         /* Buttons */
         .btn-primary {
-            background: #2F6E7F;
+            background: #038b89;
             color: white;
         }
 
@@ -497,12 +497,12 @@
 
         .btn-outline {
             background: transparent;
-            color: #2F6E7F;
-            border: 2px solid #2F6E7F;
+            color: #038b89;
+            border: 2px solid #038b89;
         }
 
         .btn-outline:hover {
-            background: #2F6E7F;
+            background: #038b89;
             color: white;
         }
 
@@ -535,7 +535,7 @@
             .col:not(:first-child)::before {
                 content: attr(data-label);
                 font-weight: 600;
-                color: #2F6E7F;
+                color: #055860;
             }
         }
 
