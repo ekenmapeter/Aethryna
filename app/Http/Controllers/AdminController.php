@@ -54,14 +54,17 @@ class AdminController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'summary' => 'required|string',
-            'description' => 'required|string',
             'category' => 'required|string|in:technical,creative,business,security,foundation',
+            'description' => 'required|string',
+            'recommended_for' => 'required|string',
+            'skills' => 'required|array',
+            'career_paths' => 'required|array',
             'difficulty_level' => 'required|string|in:Beginner,Intermediate,Advanced',
-            'key_skills' => 'required|array',
-            'potential_roles' => 'required|array',
-            'learning_resources' => 'required|array',
+            'duration_months' => 'required|integer',
         ]);
+
+        $validated['slug'] = \Illuminate\Support\Str::slug($validated['name']);
+        $validated['is_active'] = true;
 
         \App\Models\Pathway::create($validated);
 
@@ -77,14 +80,16 @@ class AdminController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'summary' => 'required|string',
-            'description' => 'required|string',
             'category' => 'required|string|in:technical,creative,business,security,foundation',
+            'description' => 'required|string',
+            'recommended_for' => 'required|string',
+            'skills' => 'required|array',
+            'career_paths' => 'required|array',
             'difficulty_level' => 'required|string|in:Beginner,Intermediate,Advanced',
-            'key_skills' => 'required|array',
-            'potential_roles' => 'required|array',
-            'learning_resources' => 'required|array',
+            'duration_months' => 'required|integer',
         ]);
+
+        $validated['slug'] = \Illuminate\Support\Str::slug($validated['name']);
 
         $pathway->update($validated);
 
@@ -181,7 +186,7 @@ class AdminController extends Controller
     public function destroyUser(\App\Models\User $user)
     {
         // Prevent deleting self
-        if (auth()->id() === $user->id) {
+        if (\Illuminate\Support\Facades\Auth::id() === $user->id) {
             return back()->with('error', 'You cannot delete your own account.');
         }
 

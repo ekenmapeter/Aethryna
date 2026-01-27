@@ -22,7 +22,7 @@
 
 <!-- Social Login -->
 <div class="social-login mb-8">
-    <div class="social-login-title relative text-center text-white/80 text-sm mb-4">
+    <div class="social-login-title relative text-center text-white/90 text-sm mb-4">
         <span class="relative z-10 bg-dark-gray/95 px-4">Sign up with</span>
         <span class="absolute top-1/2 left-0 right-0 h-px bg-white/20"></span>
     </div>
@@ -47,7 +47,7 @@
 
 <!-- Divider -->
 <div class="divider relative text-center my-8">
-    <span class="relative z-10 bg-dark-gray/95 px-4 text-white/60 text-sm">or create account with email</span>
+    <span class="relative z-10 bg-dark-gray/95 px-4 text-white/80 text-sm">or create account with email</span>
     <span class="absolute top-1/2 left-0 right-0 h-px bg-white/20"></span>
 </div>
 

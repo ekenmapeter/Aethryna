@@ -54,7 +54,10 @@
                         <span>Lagos, Nigeria | London, UK</span>
                     </div>
                     <div class="newsletter">
-                        <p>Subscribe to our newsletter</p>
+                        <div class="newsletter-label">
+                            <i class="fas fa-paper-plane"></i>
+                            <p>Subscribe to our newsletter</p>
+                        </div>
                         <form class="newsletter-form">
                             <input type="email" placeholder="Your email address" required>
                             <button type="submit"><i class="fas fa-paper-plane"></i></button>
@@ -187,14 +190,37 @@
         color: var(--teal);
     }
 
-    .newsletter p {
+    .newsletter {
+        margin-top: 2rem;
+    }
+
+    .newsletter-label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
         margin-bottom: 1rem;
-        font-weight: 600;
+        color: rgba(245, 245, 245, 0.9);
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .newsletter-label i {
+        color: var(--teal);
+        width: 16px; 
+        text-align: center;
         font-size: 0.9rem;
+    }
+
+    .newsletter-label p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1;
+        letter-spacing: 0.5px;
     }
 
     .newsletter-form {
         display: flex;
+        align-items: center;
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.1);
         padding: 0.3rem;

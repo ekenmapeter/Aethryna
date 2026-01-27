@@ -77,8 +77,8 @@
                     <div class="auth-form-section flex justify-center items-center">
                         <div class="auth-card bg-dark-gray/95 backdrop-blur-custom rounded-xl p-12 shadow-lg border border-white/10 w-full max-w-md h-fit flex flex-col">
                             <div class="auth-header text-center mb-8">
-                                <h1 class="text-4xl font-extrabold mb-4 bg-gradient-teal-gold bg-clip-text text-transparent">@yield('auth-title', 'Welcome Back')</h1>
-                                <p class="text-white/80 text-lg leading-relaxed">@yield('auth-subtitle', 'Sign in to your account to continue your journey')</p>
+                                <h1 class="text-4xl font-extrabold mb-4 text-gradient-gold">@yield('auth-title', 'Welcome Back')</h1>
+                                <p class="text-white text-lg leading-relaxed">@yield('auth-subtitle', 'Sign in to your account to continue your journey')</p>
                             </div>
 
                             @yield('auth-content')
@@ -89,19 +89,19 @@
                     <div class="auth-caption-section flex justify-center items-center py-8 lg:order-2">
                         <div class="auth-caption text-center text-light max-w-md">
                             <h2 class="text-5xl font-extrabold mb-6 text-gradient">@yield('caption-title', 'Transform Your Future')</h2>
-                            <p class="text-xl leading-relaxed text-white/90 mb-8">@yield('caption-text', 'Join thousands of youth who have discovered their potential through our digital skills programs and mentorship opportunities.')</p>
+                            <p class="text-xl leading-relaxed text-white mb-8">@yield('caption-text', 'Join thousands of youth who have discovered their potential through our digital skills programs and mentorship opportunities.')</p>
                             <div class="caption-stats flex justify-around gap-8 mt-8">
                                 <div class="stat-item text-center">
-                                    <span class="stat-number block text-4xl font-extrabold text-gold mb-2" style="text-shadow: 0 0 20px rgba(232, 182, 71, 0.3);">500+</span>
-                                    <span class="stat-label text-sm text-white/70 font-medium">Students Trained</span>
+                                    <span class="stat-number block text-4xl font-extrabold text-gold mb-2" style="text-shadow: 0 0 20px rgba(238, 157, 29, 0.3);">500+</span>
+                                    <span class="stat-label text-sm text-white/90 font-medium">Students Trained</span>
                                 </div>
                                 <div class="stat-item text-center">
-                                    <span class="stat-number block text-4xl font-extrabold text-gold mb-2" style="text-shadow: 0 0 20px rgba(232, 182, 71, 0.3);">95%</span>
-                                    <span class="stat-label text-sm text-white/70 font-medium">Success Rate</span>
+                                    <span class="stat-number block text-4xl font-extrabold text-gold mb-2" style="text-shadow: 0 0 20px rgba(238, 157, 29, 0.3);">95%</span>
+                                    <span class="stat-label text-sm text-white/90 font-medium">Success Rate</span>
                                 </div>
                                 <div class="stat-item text-center">
-                                    <span class="stat-number block text-4xl font-extrabold text-gold mb-2" style="text-shadow: 0 0 20px rgba(232, 182, 71, 0.3);">50+</span>
-                                    <span class="stat-label text-sm text-white/70 font-medium">Partner Companies</span>
+                                    <span class="stat-number block text-4xl font-extrabold text-gold mb-2" style="text-shadow: 0 0 20px rgba(238, 157, 29, 0.3);">50+</span>
+                                    <span class="stat-label text-sm text-white/90 font-medium">Partner Companies</span>
                                 </div>
                             </div>
                         </div>

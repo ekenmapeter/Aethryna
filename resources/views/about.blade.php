@@ -208,21 +208,45 @@
     @push('styles')
     <style>
         :root {
-            --teal: #038b89;
-            --gold: #ee9d1d;
-            --black: #055860;
-            --light: #F5F5F5;
-            --dark-gray: #404952;
-            --transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-            --radius: 20px;
-            --shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 40px 80px rgba(0, 0, 0, 0.12);
+            --ath-teal: #038b89;
+            --ath-gold: #ee9d1d;
+            --ath-deep: #055860;
+            --ath-light: #F8FBFB;
+            --ath-white: #ffffff;
+            --ath-text: #404952;
+            --ath-muted: #57616a;
+            --ath-trans: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --ath-radius: 24px;
+        }
+
+        /* General Section Header */
+        .section-title {
+            text-align: left;
+            margin-bottom: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title h2, .mission-text h3 {
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--ath-muted);
+            line-height: 1.6;
+            max-width: 800px;
         }
 
         /* About Hero Section */
         .about-hero {
             height: 60vh;
-            background: linear-gradient(135deg, var(--deep), var(--teal));
+            background: linear-gradient(135deg, var(--ath-deep), var(--ath-teal));
             background-size: cover;
             background-position: center;
             display: flex;
@@ -235,7 +259,7 @@
         }
 
         .about-hero .hero-content h1 {
-            font-size: 4rem;
+            font-size: clamp(3rem, 8vw, 5rem);
             font-weight: 800;
             margin-bottom: 1.5rem;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -259,7 +283,7 @@
 
         .hero-shapes .shape {
             position: absolute;
-            background: linear-gradient(135deg, var(--teal), transparent);
+            background: linear-gradient(135deg, var(--ath-teal), transparent);
             border-radius: 50%;
             filter: blur(40px);
             opacity: 0.3;
@@ -280,7 +304,7 @@
             top: 60%;
             right: 10%;
             animation-delay: 2s;
-            background: linear-gradient(135deg, var(--gold), transparent);
+            background: linear-gradient(135deg, var(--ath-gold), transparent);
         }
 
         .hero-shapes .shape:nth-child(3) {
@@ -302,8 +326,11 @@
 
         /* Mission Section */
         .mission {
-            padding: 8rem 5%;
-            background: var(--light);
+            padding: 100px 5%;
+            background: var(--ath-light);
+            margin-top: -50px; /* Pull up to join hero flow */
+            position: relative;
+            z-index: 10;
         }
 
         .mission-content {
@@ -315,17 +342,10 @@
             align-items: center;
         }
 
-        .mission-text h3 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: var(--teal);
-            line-height: 1.2;
-        }
-
         .mission-text p {
             font-size: 1.1rem;
             margin-bottom: 2rem;
-            color: var(--dark-gray);
+            color: var(--ath-text);
             line-height: 1.8;
         }
 
@@ -342,13 +362,13 @@
         .mission-stats .stat-number {
             font-size: 2.5rem;
             font-weight: 800;
-            color: var(--teal);
+            color: var(--ath-teal);
             display: block;
         }
 
         .mission-stats .stat-label {
             font-size: 1rem;
-            color: var(--dark-gray);
+            color: var(--ath-text);
             margin-top: 0.5rem;
         }
 
@@ -373,11 +393,11 @@
         }
 
         .value-card {
-            background: var(--light);
+            background: var(--ath-light);
             padding: 3rem 2rem;
-            border-radius: var(--radius);
+            border-radius: var(--ath-radius);
             text-align: center;
-            transition: var(--transition);
+            transition: var(--ath-trans);
             box-shadow: var(--shadow);
             position: relative;
             overflow: hidden;
@@ -390,7 +410,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, var(--teal), var(--gold));
+            background: linear-gradient(90deg, var(--ath-teal), var(--ath-gold));
         }
 
         .value-card:hover {
@@ -401,7 +421,7 @@
         .value-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--teal), var(--gold));
+            background: linear-gradient(135deg, var(--ath-teal), var(--ath-gold));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -409,7 +429,7 @@
             margin: 0 auto 2rem;
             color: white;
             font-size: 2rem;
-            transition: var(--transition);
+            transition: var(--ath-trans);
         }
 
         .value-card:hover .value-icon {
@@ -419,17 +439,17 @@
         .value-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            color: var(--teal);
+            color: var(--ath-deep);
         }
 
         .value-card p {
-            color: var(--dark-gray);
+            color: var(--ath-text);
             line-height: 1.7;
         }
 
         /* Team Section */
         .team {
-            padding: 8rem 5%;
+            padding: 100px 5%;
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
         }
 
@@ -443,10 +463,10 @@
 
         .team-member {
             background: white;
-            border-radius: var(--radius);
+            border-radius: var(--ath-radius);
             overflow: hidden;
             box-shadow: var(--shadow);
-            transition: var(--transition);
+            transition: var(--ath-trans);
         }
 
         .team-member:hover {
@@ -463,7 +483,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: var(--transition);
+            transition: var(--ath-trans);
         }
 
         .team-member:hover .member-image img {
@@ -477,23 +497,24 @@
         .member-info h3 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
-            color: var(--teal);
+            color: var(--ath-deep);
+            font-weight: 700;
         }
 
         .member-role {
-            color: var(--gold);
+            color: var(--ath-gold);
             font-weight: 600;
             margin-bottom: 1rem;
         }
 
         .member-bio {
-            color: var(--dark-gray);
+            color: var(--ath-text);
             line-height: 1.6;
         }
 
-        /* History/Timeline Section */
+        /* History Section */
         .history {
-            padding: 8rem 5%;
+            padding: 100px 5%;
             background: white;
         }
 
@@ -510,13 +531,14 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, var(--teal), var(--gold));
+            background: linear-gradient(to bottom, var(--ath-teal), var(--ath-gold));
             transform: translateX(-50%);
         }
 
         .timeline-item {
             margin-bottom: 4rem;
             position: relative;
+            width: 100%;
         }
 
         .timeline-item:nth-child(even) .timeline-content {
@@ -526,13 +548,14 @@
         }
 
         .timeline-content {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: var(--radius);
+            background: var(--ath-light);
+            padding: 2.5rem;
+            border-radius: var(--ath-radius);
             box-shadow: var(--shadow);
-            max-width: 400px;
+            max-width: 420px;
             position: relative;
             margin-left: 60px;
+            transition: var(--ath-trans);
         }
 
         .timeline-item:nth-child(even) .timeline-content {
@@ -541,13 +564,14 @@
         }
 
         .timeline-content h3 {
-            color: var(--teal);
+            color: var(--ath-teal);
             margin-bottom: 1rem;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            font-weight: 700;
         }
 
         .timeline-content p {
-            color: var(--dark-gray);
+            color: var(--ath-text);
             line-height: 1.6;
         }
 
@@ -557,20 +581,20 @@
             top: 2rem;
             width: 20px;
             height: 20px;
-            background: var(--gold);
+            background: var(--ath-gold);
             border-radius: 50%;
             border: 4px solid white;
-            box-shadow: 0 0 0 4px var(--teal);
+            box-shadow: 0 0 0 4px var(--ath-teal);
             transform: translateX(-50%);
             z-index: 1;
         }
 
         /* CTA Section */
         .cta {
-            background: linear-gradient(135deg, var(--teal), #055860);
+            background: linear-gradient(135deg, var(--ath-teal), var(--ath-deep));
             color: white;
             text-align: center;
-            padding: 8rem 2rem;
+            padding: 100px 2rem;
             position: relative;
             overflow: hidden;
         }
@@ -655,10 +679,6 @@
                 font-size: 1.2rem;
             }
 
-            .mission-text h3 {
-                font-size: 2rem;
-            }
-
             .values-grid {
                 grid-template-columns: 1fr;
             }
@@ -697,10 +717,6 @@
         @media (max-width: 576px) {
             .about-hero .hero-content h1 {
                 font-size: 2rem;
-            }
-
-            .mission-text h3 {
-                font-size: 1.8rem;
             }
 
             .mission-stats {

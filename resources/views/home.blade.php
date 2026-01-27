@@ -31,7 +31,7 @@
                     <h1 class="ath-title">Tech. Future. <span class="ath-gradient-text">Mastery.</span></h1>
                     <p>Equipping the next generation with cutting-edge digital skills to thrive in a global economy. Master Web Development, Design, and more.</p>
                     <div class="ath-hero-btns">
-                        <a href="{{ route('register') }}" class="ath-btn ath-btn-primary">View Programs</a>
+                        <a href="{{ route('programs') }}" class="ath-btn ath-btn-primary">View Programs</a>
                         <a href="{{ route('pathway') }}" class="ath-btn ath-btn-outline">Our Pathway</a>
                     </div>
                 </div>
@@ -70,9 +70,11 @@
             </div>
             <div class="ath-about-grid">
                 <div class="ath-about-card reveal-fade-right">
-                    <h3>Building Futures Together</h3>
-                    <p>Aethryna Foundation is a modern youth empowerment nonprofit dedicated to creating pathways to success for young people from all backgrounds. Through our innovative mentorship programs, we connect aspiring youth with experienced professionals who guide them toward achieving their personal and professional goals.</p>
-                    <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare youth for the challenges of tomorrow.</p>
+                    <div class="ath-feature-body">
+                            <h4>Building Futures Together</h4>
+                            <p>Aethryna Foundation is a modern youth empowerment nonprofit dedicated to creating pathways to success for young people from all backgrounds. Through our innovative mentorship programs, we connect aspiring youth with experienced professionals who guide them toward achieving their personal and professional goals.</p>
+                            <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare youth for the challenges of tomorrow.</p>
+                    </div>
                 </div>
                 <div class="ath-about-features">
                     <div class="ath-feature reveal-fade-left" style="--delay: 1">
@@ -140,7 +142,7 @@
                 <div class="ath-step-card reveal-fade-up" style="--delay: 3">
                     <div class="ath-step-num">03</div>
                     <h4>Economic Independence</h4>
-                    <p>Start earning through freelance projects (£50-£200) and job placement. Ongoing mentorship and career advancement support.</p>
+                    <p>Start earning through freelance projects and job placement. Ongoing mentorship and career advancement support.</p>
                 </div>
             </div>
         </div>
@@ -165,24 +167,41 @@
                 <p>Structured learning paths designed for real-world excellence</p>
             </div>
             <div class="ath-grid-3">
-                <div class="ath-prog-item reveal-fade-up" style="--delay: 1">
-                    <div class="ath-prog-icon"><i class="fas fa-code"></i></div>
-                    <h3>Web Development</h3>
-                    <p>Master HTML, CSS, JavaScript and build real websites. Perfect for creative problem-solvers who want to build the digital world.</p>
-                    <a href="#" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="ath-prog-item reveal-fade-up" style="--delay: 2">
-                    <div class="ath-prog-icon"><i class="fas fa-palette"></i></div>
-                    <h3>Digital Design</h3>
-                    <p>Learn UI/UX design, branding, and visual communication. Create stunning digital experiences that users love.</p>
-                    <a href="#" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="ath-prog-item reveal-fade-up" style="--delay: 3">
-                    <div class="ath-prog-icon"><i class="fas fa-tools"></i></div>
-                    <h3>IT Support</h3>
-                    <p>Develop troubleshooting skills, customer service, and technical support expertise. High-demand roles with clear career paths.</p>
-                    <a href="#" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                </div>
+                @forelse($pathways as $index => $pathway)
+                    @php
+                        $icon = 'fa-laptop-code'; // Default icon
+                        if (stripos($pathway->name, 'Design') !== false) $icon = 'fa-palette';
+                        if (stripos($pathway->name, 'Development') !== false || stripos($pathway->name, 'Web') !== false) $icon = 'fa-code';
+                        if (stripos($pathway->name, 'Support') !== false || stripos($pathway->name, 'IT') !== false) $icon = 'fa-tools';
+                        if (stripos($pathway->name, 'Sales') !== false || stripos($pathway->name, 'Marketing') !== false) $icon = 'fa-bullhorn';
+                    @endphp
+                    <div class="ath-prog-item reveal-fade-up" style="--delay: {{ $index + 1 }}">
+                        <div class="ath-prog-icon"><i class="fas {{ $icon }}"></i></div>
+                        <h3>{{ $pathway->name }}</h3>
+                        <p>{{ $pathway->description }}</p>
+                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                @empty
+                    <!-- Fallback items if database is empty -->
+                    <div class="ath-prog-item reveal-fade-up" style="--delay: 1">
+                        <div class="ath-prog-icon"><i class="fas fa-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Master HTML, CSS, JavaScript and build real websites. Perfect for creative problem-solvers who want to build the digital world.</p>
+                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="ath-prog-item reveal-fade-up" style="--delay: 2">
+                        <div class="ath-prog-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Digital Design</h3>
+                        <p>Learn UI/UX design, branding, and visual communication. Create stunning digital experiences that users love.</p>
+                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="ath-prog-item reveal-fade-up" style="--delay: 3">
+                        <div class="ath-prog-icon"><i class="fas fa-tools"></i></div>
+                        <h3>IT Support</h3>
+                        <p>Develop troubleshooting skills, customer service, and technical support expertise. High-demand roles with clear career paths.</p>
+                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                @endforelse
             </div>
         </div>
     </section>
@@ -192,6 +211,7 @@
         <div class="ath-container">
             <div class="ath-impact-grid">
                 <div class="ath-impact-info reveal-fade-right">
+                    <span class="ath-sub">Proven Results</span>
                     <h2>Our Growing Impact</h2>
                     <p>We measure success through the lives we transform and the careers we launch. Every number tells a story of perseverance and growth.</p>
                 </div>
@@ -667,11 +687,28 @@
         .ath-step-card p { color: var(--ath-muted); line-height: 1.6; }
 
         /* Impact Section Stats with Cards */
+        .ath-impact { background-color: var(--ath-light); }
+        
         .ath-impact-grid {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
             gap: 60px;
             align-items: center;
+        }
+
+        .ath-impact-info h2 {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            color: var(--ath-deep);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .ath-impact-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--ath-muted);
+            margin-bottom: 0;
         }
 
         .ath-stats-grid {
@@ -860,7 +897,7 @@
 
             // Cleanup potential scroll bottlenecks
             document.getElementById('assessmentToolBtn')?.addEventListener('click', () => {
-                window.location.href = '{{ route("register") }}';
+                window.location.href = '{{ route("assessment.index") }}';
             });
 
             // Hero Slider Logic

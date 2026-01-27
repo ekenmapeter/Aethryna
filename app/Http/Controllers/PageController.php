@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pathway;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $pathways = Pathway::active()->get();
+        return view('home', compact('pathways'));
     }
 
     public function about()
@@ -18,12 +20,14 @@ class PageController extends Controller
 
     public function pathway()
     {
-        return view('pathway');
+        $pathways = \App\Models\Pathway::active()->get();
+        return view('pathway', compact('pathways'));
     }
 
     public function programs()
     {
-        return view('programs');
+        $pathways = Pathway::active()->paginate(4);
+        return view('programs', compact('pathways'));
     }
 
     public function impact()

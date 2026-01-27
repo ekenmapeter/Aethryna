@@ -6,26 +6,31 @@
 
     <!-- Hero Section -->
     <section class="pathway-hero">
-        <div class="hero-content">
-            <h1>The Digital Transformation Pathway</h1>
-            <p>Our proven three-phase approach turns potential into professional success</p>
-            <a href="#pathway-details" class="btn btn-primary">Explore the Pathway</a>
-        </div>
-        <div class="hero-visual">
-            <div class="pathway-diagram">
-                <div class="phase phase-1">
-                    <div class="phase-icon">🌱</div>
-                    <div class="phase-title">Phase 1</div>
+        <div class="ath-container">
+            <div class="pathway-hero-grid">
+                <div class="hero-content">
+                    <span class="ath-sub">The Journey</span>
+                    <h1>The Digital <span class="ath-gradient-text">Transformation</span> Pathway</h1>
+                    <p>Our proven three-phase approach turns potential into professional success. From foundations to independence.</p>
+                    <a href="#pathway-details" class="btn btn-primary">Explore the Journey <i class="fas fa-arrow-down"></i></a>
                 </div>
-                <div class="phase-connector">→</div>
-                <div class="phase phase-2">
-                    <div class="phase-icon">🚀</div>
-                    <div class="phase-title">Phase 2</div>
-                </div>
-                <div class="phase-connector">→</div>
-                <div class="phase phase-3">
-                    <div class="phase-icon">💼</div>
-                    <div class="phase-title">Phase 3</div>
+                <div class="hero-visual">
+                    <div class="pathway-diagram">
+                        <div class="phase phase-1">
+                            <div class="phase-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="phase-title">Foundation</div>
+                        </div>
+                        <div class="phase-connector"><i class="fas fa-angle-right"></i></div>
+                        <div class="phase phase-2">
+                            <div class="phase-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="phase-title">Specialization</div>
+                        </div>
+                        <div class="phase-connector"><i class="fas fa-angle-right"></i></div>
+                        <div class="phase phase-3">
+                            <div class="phase-icon"><i class="fas fa-award"></i></div>
+                            <div class="phase-title">Independence</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,11 +38,13 @@
 
     <!-- Pathway Overview -->
     <section id="pathway-details" class="pathway-overview">
-        <div class="section-title">
-            <h2>How It Works</h2>
-            <p>A structured journey from beginner to professional</p>
-        </div>
-        <div class="overview-content">
+        <div class="ath-container">
+            <div class="section-title">
+                <span class="ath-sub">Overview</span>
+                <h2>How It Works</h2>
+                <p>A structured journey from beginner to professional</p>
+            </div>
+            <div class="overview-content">
             <div class="overview-text">
                 <p>Our Digital Transformation Pathway is designed to take you from having little to no digital experience to becoming a confident professional in the tech industry. Through our comprehensive three-phase program, you'll gain practical skills, build a portfolio, and secure your first job in tech.</p>
                 <p>Each phase builds upon the previous one, ensuring you have a solid foundation before moving to more advanced topics. Our experienced mentors and industry partners guide you every step of the way.</p>
@@ -61,7 +68,7 @@
 
     <!-- Phase 1: Digital Foundations -->
     <section class="phase-section phase-1-bg">
-        <div class="phase-container">
+        <div class="ath-container">
             <div class="phase-header">
                 <div class="phase-badge">Phase 1</div>
                 <h2>Digital Foundations</h2>
@@ -82,14 +89,14 @@
                         </ul>
                     </div>
                     <div class="phase-duration">
-                        <strong>Duration:</strong> 3-6 months (part-time)
+                        <i class="fas fa-clock"></i> <strong>Duration:</strong> 3-6 months (part-time)
                     </div>
                 </div>
                 <div class="phase-skills">
                     <h4>Skills You'll Learn:</h4>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <i class="fas fa-computer"></i>
+                            <i class="fas fa-laptop-code"></i>
                             <span>Computer Basics</span>
                         </div>
                         <div class="skill-item">
@@ -97,19 +104,19 @@
                             <span>Internet Navigation</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email & Communication</span>
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>Communication</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-file-alt"></i>
-                            <span>Document Creation</span>
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Documents</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-search"></i>
-                            <span>Online Research</span>
+                            <i class="fas fa-magnifying-glass"></i>
+                            <span>Research</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-shield-alt"></i>
+                            <i class="fas fa-user-shield"></i>
                             <span>Digital Safety</span>
                         </div>
                     </div>
@@ -120,7 +127,7 @@
 
     <!-- Phase 2: Skill Specialization -->
     <section class="phase-section phase-2-bg">
-        <div class="phase-container">
+        <div class="ath-container">
             <div class="phase-header">
                 <div class="phase-badge">Phase 2</div>
                 <h2>Skill Specialization</h2>
@@ -128,52 +135,53 @@
             </div>
             <div class="phase-content">
                 <div class="phase-description">
-                    <h3>Choose your track: Web Development, Digital Design, IT Support, or Digital Sales</h3>
+                    <h3>Choose your track and master your craft</h3>
                     <p>In this phase, you'll dive deep into your chosen specialization. Working with industry mentors, you'll complete real-world projects, build a professional portfolio, and gain hands-on experience that employers value.</p>
                     <div class="phase-tracks">
-                        <div class="track">
-                            <h4>Web Development Track</h4>
-                            <p>Learn HTML, CSS, JavaScript, and modern frameworks to build websites and web applications.</p>
-                            <div class="track-skills">
-                                <span>HTML/CSS</span>
-                                <span>JavaScript</span>
-                                <span>React/Vue</span>
-                                <span>Node.js</span>
+                        @forelse($pathways->take(4) as $pathway)
+                            <div class="track">
+                                <h4>{{ $pathway->name }}</h4>
+                                <p>{{ Str::limit($pathway->description, 120) }}</p>
+                                <div class="track-skills">
+                                    @if(is_array($pathway->skills))
+                                        @foreach(array_slice($pathway->skills, 0, 3) as $skill)
+                                            <span>{{ $skill }}</span>
+                                        @endforeach
+                                    @endif
+                                </div>
                             </div>
-                        </div>
-                        <div class="track">
-                            <h4>Digital Design Track</h4>
-                            <p>Master UI/UX design, graphic design, and visual communication using industry-standard tools.</p>
-                            <div class="track-skills">
-                                <span>Figma</span>
-                                <span>Adobe XD</span>
-                                <span>Photoshop</span>
-                                <span>Illustrator</span>
+                        @empty
+                            <div class="track">
+                                <h4>Web Development Track</h4>
+                                <p>Learn HTML, CSS, JavaScript, and modern frameworks to build websites and web applications.</p>
+                                <div class="track-skills">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>React/Vue</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="track">
-                            <h4>IT Support Track</h4>
-                            <p>Develop technical support skills, troubleshooting, and customer service expertise.</p>
-                            <div class="track-skills">
-                                <span>Hardware</span>
-                                <span>Networking</span>
-                                <span>Windows/Linux</span>
-                                <span>Help Desk</span>
+                            <div class="track">
+                                <h4>Digital Design Track</h4>
+                                <p>Master UI/UX design, graphic design, and visual communication using industry-standard tools.</p>
+                                <div class="track-skills">
+                                    <span>Figma</span>
+                                    <span>UI/UX</span>
+                                    <span>Adobe Suite</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="track">
-                            <h4>Digital Sales Track</h4>
-                            <p>Learn digital marketing, social media management, and sales techniques for online businesses.</p>
-                            <div class="track-skills">
-                                <span>Social Media</span>
-                                <span>SEO</span>
-                                <span>Analytics</span>
-                                <span>CRM Tools</span>
-                            </div>
-                        </div>
+                        @endforelse
                     </div>
+
+                    @if($pathways->count() > 4)
+                        <div class="see-more-container">
+                            <a href="{{ route('programs') }}" class="btn-see-more">
+                                Explore All Programs <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    @endif
+
                     <div class="phase-duration">
-                        <strong>Duration:</strong> 6-12 months (full-time equivalent)
+                        <i class="fas fa-calendar-alt"></i> <strong>Duration:</strong> 6-12 months (full-time)
                     </div>
                 </div>
                 <div class="phase-projects">
@@ -203,7 +211,7 @@
 
     <!-- Phase 3: Economic Independence -->
     <section class="phase-section phase-3-bg">
-        <div class="phase-container">
+        <div class="ath-container">
             <div class="phase-header">
                 <div class="phase-badge">Phase 3</div>
                 <h2>Economic Independence</h2>
@@ -211,8 +219,8 @@
             </div>
             <div class="phase-content">
                 <div class="phase-description">
-                    <h3>Ongoing mentorship and career advancement support</h3>
-                    <p>The final phase focuses on transitioning to professional employment. You'll learn job search strategies, interview skills, and begin earning through freelance work while receiving continued mentorship and career guidance.</p>
+                    <h3>Ongoing mentorship and career advancement</h3>
+                    <p>The final phase focuses on transitioning to professional employment. You'll learn job search strategies, interview skills, and begin earning through freelance work while receiving continued mentorship.</p>
                     <div class="phase-objectives">
                         <h4>Key Objectives:</h4>
                         <ul>
@@ -224,7 +232,7 @@
                         </ul>
                     </div>
                     <div class="phase-duration">
-                        <strong>Duration:</strong> 3-6 months (with ongoing support)
+                        <i class="fas fa-award"></i> <strong>Goal:</strong> Sustainable Employment
                     </div>
                 </div>
                 <div class="phase-career">
@@ -248,7 +256,7 @@
                             <i class="fas fa-graduation-cap"></i>
                             <div class="service-content">
                                 <h5>Interview Coaching</h5>
-                            <p>Mock interviews, resume reviews, and professional development workshops</p>
+                                <p>Mock interviews, resume reviews, and professional development workshops</p>
                             </div>
                         </div>
                         <div class="service-item">
@@ -266,44 +274,47 @@
 
     <!-- Success Stories -->
     <section class="success-stories">
-        <div class="section-title">
-            <h2>Pathway Success Stories</h2>
-            <p>Real journeys from our program graduates</p>
-        </div>
-        <div class="stories-grid">
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Success story">
-                </div>
-                <div class="story-content">
-                    <h3>From Beginner to Web Developer</h3>
-                    <p>"I started with zero computer skills. After completing the pathway, I landed a £28k job as a junior web developer. The mentors were incredible!"</p>
-                    <div class="story-author">
-                        <strong>Maria G.</strong> - Web Developer at TechStart
+        <div class="ath-container">
+            <div class="section-title">
+                <span class="ath-sub">Success Stories</span>
+                <h2>Pathway Impact</h2>
+                <p>Real journeys from our program graduates</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Success story">
+                    </div>
+                    <div class="story-content">
+                        <h3>From Beginner to Web Developer</h3>
+                        <p>"I started with zero computer skills. After completing the pathway, I landed a job as a junior web developer. The mentors were incredible!"</p>
+                        <div class="story-author">
+                            Maria G. <span>Web Developer at TechStart</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Success story">
-                </div>
-                <div class="story-content">
-                    <h3>Digital Design Career Launch</h3>
-                    <p>"The design track gave me the skills and confidence to pursue my passion. Now I'm a UX designer earning £32k and loving every day!"</p>
-                    <div class="story-author">
-                        <strong>James L.</strong> - UX Designer at CreativeCo
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Success story">
+                    </div>
+                    <div class="story-content">
+                        <h3>Digital Design Career Launch</h3>
+                        <p>"The design track gave me the skills and confidence to pursue my passion. Now I'm a UX designer and loving every day!"</p>
+                        <div class="story-author">
+                            James L. <span>UX Designer at CreativeCo</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Success story">
-                </div>
-                <div class="story-content">
-                    <h3>IT Support to IT Management</h3>
-                    <p>"Started in IT support and now manage a team of 8. The pathway taught me not just technical skills, but leadership and problem-solving."</p>
-                    <div class="story-author">
-                        <strong>David K.</strong> - IT Manager at GlobalTech
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Success story">
+                    </div>
+                    <div class="story-content">
+                        <h3>IT Support to Management</h3>
+                        <p>"Started in IT support and now manage a team. The pathway taught me not just technical skills, but leadership and problem-solving."</p>
+                        <div class="story-author">
+                            David K. <span>IT Manager at GlobalTech</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,12 +323,14 @@
 
     <!-- CTA Section -->
     <section class="pathway-cta">
-        <div class="cta-content">
-            <h2>Ready to Start Your Journey?</h2>
-            <p>Take our 2-minute assessment to discover which track is right for you and begin your transformation today.</p>
-            <div class="cta-buttons">
-                <button class="btn btn-primary" id="startAssessment">Take Assessment</button>
-                <a href="{{ route('register') }}" class="btn btn-outline">Apply Now</a>
+        <div class="ath-container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Take our 2-minute assessment to discover which track is right for you and begin your transformation today.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" id="startAssessment">Take Assessment</button>
+                    <a href="{{ route('assessment.index') }}" class="btn btn-outline">Apply Now</a>
+                </div>
             </div>
         </div>
     </section>
@@ -325,359 +338,484 @@
     @push('styles')
     <style>
         :root {
-            --teal: #038b89;
-            --gold: #ee9d1d;
-            --black: #055860;
-            --light: #F5F5F5;
-            --dark-gray: #404952;
-            --transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-            --radius: 20px;
-            --shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 40px 80px rgba(0, 0, 0, 0.12);
+            --ath-teal: #038b89;
+            --ath-gold: #ee9d1d;
+            --ath-deep: #055860;
+            --ath-light: #F8FBFB;
+            --ath-white: #ffffff;
+            --ath-text: #404952;
+            --ath-muted: #57616a;
+            --ath-trans: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --ath-radius: 24px;
+        }
+
+        .ath-container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        /* General Section Header */
+        .section-title {
+            text-align: left;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .section-title p {
+            font-size: 1.25rem;
+            color: var(--ath-muted);
+            max-width: 800px;
         }
 
         /* Pathway Hero */
         .pathway-hero {
-            height: 70vh;
-            background: linear-gradient(135deg, var(--black), var(--teal));
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
+            padding: 160px 0 100px;
+            background: var(--ath-deep);
             position: relative;
             overflow: hidden;
+            color: #fff;
         }
 
-        .pathway-hero .hero-content {
-            flex: 1;
-            padding: 0 5%;
-            color: white;
-            text-align: center;
+        .pathway-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 70% 30%, rgba(3, 139, 137, 0.2), transparent 50%),
+                        radial-gradient(circle at 30% 70%, rgba(238, 157, 29, 0.1), transparent 50%);
+            z-index: 1;
+        }
+
+        .pathway-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
         }
 
         .pathway-hero h1 {
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 800;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .ath-gradient-text {
+            background: linear-gradient(135deg, var(--ath-gold), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .pathway-hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-visual {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 5%;
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
         }
 
         .pathway-diagram {
             display: flex;
             align-items: center;
-            gap: 2rem;
-            background: rgba(255, 255, 255, 0.1);
+            gap: 30px;
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(20px);
-            border-radius: var(--radius);
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--ath-radius);
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .phase {
             text-align: center;
-            color: white;
+            flex: 1;
         }
 
         .phase-icon {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            color: var(--ath-gold);
+            margin-bottom: 15px;
         }
 
         .phase-title {
-            font-weight: 600;
-            font-size: 1.1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.9);
         }
 
         .phase-connector {
-            font-size: 2rem;
-            color: var(--gold);
-            font-weight: bold;
+            color: rgba(255,255,255,0.3);
+            font-size: 1.5rem;
         }
 
         /* Overview Section */
         .pathway-overview {
-            padding: 6rem 5%;
-            background: var(--light);
+            padding: 100px 0;
+            background: var(--ath-light);
         }
 
         .overview-content {
-            max-width: 1200px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 4rem;
+            gap: 60px;
             align-items: center;
         }
 
         .overview-text p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             line-height: 1.8;
-            color: var(--dark-gray);
-            margin-bottom: 1.5rem;
+            color: var(--ath-text);
+            margin-bottom: 20px;
         }
 
         .overview-stats {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 25px;
         }
 
         .overview-stats .stat {
-            text-align: center;
-            padding: 2rem;
+            padding: 30px;
             background: white;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+            transition: var(--ath-trans);
+        }
+
+        .overview-stats .stat:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .overview-stats .stat-number {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
-            color: var(--teal);
+            color: var(--ath-teal);
             display: block;
+            margin-bottom: 5px;
         }
 
         .overview-stats .stat-label {
-            font-size: 1rem;
-            color: var(--dark-gray);
-            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--ath-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Phase Sections */
         .phase-section {
-            padding: 8rem 5%;
+            padding: 100px 0;
             position: relative;
-            overflow: hidden;
         }
 
-        .phase-1-bg {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        }
-
-        .phase-2-bg {
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-        }
-
-        .phase-3-bg {
-            background: linear-gradient(135deg, #f3e5f5, #ce93d8);
-        }
-
-        .phase-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .phase-1-bg { background-color: #fff; }
+        .phase-2-bg { background-color: var(--ath-light); }
+        .phase-3-bg { background-color: #fff; }
 
         .phase-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 60px;
         }
 
         .phase-badge {
             display: inline-block;
-            background: var(--teal);
-            color: white;
-            padding: 0.5rem 1.5rem;
+            background: rgba(3, 139, 137, 0.1);
+            color: var(--ath-teal);
+            padding: 8px 24px;
             border-radius: 50px;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
         }
 
         .phase-header h2 {
-            font-size: 3rem;
-            color: var(--teal);
-            margin-bottom: 1rem;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 15px;
         }
 
         .phase-header p {
             font-size: 1.2rem;
-            color: var(--dark-gray);
-            max-width: 600px;
+            color: var(--ath-muted);
+            max-width: 700px;
             margin: 0 auto;
         }
 
         .phase-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
             align-items: start;
         }
 
         .phase-description h3 {
             font-size: 1.8rem;
-            color: var(--black);
-            margin-bottom: 1.5rem;
+            color: var(--ath-deep);
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.3;
         }
 
         .phase-description p {
-            color: var(--dark-gray);
+            color: var(--ath-text);
+            font-size: 1.1rem;
             line-height: 1.7;
-            margin-bottom: 2rem;
+            margin-bottom: 30px;
         }
 
-        .phase-objectives h4 {
-            color: var(--teal);
-            margin-bottom: 1rem;
+        .phase-objectives h4, .phase-skills h4, .phase-projects h4, .phase-career h4 {
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 25px;
             font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phase-objectives h4::before {
+            content: '';
+            width: 30px; height: 2px;
+            background: var(--ath-gold);
+            display: block;
         }
 
         .phase-objectives ul {
             list-style: none;
             padding: 0;
+            display: grid;
+            gap: 15px;
         }
 
         .phase-objectives li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
+            padding-left: 35px;
             position: relative;
-            color: var(--dark-gray);
+            color: var(--ath-text);
+            font-weight: 500;
         }
 
         .phase-objectives li::before {
-            content: '✓';
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
             position: absolute;
             left: 0;
-            color: var(--gold);
-            font-weight: bold;
+            color: var(--ath-teal);
+            font-size: 1rem;
         }
 
         .phase-duration {
-            margin-top: 2rem;
-            padding: 1rem;
-            background: white;
-            border-radius: var(--radius);
-            text-align: center;
-            box-shadow: var(--shadow);
+            margin-top: 40px;
+            padding: 20px 30px;
+            background: var(--ath-light);
+            border-radius: var(--ath-radius);
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
         .phase-duration strong {
-            color: var(--teal);
+            color: var(--ath-deep);
+            font-weight: 700;
         }
 
         /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 1.5rem;
+            gap: 20px;
         }
 
         .skill-item {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 25px;
             background: white;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--ath-trans);
         }
 
         .skill-item:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: var(--ath-teal);
         }
 
         .skill-item i {
-            color: var(--teal);
-            font-size: 1.5rem;
+            color: var(--ath-teal);
+            font-size: 1.8rem;
+            background: rgba(3, 139, 137, 0.05);
+            width: 60px; height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            transition: var(--ath-trans);
+        }
+
+        .skill-item:hover i {
+            background: var(--ath-teal);
+            color: #fff;
         }
 
         .skill-item span {
-            font-weight: 600;
-            color: var(--black);
+            font-weight: 700;
+            color: var(--ath-deep);
+            font-size: 1rem;
         }
 
         /* Phase Tracks */
         .phase-tracks {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 25px;
+            margin: 30px 0;
         }
 
         .track {
             background: white;
-            padding: 2rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            padding: 30px;
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border-left: 5px solid var(--ath-teal);
+            transition: var(--ath-trans);
         }
 
         .track:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            transform: translateX(10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
         }
 
         .track h4 {
-            color: var(--teal);
-            margin-bottom: 1rem;
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
         }
 
         .track p {
-            color: var(--dark-gray);
-            margin-bottom: 1.5rem;
+            color: var(--ath-muted);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
             line-height: 1.6;
         }
 
         .track-skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 8px;
         }
 
         .track-skills span {
-            background: var(--gold);
-            color: var(--black);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
+            background: var(--ath-light);
+            color: var(--ath-teal);
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border: 1px solid rgba(3, 139, 137, 0.1);
+        }
+
+        /* See More Link */
+        .see-more-container {
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .btn-see-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--ath-teal);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--ath-trans);
+            padding: 10px 0;
+            border-bottom: 2px solid rgba(3, 139, 137, 0.1);
+        }
+
+        .btn-see-more:hover {
+            color: var(--ath-deep);
+            border-bottom-color: var(--ath-gold);
+            transform: translateX(5px);
+        }
+
+        .btn-see-more i {
             font-size: 0.9rem;
-            font-weight: 500;
+            transition: var(--ath-trans);
+        }
+
+        .btn-see-more:hover i {
+            transform: translateX(3px);
         }
 
         /* Projects Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            gap: 20px;
         }
 
         .project-item {
             background: white;
-            padding: 1.5rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            padding: 25px;
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--ath-trans);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .project-item::before {
+            content: '\f121';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--ath-gold);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
         }
 
         .project-item:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: var(--ath-gold);
         }
 
         .project-item h5 {
-            color: var(--teal);
-            margin-bottom: 0.5rem;
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
         }
 
         .project-item p {
-            color: var(--dark-gray);
+            color: var(--ath-muted);
             font-size: 0.95rem;
             line-height: 1.5;
         }
@@ -685,230 +823,203 @@
         /* Career Services */
         .career-services {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
         }
 
         .service-item {
             display: flex;
-            align-items: center;
-            gap: 1.5rem;
+            align-items: flex-start;
+            gap: 20px;
             background: white;
-            padding: 1.5rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            padding: 25px;
+            border-radius: var(--ath-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--ath-trans);
         }
 
         .service-item:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
         }
 
         .service-item i {
-            color: var(--teal);
-            font-size: 2rem;
+            color: var(--ath-teal);
+            font-size: 1.5rem;
+            background: rgba(3, 139, 137, 0.1);
+            width: 50px; height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
             flex-shrink: 0;
         }
 
         .service-content h5 {
-            color: var(--teal);
-            margin-bottom: 0.5rem;
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
         }
 
         .service-content p {
-            color: var(--dark-gray);
+            color: var(--ath-muted);
             font-size: 0.95rem;
             line-height: 1.5;
         }
 
         /* Success Stories */
         .success-stories {
-            padding: 8rem 5%;
-            background: white;
+            padding: 100px 0;
+            background: var(--ath-light);
         }
 
         .stories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 30px;
         }
 
         .story-card {
-            background: var(--light);
-            border-radius: var(--radius);
+            background: white;
+            border-radius: var(--ath-radius);
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--ath-trans);
         }
 
         .story-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
         }
 
         .story-image {
-            height: 200px;
-            overflow: hidden;
+            height: 250px;
+            position: relative;
         }
 
         .story-image img {
-            width: 100%;
-            height: 100%;
+            width: 100%; height: 100%;
             object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .story-card:hover .story-image img {
-            transform: scale(1.05);
         }
 
         .story-content {
-            padding: 2rem;
+            padding: 40px;
         }
 
         .story-content h3 {
-            color: var(--teal);
-            margin-bottom: 1rem;
+            color: var(--ath-deep);
+            font-weight: 800;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
         }
 
         .story-content p {
-            color: var(--dark-gray);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            color: var(--ath-text);
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-style: italic;
         }
 
         .story-author {
-            font-style: italic;
-            color: var(--black);
+            color: var(--ath-deep);
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .story-author span {
+            color: var(--ath-gold);
+            font-size: 0.9rem;
+            font-weight: 600;
         }
 
         /* CTA Section */
         .pathway-cta {
-            background: linear-gradient(135deg, var(--teal), #055860);
-            color: white;
+            padding: 100px 0;
+            background: var(--ath-deep);
             text-align: center;
-            padding: 8rem 2rem;
+            color: #fff;
             position: relative;
             overflow: hidden;
         }
 
+        .pathway-cta::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(3, 139, 137, 0.3), transparent 70%);
+        }
+
         .pathway-cta .cta-content {
-            max-width: 800px;
-            margin: 0 auto;
             position: relative;
             z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .pathway-cta h2 {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.1;
         }
 
         .pathway-cta p {
-            font-size: 1.4rem;
-            margin-bottom: 3rem;
+            font-size: 1.25rem;
+            margin-bottom: 40px;
             opacity: 0.9;
         }
 
         .cta-buttons {
             display: flex;
-            gap: 2rem;
+            gap: 20px;
             justify-content: center;
         }
 
         /* Mobile Responsive */
         @media (max-width: 992px) {
-            .pathway-hero {
-                flex-direction: column;
+            .pathway-hero-grid {
+                grid-template-columns: 1fr;
                 text-align: center;
-                height: auto;
-                padding: 6rem 0;
+                gap: 40px;
             }
 
-            .hero-visual {
-                margin-top: 3rem;
+            .pathway-hero p {
+                margin-left: auto;
+                margin-right: auto;
             }
 
+            .phase-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
             .pathway-diagram {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 20px;
             }
 
             .phase-connector {
                 transform: rotate(90deg);
             }
 
-            .overview-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .phase-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .phase-tracks {
-                grid-template-columns: 1fr;
-            }
-
-            .projects-grid,
-            .career-services {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .pathway-hero h1 {
-                font-size: 2.8rem;
-            }
-
-            .phase-header h2 {
-                font-size: 2.5rem;
-            }
-
-            .stories-grid {
-                grid-template-columns: 1fr;
-            }
-
             .cta-buttons {
                 flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .pathway-hero h1 {
-                font-size: 2.2rem;
             }
 
-            .phase-header h2 {
-                font-size: 2rem;
-            }
-
-            .pathway-cta h2 {
-                font-size: 2.5rem;
-            }
-
-            .overview-stats {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .overview-stats .stat {
-                padding: 1.5rem;
-            }
-
-            .phase-section {
-                padding: 6rem 5%;
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -918,8 +1029,8 @@
     <script>
         // Assessment modal trigger
         document.getElementById('startAssessment').addEventListener('click', () => {
-            // This would open the assessment modal - for now just redirect to register
-            window.location.href = '{{ route("register") }}';
+            // This would open the assessment modal - for now just redirect to assessment
+            window.location.href = '{{ route("assessment.index") }}';
         });
 
         // Intersection Observer for animations

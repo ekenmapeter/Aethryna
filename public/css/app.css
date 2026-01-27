@@ -5,16 +5,28 @@
 /* Custom animations and styles that can't be done with Tailwind alone */
 @layer utilities {
     .bg-gradient-teal-gold {
-        background: linear-gradient(135deg, #055860, #E8B647);
+        background: linear-gradient(135deg, #038b89, #ee9d1d);
     }
 
     .text-gradient {
-        background: linear-gradient(135deg, #055860, #E8B647, #ff6b6b, #4ecdc4);
-        background-size: 300% 300%;
+        background: linear-gradient(135deg, #ee9d1d, #FFFFFF, #BFF0F0);
+        background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        animation: gradientShift 4s ease-in-out infinite;
+        animation: textFlow 4s linear infinite;
+    }
+
+    .text-gradient-gold {
+        background: linear-gradient(135deg, #ee9d1d, #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    @keyframes textFlow {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 200% 50%; }
     }
 
     .backdrop-blur-custom {
