@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ci2KzpC4qgY26Llx',
+            '_route' => 'generated::NwTWtJdXzeyZ1K31',
           ),
           1 => NULL,
           2 => 
@@ -377,6 +377,105 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/coach/dashboard' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'coach.dashboard',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/coach/cohort' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'coach.cohort',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/mentor/dashboard' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mentor.dashboard',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/mentor/learners' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mentor.learners',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/mentor/log-session' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mentor.log-session',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/assessment' => 
       array (
         0 => 
@@ -480,7 +579,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::VWGh8HeDM3N9PbYJ',
+            '_route' => 'generated::FInZr9bk0zblsvwV',
           ),
           1 => NULL,
           2 => 
@@ -516,7 +615,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::0om5fZ8jQIoAinlm',
+            '_route' => 'generated::xKTzhtfAcIRhvmIE',
           ),
           1 => NULL,
           2 => 
@@ -646,7 +745,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::S7O1cUzYF2Tl2VMT',
+            '_route' => 'generated::Qh7wnlpjmtxc1bTZ',
           ),
           1 => NULL,
           2 => 
@@ -700,11 +799,33 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/a(?|dmin/content/(?|pathway/([^/]++)(?|/edit(*:52)|(*:59))|question/([^/]++)(?|/edit(*:92)|(*:99)))|ssessment/question/([^/]++)(?|(*:138)|/answer(*:153)))|/reset\\-password/([^/]++)(*:188)|/verify\\-email/([^/]++)/([^/]++)(*:228)|/storage/(.*)(*:249))/?$}sDu',
+      0 => '{^(?|/a(?|dmin/(?|users/([^/]++)(*:34)|content/(?|pathway/([^/]++)(?|/edit(*:76)|(*:83))|question/([^/]++)(?|/edit(*:116)|(*:124))))|ssessment/question/([^/]++)(?|(*:165)|/answer(*:180)))|/coach/flag/([^/]++)(*:210)|/reset\\-password/([^/]++)(*:243)|/verify\\-email/([^/]++)/([^/]++)(*:283)|/storage/(.*)(*:304))/?$}sDu',
     ),
     3 => 
     array (
-      52 => 
+      34 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.users.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'user',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      76 => 
       array (
         0 => 
         array (
@@ -727,7 +848,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      59 => 
+      83 => 
       array (
         0 => 
         array (
@@ -768,7 +889,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      92 => 
+      116 => 
       array (
         0 => 
         array (
@@ -791,7 +912,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      99 => 
+      124 => 
       array (
         0 => 
         array (
@@ -832,7 +953,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      138 => 
+      165 => 
       array (
         0 => 
         array (
@@ -855,7 +976,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      153 => 
+      180 => 
       array (
         0 => 
         array (
@@ -877,7 +998,29 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      188 => 
+      210 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'coach.flag',
+          ),
+          1 => 
+          array (
+            0 => 'learner',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      243 => 
       array (
         0 => 
         array (
@@ -900,7 +1043,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      228 => 
+      283 => 
       array (
         0 => 
         array (
@@ -924,7 +1067,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      249 => 
+      304 => 
       array (
         0 => 
         array (
@@ -962,7 +1105,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::ci2KzpC4qgY26Llx' => 
+    'generated::NwTWtJdXzeyZ1K31' => 
     array (
       'methods' => 
       array (
@@ -991,7 +1134,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000004d70000000000000000";}}',
-        'as' => 'generated::ci2KzpC4qgY26Llx',
+        'as' => 'generated::NwTWtJdXzeyZ1K31',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1444,6 +1587,45 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\AdminController@users',
         'controller' => 'App\\Http\\Controllers\\AdminController@users',
         'as' => 'admin.users',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.users.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/users/{user}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@destroyUser',
+        'controller' => 'App\\Http\\Controllers\\AdminController@destroyUser',
+        'as' => 'admin.users.destroy',
         'namespace' => NULL,
         'prefix' => '/admin',
         'where' => 
@@ -1938,6 +2120,244 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'coach.dashboard' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'coach/dashboard',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'coach',
+        ),
+        'uses' => 'App\\Http\\Controllers\\CoachController@dashboard',
+        'controller' => 'App\\Http\\Controllers\\CoachController@dashboard',
+        'as' => 'coach.dashboard',
+        'namespace' => NULL,
+        'prefix' => '/coach',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'coach.cohort' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'coach/cohort',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'coach',
+        ),
+        'uses' => 'App\\Http\\Controllers\\CoachController@cohort',
+        'controller' => 'App\\Http\\Controllers\\CoachController@cohort',
+        'as' => 'coach.cohort',
+        'namespace' => NULL,
+        'prefix' => '/coach',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'coach.flag' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'coach/flag/{learner}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'coach',
+        ),
+        'uses' => 'App\\Http\\Controllers\\CoachController@flagConcern',
+        'controller' => 'App\\Http\\Controllers\\CoachController@flagConcern',
+        'as' => 'coach.flag',
+        'namespace' => NULL,
+        'prefix' => '/coach',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mentor.dashboard' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'mentor/dashboard',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'mentor',
+        ),
+        'uses' => 'App\\Http\\Controllers\\MentorController@dashboard',
+        'controller' => 'App\\Http\\Controllers\\MentorController@dashboard',
+        'as' => 'mentor.dashboard',
+        'namespace' => NULL,
+        'prefix' => '/mentor',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mentor.learners' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'mentor/learners',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'mentor',
+        ),
+        'uses' => 'App\\Http\\Controllers\\MentorController@learners',
+        'controller' => 'App\\Http\\Controllers\\MentorController@learners',
+        'as' => 'mentor.learners',
+        'namespace' => NULL,
+        'prefix' => '/mentor',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mentor.log-session' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'mentor/log-session',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'mentor',
+        ),
+        'uses' => 'App\\Http\\Controllers\\MentorController@logSession',
+        'controller' => 'App\\Http\\Controllers\\MentorController@logSession',
+        'as' => 'mentor.log-session',
+        'namespace' => NULL,
+        'prefix' => '/mentor',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'assessment.index' => 
     array (
       'methods' => 
@@ -2197,7 +2617,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::VWGh8HeDM3N9PbYJ' => 
+    'generated::FInZr9bk0zblsvwV' => 
     array (
       'methods' => 
       array (
@@ -2218,7 +2638,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::VWGh8HeDM3N9PbYJ',
+        'as' => 'generated::FInZr9bk0zblsvwV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2272,7 +2692,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::0om5fZ8jQIoAinlm' => 
+    'generated::xKTzhtfAcIRhvmIE' => 
     array (
       'methods' => 
       array (
@@ -2293,7 +2713,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::0om5fZ8jQIoAinlm',
+        'as' => 'generated::xKTzhtfAcIRhvmIE',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2613,7 +3033,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::S7O1cUzYF2Tl2VMT' => 
+    'generated::Qh7wnlpjmtxc1bTZ' => 
     array (
       'methods' => 
       array (
@@ -2634,7 +3054,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::S7O1cUzYF2Tl2VMT',
+        'as' => 'generated::Qh7wnlpjmtxc1bTZ',
       ),
       'fallback' => false,
       'defaults' => 
