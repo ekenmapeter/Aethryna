@@ -55,11 +55,86 @@ class User extends Authenticatable
         return $this->role === 'admin';
     }
 
-    /**
-     * Check if user is regular user
-     */
     public function isUser(): bool
     {
-        return $this->role === 'user';
+        return $this->role === 'user' || $this->role === 'learner';
+    }
+
+    /**
+     * Check if user is a learner/member
+     */
+    public function isLearner(): bool
+    {
+        return $this->role === 'learner' || $this->role === 'user';
+    }
+
+    /**
+     * Check if user is a mentor/volunteer
+     */
+    public function isMentor(): bool
+    {
+        return $this->role === 'mentor';
+    }
+
+    /**
+     * Check if user is a skills coach (internal staff)
+     */
+    public function isCoach(): bool
+    {
+        return $this->role === 'coach';
+    }
+
+    // --- Relationships ---
+
+    /**
+     * Learners assigned to this mentor
+     */
+    public function assignedLearners()
+    {
+        return $this->belongsToMany(User::class, 'mentor_learner_assignments', 'mentor_id', 'learner_id')
+            ->withPivot('status', 'assigned_date', 'completion_date', 'notes')
+            ->withTimestamps();
+    }
+
+    /**
+     * Mentor assigned to this learner
+     */
+    public function assignedMentor()
+    {
+        return $this->belongsToMany(User::class, 'mentor_learner_assignments', 'learner_id', 'mentor_id')
+            ->withPivot('status', 'assigned_date', 'completion_date', 'notes')
+            ->withTimestamps();
+    }
+
+    /**
+     * Learners in this coach's cohort
+     */
+    public function cohortLearners()
+    {
+        return $this->hasMany(CoachCohort::class, 'coach_id');
+    }
+
+    /**
+     * Coach assigned to this learner
+     */
+    public function assignedCoach()
+    {
+        return $this->hasOne(CoachCohort::class, 'learner_id');
+    }
+
+    /**
+     * Mentoring sessions as a mentor
+     */
+    public function mentoringSessions()
+    {
+        return $this->hasMany(MentoringSession::class, 'mentor_id');
+    }
+
+    /**
+     * Mentoring sessions as a learner
+     */
+    public function learningSessions()
+    {
+        return $this->hasMany(MentoringSession::class, 'learner_id');
     }
 }

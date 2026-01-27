@@ -3,6 +3,7 @@
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AssessmentController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -22,11 +23,42 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware(['auth', 'verified', 'admin'])->group(function () {
-    Route::get('/admin/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('admin.dashboard');
+Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    Route::get('/users', [AdminController::class, 'users'])->name('users');
+    Route::delete('/users/{user}', [AdminController::class, 'destroyUser'])->name('users.destroy');
+    Route::get('/reports', [AdminController::class, 'reports'])->name('reports');
+    Route::get('/content', [AdminController::class, 'content'])->name('content');
+    
+    // Pathway Management
+    Route::get('/content/pathway/create', [AdminController::class, 'createPathway'])->name('content.pathway.create');
+    Route::post('/content/pathway', [AdminController::class, 'storePathway'])->name('content.pathway.store');
+    Route::get('/content/pathway/{pathway}/edit', [AdminController::class, 'editPathway'])->name('content.pathway.edit');
+    Route::put('/content/pathway/{pathway}', [AdminController::class, 'updatePathway'])->name('content.pathway.update');
+    Route::delete('/content/pathway/{pathway}', [AdminController::class, 'destroyPathway'])->name('content.pathway.destroy');
+
+    // Question Management
+    Route::get('/content/question/create', [AdminController::class, 'createQuestion'])->name('content.question.create');
+    Route::post('/content/question', [AdminController::class, 'storeQuestion'])->name('content.question.store');
+    Route::get('/content/question/{question}/edit', [AdminController::class, 'editQuestion'])->name('content.question.edit');
+    Route::put('/content/question/{question}', [AdminController::class, 'updateQuestion'])->name('content.question.update');
+    Route::delete('/content/question/{question}', [AdminController::class, 'destroyQuestion'])->name('content.question.destroy');
 });
+
+// Coach Routes
+Route::middleware(['auth', 'verified', 'coach'])->prefix('coach')->name('coach.')->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\CoachController::class, 'dashboard'])->name('dashboard');
+    Route::get('/cohort', [\App\Http\Controllers\CoachController::class, 'cohort'])->name('cohort');
+    Route::post('/flag/{learner}', [\App\Http\Controllers\CoachController::class, 'flagConcern'])->name('flag');
+});
+
+// Mentor Routes
+Route::middleware(['auth', 'verified', 'mentor'])->prefix('mentor')->name('mentor.')->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\MentorController::class, 'dashboard'])->name('dashboard');
+    Route::get('/learners', [\App\Http\Controllers\MentorController::class, 'learners'])->name('learners');
+    Route::post('/log-session', [\App\Http\Controllers\MentorController::class, 'logSession'])->name('log-session');
+});
+
 
 // Assessment Routes
 Route::prefix('assessment')->name('assessment.')->group(function () {

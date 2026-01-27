@@ -3,7 +3,8 @@
 @section('title', 'Find Your Pathway - Aethryna Foundation')
 
 @section('content')
-<section class="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-16 px-8 relative overflow-hidden">
+<section class="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-32 px-8 relative overflow-hidden">
+   <br/>
     <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-400 opacity-10 rounded-full -mr-48 -mt-48"></div>
     <div class="max-w-4xl mx-auto text-center relative z-10">
         <h1 class="text-5xl font-bold mb-6">Find Your Pathway</h1>

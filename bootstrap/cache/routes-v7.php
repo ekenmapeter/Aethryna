@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nCDF5hTXzEVfS0Fw',
+            '_route' => 'generated::ci2KzpC4qgY26Llx',
           ),
           1 => NULL,
           2 => 
@@ -239,6 +239,144 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/admin/users' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.users',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/reports' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.reports',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/content' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/content/pathway/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.pathway.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/content/pathway' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.pathway.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/content/question/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.question.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/content/question' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.question.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/assessment' => 
       array (
         0 => 
@@ -342,7 +480,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ws3UbuYbLf95oaI6',
+            '_route' => 'generated::VWGh8HeDM3N9PbYJ',
           ),
           1 => NULL,
           2 => 
@@ -378,7 +516,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::kDhZrnlIHwy2dz1U',
+            '_route' => 'generated::0om5fZ8jQIoAinlm',
           ),
           1 => NULL,
           2 => 
@@ -508,7 +646,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::MUTXLuSVTAFIOyAf',
+            '_route' => 'generated::S7O1cUzYF2Tl2VMT',
           ),
           1 => NULL,
           2 => 
@@ -562,11 +700,139 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/assessment/question/([^/]++)(?|(*:39)|/answer(*:53))|/reset\\-password/([^/]++)(*:86)|/verify\\-email/([^/]++)/([^/]++)(*:125)|/storage/(.*)(*:146))/?$}sDu',
+      0 => '{^(?|/a(?|dmin/content/(?|pathway/([^/]++)(?|/edit(*:52)|(*:59))|question/([^/]++)(?|/edit(*:92)|(*:99)))|ssessment/question/([^/]++)(?|(*:138)|/answer(*:153)))|/reset\\-password/([^/]++)(*:188)|/verify\\-email/([^/]++)/([^/]++)(*:228)|/storage/(.*)(*:249))/?$}sDu',
     ),
     3 => 
     array (
-      39 => 
+      52 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.pathway.edit',
+          ),
+          1 => 
+          array (
+            0 => 'pathway',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      59 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.pathway.update',
+          ),
+          1 => 
+          array (
+            0 => 'pathway',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.pathway.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'pathway',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      92 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.question.edit',
+          ),
+          1 => 
+          array (
+            0 => 'question',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      99 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.question.update',
+          ),
+          1 => 
+          array (
+            0 => 'question',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.content.question.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'question',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      138 => 
       array (
         0 => 
         array (
@@ -589,7 +855,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      53 => 
+      153 => 
       array (
         0 => 
         array (
@@ -611,7 +877,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      86 => 
+      188 => 
       array (
         0 => 
         array (
@@ -634,7 +900,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      125 => 
+      228 => 
       array (
         0 => 
         array (
@@ -658,7 +924,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      146 => 
+      249 => 
       array (
         0 => 
         array (
@@ -696,7 +962,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::nCDF5hTXzEVfS0Fw' => 
+    'generated::ci2KzpC4qgY26Llx' => 
     array (
       'methods' => 
       array (
@@ -724,8 +990,8 @@ app('router')->setCompiledRoutes(
                     return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\xampp\\\\htdocs\\\\aethryna\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000005250000000000000000";}}',
-        'as' => 'generated::nCDF5hTXzEVfS0Fw',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000004d70000000000000000";}}',
+        'as' => 'generated::ci2KzpC4qgY26Llx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -981,7 +1247,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:46:"function () {
     return \\view(\'dashboard\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005310000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004e30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -1135,15 +1401,528 @@ app('router')->setCompiledRoutes(
           2 => 'verified',
           3 => 'admin',
         ),
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:60:"function () {
-        return \\view(\'admin.dashboard\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005380000000000000000";}}',
+        'uses' => 'App\\Http\\Controllers\\AdminController@dashboard',
+        'controller' => 'App\\Http\\Controllers\\AdminController@dashboard',
+        'as' => 'admin.dashboard',
         'namespace' => NULL,
-        'prefix' => '',
+        'prefix' => '/admin',
         'where' => 
         array (
         ),
-        'as' => 'admin.dashboard',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.users' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/users',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@users',
+        'controller' => 'App\\Http\\Controllers\\AdminController@users',
+        'as' => 'admin.users',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.reports' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/reports',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@reports',
+        'controller' => 'App\\Http\\Controllers\\AdminController@reports',
+        'as' => 'admin.reports',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/content',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@content',
+        'controller' => 'App\\Http\\Controllers\\AdminController@content',
+        'as' => 'admin.content',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.pathway.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/content/pathway/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@createPathway',
+        'controller' => 'App\\Http\\Controllers\\AdminController@createPathway',
+        'as' => 'admin.content.pathway.create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.pathway.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/content/pathway',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@storePathway',
+        'controller' => 'App\\Http\\Controllers\\AdminController@storePathway',
+        'as' => 'admin.content.pathway.store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.pathway.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/content/pathway/{pathway}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@editPathway',
+        'controller' => 'App\\Http\\Controllers\\AdminController@editPathway',
+        'as' => 'admin.content.pathway.edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.pathway.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+      ),
+      'uri' => 'admin/content/pathway/{pathway}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@updatePathway',
+        'controller' => 'App\\Http\\Controllers\\AdminController@updatePathway',
+        'as' => 'admin.content.pathway.update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.pathway.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/content/pathway/{pathway}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@destroyPathway',
+        'controller' => 'App\\Http\\Controllers\\AdminController@destroyPathway',
+        'as' => 'admin.content.pathway.destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.question.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/content/question/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@createQuestion',
+        'controller' => 'App\\Http\\Controllers\\AdminController@createQuestion',
+        'as' => 'admin.content.question.create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.question.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/content/question',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@storeQuestion',
+        'controller' => 'App\\Http\\Controllers\\AdminController@storeQuestion',
+        'as' => 'admin.content.question.store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.question.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/content/question/{question}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@editQuestion',
+        'controller' => 'App\\Http\\Controllers\\AdminController@editQuestion',
+        'as' => 'admin.content.question.edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.question.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+      ),
+      'uri' => 'admin/content/question/{question}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@updateQuestion',
+        'controller' => 'App\\Http\\Controllers\\AdminController@updateQuestion',
+        'as' => 'admin.content.question.update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'admin.content.question.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/content/question/{question}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'verified',
+          3 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@destroyQuestion',
+        'controller' => 'App\\Http\\Controllers\\AdminController@destroyQuestion',
+        'as' => 'admin.content.question.destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
       ),
       'fallback' => false,
       'defaults' => 
@@ -1418,7 +2197,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ws3UbuYbLf95oaI6' => 
+    'generated::VWGh8HeDM3N9PbYJ' => 
     array (
       'methods' => 
       array (
@@ -1439,7 +2218,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ws3UbuYbLf95oaI6',
+        'as' => 'generated::VWGh8HeDM3N9PbYJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1493,7 +2272,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::kDhZrnlIHwy2dz1U' => 
+    'generated::0om5fZ8jQIoAinlm' => 
     array (
       'methods' => 
       array (
@@ -1514,7 +2293,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::kDhZrnlIHwy2dz1U',
+        'as' => 'generated::0om5fZ8jQIoAinlm',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1834,7 +2613,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MUTXLuSVTAFIOyAf' => 
+    'generated::S7O1cUzYF2Tl2VMT' => 
     array (
       'methods' => 
       array (
@@ -1855,7 +2634,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::MUTXLuSVTAFIOyAf',
+        'as' => 'generated::S7O1cUzYF2Tl2VMT',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1961,7 +2740,7 @@ app('router')->setCompiledRoutes(
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000005330000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000004e50000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,

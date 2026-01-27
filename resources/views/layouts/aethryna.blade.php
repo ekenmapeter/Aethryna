@@ -60,7 +60,7 @@
 <body class="font-sans antialiased">
     @include('layouts.navigation')
 
-    <main>
+    <main class="py-20">
         @yield('content')
     </main>
 
