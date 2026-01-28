@@ -51,9 +51,22 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ath-teal': '#038b89',
+                        'ath-gold': '#ee9d1d',
+                        'ath-deep': '#055860',
+                    }
+                }
+            }
+        }
+    </script>
 
-    <!-- Vite Assets -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aethryna.css') }}">
 
     @stack('styles')
