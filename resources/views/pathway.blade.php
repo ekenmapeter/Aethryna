@@ -249,7 +249,7 @@
                             <i class="fas fa-briefcase"></i>
                             <div class="service-content">
                                 <h5>Freelance Platform</h5>
-                                <p>Access to our curated freelance opportunities starting at £50-£200 per project</p>
+                                <p>Access to our curated freelance opportunities</p>
                             </div>
                         </div>
                         <div class="service-item">

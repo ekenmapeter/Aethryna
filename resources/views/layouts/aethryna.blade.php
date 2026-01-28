@@ -52,8 +52,8 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <!-- Vite Assets -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('css/aethryna.css') }}">
 
     @stack('styles')

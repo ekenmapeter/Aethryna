@@ -47,7 +47,7 @@
                     <h4>Contact Us</h4>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@aethryna.org</span>
+                        <span>info@aethryna.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
