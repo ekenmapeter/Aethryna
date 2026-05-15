@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Digital Transformation Pathway | Aethryna Foundation')
+@section('title', 'Digital Transformation Pathway | SkillsCo-op')
 
 @section('content')
 

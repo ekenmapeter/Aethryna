@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>@yield('title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')</title>
-    <meta name="title" content="@yield('meta_title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')">
-    <meta name="description" content="@yield('meta_description', 'Aethryna Foundation transforms young lives through digital skills training, mentorship programs, and career pathways in tech. Join our mission to empower the next generation.')">
+    <title>@yield('title', 'SkillsCo-op | Empowering Youth Through Digital Skills & Mentorship')</title>
+    <meta name="title" content="@yield('meta_title', 'SkillsCo-op | Empowering Youth Through Digital Skills & Mentorship')">
+    <meta name="description" content="@yield('meta_description', 'SkillsCo-op transforms young lives through digital skills training, mentorship programs, and career pathways in tech. Join our mission to empower the next generation.')">
     <meta name="keywords" content="@yield('meta_keywords', 'youth empowerment, digital skills training, tech mentorship, career development, nonprofit organization, coding bootcamp, web development, IT support, digital design')">
-    <meta name="author" content="Aethryna Foundation">
+    <meta name="author" content="SkillsCo-op">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Canonical URL -->

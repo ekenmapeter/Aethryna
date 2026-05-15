@@ -6,10 +6,10 @@
                 <!-- Brand Info -->
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="{{ asset('images/logo_white.png') }}" alt="Aethryna Foundation">
+                        <img src="{{ asset('images/logo_white.png') }}" alt="SkillsCo-op">
                     </div>
                     <p class="brand-desc">
-                        Empowering the next generation through digital skills, mentorship, and career pathways. Join us in transforming potential into professional excellence.
+                        Widening access to digital skills and meaningful career progression for underserved communities. Join us in transforming potential into professional excellence.
                     </p>
                     <div class="social-links">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -28,6 +28,7 @@
                         <li><a href="{{ route('pathway') }}">Transformation Pathway</a></li>
                         <li><a href="{{ route('impact') }}">Our Impact</a></li>
                         <li><a href="{{ route('stories') }}">Success Stories</a></li>
+                        <li><a href="{{ route('sessions') }}">Sessions & Events</a></li>
                     </ul>
                 </div>
 
@@ -47,19 +48,24 @@
                     <h4>Contact Us</h4>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@aethryna.com</span>
+                        <span>hello@skillscoop.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>skillscoop.org</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Lagos, Nigeria | London, UK</span>
+                        <span>United Kingdom</span>
                     </div>
                     <div class="newsletter">
                         <div class="newsletter-label">
                             <i class="fas fa-paper-plane"></i>
-                            <p>Subscribe to our newsletter</p>
+                            <p>Join our waitlist</p>
                         </div>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Your email address" required>
+                        <form class="newsletter-form" action="{{ route('waitlist.store') }}" method="POST">
+                            @csrf
+                            <input type="email" name="email" placeholder="Your email address" required>
                             <button type="submit"><i class="fas fa-paper-plane"></i></button>
                         </form>
                     </div>
@@ -71,7 +77,7 @@
     <div class="footer-bottom">
         <div class="footer-container">
             <div class="bottom-content">
-                <p>&copy; {{ date('Y') }} Aethryna Foundation. All Rights Reserved.</p>
+                <p>&copy; {{ date('Y') }} SkillsCo-op. All Rights Reserved.</p>
                 <div class="legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

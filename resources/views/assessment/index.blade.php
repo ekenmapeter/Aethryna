@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Find Your Pathway - Aethryna Foundation')
+@section('title', 'Find Your Pathway - SkillsCo-op')
 
 @section('content')
     <!-- Assessment Start Hero -->

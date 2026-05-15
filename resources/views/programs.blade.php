@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Skills Pathway Programs | Aethryna Foundation')
+@section('title', 'Skills Pathway Programs | SkillsCo-op')
 
 @section('content')
 
@@ -18,7 +18,7 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">4</span>
+                        <span class="stat-number">{{ $pathways->total() }}</span>
                         <span class="stat-label">Expert Tracks</span>
                     </div>
                     <div class="stat">

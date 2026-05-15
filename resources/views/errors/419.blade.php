@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>419 - Page Expired | Aethryna Foundation</title>
+    <title>419 - Page Expired | SkillsCo-op</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -142,7 +142,7 @@
 
             <!-- Footer -->
             <div class="mt-12 text-gray-500 text-sm">
-                <p>Need immediate assistance? <a href="mailto:support@aethryna.org" class="text-[#055860] hover:text-[#E8B647] font-semibold">Email Support</a></p>
+                <p>Need immediate assistance? <a href="mailto:hello@skillscoop.org" class="text-[#055860] hover:text-[#E8B647] font-semibold">Email Support</a></p>
             </div>
         </div>
     </div>

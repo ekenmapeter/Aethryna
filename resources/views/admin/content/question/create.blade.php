@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Create Question | Aethryna Foundation')
+@section('title', 'Create Question | SkillsCo-op')
 
 @section('content')
     <!-- Header -->

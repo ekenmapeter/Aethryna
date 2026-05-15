@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pathway;
+use App\Models\SessionRegistration;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -38,5 +39,25 @@ class PageController extends Controller
     public function stories()
     {
         return view('stories');
+    }
+
+    public function sessions()
+    {
+        return view('sessions');
+    }
+
+    public function registerSession(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'interest_type' => 'required|in:learner,mentor,partner,curious',
+            'referral_source' => 'nullable|string|max:255',
+        ]);
+
+        SessionRegistration::create($validated);
+
+        return redirect()->route('sessions')
+            ->with('success', 'Thank you for registering! We\'ll send you details about our next panel session to your email address.');
     }
 }

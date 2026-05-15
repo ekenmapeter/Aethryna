@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AssessmentController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\WaitlistController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -12,6 +13,13 @@ Route::get('/pathway', [PageController::class, 'pathway'])->name('pathway');
 Route::get('/programs', [PageController::class, 'programs'])->name('programs');
 Route::get('/impact', [PageController::class, 'impact'])->name('impact');
 Route::get('/stories', [PageController::class, 'stories'])->name('stories');
+
+// Sessions & Events
+Route::get('/sessions', [PageController::class, 'sessions'])->name('sessions');
+Route::post('/sessions/register', [PageController::class, 'registerSession'])->name('sessions.register');
+
+// Waitlist
+Route::post('/waitlist', [WaitlistController::class, 'store'])->name('waitlist.store');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

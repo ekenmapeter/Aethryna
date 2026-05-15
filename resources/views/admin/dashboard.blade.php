@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Admin Dashboard | Aethryna Foundation')
+@section('title', 'Admin Dashboard | SkillsCo-op')
 
 @section('content')
     @php

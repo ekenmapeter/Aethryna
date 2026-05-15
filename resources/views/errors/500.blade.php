@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>500 - Server Error | Aethryna Foundation</title>
+    <title>500 - Server Error | SkillsCo-op</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -82,7 +82,7 @@
                 <p class="text-gray-600 mb-6">
                     If this problem persists, please contact our support team with the error details.
                 </p>
-                <a href="mailto:support@aethryna.org" class="inline-flex items-center justify-center px-6 py-3 bg-[#055860] text-white font-semibold rounded-lg hover:bg-[#E8B647] transition-colors">
+                <a href="mailto:hello@skillscoop.org" class="inline-flex items-center justify-center px-6 py-3 bg-[#055860] text-white font-semibold rounded-lg hover:bg-[#E8B647] transition-colors">
                     <i class="fas fa-envelope mr-2"></i>
                     Contact Support
                 </a>

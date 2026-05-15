@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>403 - Access Denied | Aethryna Foundation</title>
+    <title>403 - Access Denied | SkillsCo-op</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -131,7 +131,7 @@
                         </div>
                         <h3 class="font-bold text-gray-800 mb-2">Need Higher Access?</h3>
                         <p class="text-sm text-gray-600 mb-3">Contact an administrator to request elevated permissions.</p>
-                        <a href="mailto:admin@aethryna.org" class="text-[#E8B647] hover:text-[#055860] font-semibold text-sm">
+                        <a href="mailto:hello@skillscoop.org" class="text-[#E8B647] hover:text-[#055860] font-semibold text-sm">
                             Contact Admin →
                         </a>
                     </div>
@@ -140,7 +140,7 @@
 
             <!-- Footer -->
             <div class="mt-12 text-gray-500 text-sm">
-                <p>Questions? <a href="mailto:support@aethryna.org" class="text-[#055860] hover:text-[#E8B647] font-semibold">Contact Support</a></p>
+                <p>Questions? <a href="mailto:hello@skillscoop.org" class="text-[#055860] hover:text-[#E8B647] font-semibold">Contact Support</a></p>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')
+@section('title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')
 
 @section('content')
 
@@ -18,7 +18,7 @@
                 <div class="ath-hero-content active" data-index="0">
                     <div class="ath-hero-badge">Empowering Tomorrow's Leaders</div>
                     <h1 class="ath-title">Rise. Learn. <span class="ath-gradient-text">Become.</span></h1>
-                    <p>Empowering young people to unlock their potential through mentorship, learning, and leadership. Your professional journey starts with Aethryna.</p>
+                    <p>Widening access to digital skills and meaningful progression for underserved communities. Your professional journey starts with SkillsCo-op.</p>
                     <div class="ath-hero-btns">
                         <a href="{{ route('login') }}" class="ath-btn ath-btn-primary">Start Your Journey</a>
                         <a href="{{ route('about') }}" class="ath-btn ath-btn-outline">Learn More</a>
@@ -65,15 +65,15 @@
         <div class="ath-container">
             <div class="ath-section-header reveal-fade-up">
                 <span class="ath-sub">Our Vision</span>
-                <h2>About Aethryna</h2>
+                <h2>About SkillsCo-op</h2>
                 <p>Our mission is to empower the next generation through meaningful connections and transformative experiences.</p>
             </div>
             <div class="ath-about-grid">
                 <div class="ath-about-card reveal-fade-right">
                     <div class="ath-feature-body">
                             <h4>Building Futures Together</h4>
-                            <p>Aethryna Foundation is a modern youth empowerment nonprofit dedicated to creating pathways to success for young people from all backgrounds. Through our innovative mentorship programs, we connect aspiring youth with experienced professionals who guide them toward achieving their personal and professional goals.</p>
-                            <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare youth for the challenges of tomorrow.</p>
+                            <p>SkillsCo-op is a community-driven skills cooperative dedicated to widening access to digital skills and meaningful career progression for underserved communities. Through our innovative curriculum, pathways, and delivery architecture, we connect aspiring learners with experienced professionals.</p>
+                            <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
                     </div>
                 </div>
                 <div class="ath-about-features">
@@ -246,14 +246,31 @@
             </div>
             <div class="ath-testimonial reveal-zoom">
                 <div class="ath-testi-box">
-                    <p class="ath-quote">"Aethryna didn't just teach me coding – they taught me to believe in myself. Today, I'm a full-stack developer earning £35k, and I mentor others just like they mentored me."</p>
+                    <p class="ath-quote">"SkillsCo-op didn't just teach me coding – they built my confidence and gave me a real career pathway. The mentorship and community support made all the difference."</p>
                     <div class="ath-testi-user">
-                        <div class="ath-user-avatar">S</div>
+                        <div class="ath-user-avatar">L</div>
                         <div class="ath-user-info">
-                            <h5>Sarah Johnson</h5>
-                            <p>Full-Stack Developer at TechCorp</p>
+                            <h5>SkillsCo-op Learner</h5>
+                            <p>Web Development Track Graduate</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessions CTA -->
+    <section class="ath-section" style="background: var(--ath-light);">
+        <div class="ath-container">
+            <div class="ath-assessment-box reveal-zoom" style="background: linear-gradient(135deg, var(--ath-gold), #d48806);">
+                <div class="ath-assessment-content">
+                    <h3 class="reveal-fade-up" style="color: #fff;">Monthly Panel Sessions</h3>
+                    <p class="reveal-fade-up" style="--delay: 1; color: rgba(255,255,255,0.9);">Join our monthly panel discussions with industry experts, mentors, and learners. Network, learn, and grow with the SkillsCo-op community.</p>
+                    <a href="{{ route('sessions') }}" class="ath-btn" style="background: #fff; color: var(--ath-deep); font-weight: 800;" class="reveal-fade-up" style="--delay: 2">View Upcoming Sessions</a>
+                </div>
+                <div class="ath-assessment-shapes">
+                    <div class="ath-shape-1"></div>
+                    <div class="ath-shape-2"></div>
                 </div>
             </div>
         </div>
@@ -264,7 +281,7 @@
         <div class="ath-container">
             <div class="ath-cta-card reveal-zoom">
                 <h2>Ready to Transform Your Future?</h2>
-                <p>Join thousands of young people who have discovered their potential and built successful careers in tech.</p>
+                <p>Join learners who have discovered their potential and built successful careers in tech through SkillsCo-op.</p>
                 <a href="{{ route('register') }}" class="ath-btn ath-btn-gold">Start Your Journey Today</a>
             </div>
         </div>

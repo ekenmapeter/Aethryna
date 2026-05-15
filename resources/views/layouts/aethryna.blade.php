@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>@yield('title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')</title>
-    <meta name="title" content="@yield('meta_title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')">
-    <meta name="description" content="@yield('meta_description', 'Aethryna Foundation transforms young lives through digital skills training, mentorship programs, and career pathways in tech. Join our mission to empower the next generation.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'youth empowerment, digital skills training, tech mentorship, career development, nonprofit organization, coding bootcamp, web development, IT support, digital design')">
-    <meta name="author" content="Aethryna Foundation">
+    <title>@yield('title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')</title>
+    <meta name="title" content="@yield('meta_title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')">
+    <meta name="description" content="@yield('meta_description', 'SkillsCo-op transforms lives through digital skills training, mentorship programs, and career pathways in tech. Join our mission to widen access to digital skills for underserved communities.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'digital skills training, tech mentorship, career development, skills cooperative, coding bootcamp, web development, IT support, digital design, underserved communities')">
+    <meta name="author" content="SkillsCo-op">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Canonical URL -->
@@ -18,25 +18,25 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('og_title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')">
-    <meta property="og:description" content="@yield('og_description', 'Transform young lives through digital skills training and mentorship programs. Join Aethryna Foundation\'s mission to create tech career pathways for youth.')">
+    <meta property="og:title" content="@yield('og_title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')">
+    <meta property="og:description" content="@yield('og_description', 'Transform lives through digital skills training and mentorship programs. Join SkillsCo-op\'s mission to create tech career pathways for underserved communities.')">
     <meta property="og:image" content="@yield('og_image', asset('images/og-image.png'))">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Aethryna Foundation">
+    <meta property="og:site_name" content="SkillsCo-op">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="@yield('twitter_title', 'Aethryna | Empowering Youth Through Digital Skills & Mentorship')">
-    <meta property="twitter:description" content="@yield('twitter_description', 'Transform young lives through digital skills training and mentorship programs. Join Aethryna Foundation\'s mission to create tech career pathways for youth.')">
+    <meta property="twitter:title" content="@yield('twitter_title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')">
+    <meta property="twitter:description" content="@yield('twitter_description', 'Transform lives through digital skills training and mentorship programs. Join SkillsCo-op\'s mission to create tech career pathways for underserved communities.')">
     <meta property="twitter:image" content="@yield('twitter_image', asset('images/og-image.png'))">
 
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#038b89">
     <meta name="msapplication-TileColor" content="#038b89">
-    <meta name="apple-mobile-web-app-title" content="Aethryna Foundation">
+    <meta name="apple-mobile-web-app-title" content="SkillsCo-op">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

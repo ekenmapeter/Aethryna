@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Pathway Assessment - Question ' . $questionNumber . ' | Aethryna Foundation')
+@section('title', 'Pathway Assessment - Question ' . $questionNumber . ' | SkillsCo-op')
 
 @section('content')
 <section class="min-h-screen bg-gradient-to-br from-teal-50 to-teal-100 py-16 px-8">

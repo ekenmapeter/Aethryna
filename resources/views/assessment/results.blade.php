@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Your Pathway Results - Aethryna Foundation')
+@section('title', 'Your Pathway Results - SkillsCo-op')
 
 @section('content')
 <section class="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-16 px-8 relative overflow-hidden">
@@ -18,7 +18,19 @@
                 @php
                     $pathway = $result->pathway;
                     $isPrimary = $result->result_type === 'primary';
-                    $clusterInfo = $this->getClusterInfo($result->cluster);
+                    
+                    // Cluster info lookup
+                    $clusterData = [
+                        'T' => ['color' => 'blue', 'icon' => 'fas fa-code', 'name' => 'Technical Builder'],
+                        'C' => ['color' => 'purple', 'icon' => 'fas fa-palette', 'name' => 'Creative Designer'],
+                        'B' => ['color' => 'green', 'icon' => 'fas fa-chart-line', 'name' => 'Digital Strategist'],
+                        'S' => ['color' => 'red', 'icon' => 'fas fa-shield-alt', 'name' => 'Systems Guardian'],
+                        'F' => ['color' => 'yellow', 'icon' => 'fas fa-seedling', 'name' => 'Foundation'],
+                    ];
+                    $clusterInfo = $clusterData[$result->cluster] ?? ['color' => 'gray', 'icon' => 'fas fa-question', 'name' => 'General'];
+                    
+                    $skillsList = is_array($pathway->skills) ? $pathway->skills : json_decode($pathway->skills, true) ?? [];
+                    $careerList = is_array($pathway->career_paths) ? $pathway->career_paths : json_decode($pathway->career_paths, true) ?? [];
                 @endphp
 
                 <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 {{ $isPrimary ? 'ring-2 ring-teal-500' : '' }}">
@@ -39,7 +51,7 @@
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
                             <div class="flex items-center gap-4 mb-6">
-                                <div class="w-16 h-16 bg-{{ $clusterInfo['color'] }}-500 rounded-full flex items-center justify-center text-white text-2xl">
+                                <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center text-white text-2xl">
                                     <i class="{{ $clusterInfo['icon'] }}"></i>
                                 </div>
                                 <div>
@@ -70,7 +82,7 @@
                         <div>
                             <h3 class="text-lg font-semibold text-teal-600 mb-4">What You'll Learn</h3>
                             <div class="space-y-3 mb-6">
-                                @foreach(json_decode($pathway->skills, true) as $skill)
+                                @foreach($skillsList as $skill)
                                 <div class="flex items-center gap-3">
                                     <div class="w-2 h-2 bg-teal-500 rounded-full"></div>
                                     <span class="text-gray-700">{{ $skill }}</span>
@@ -80,7 +92,7 @@
 
                             <h3 class="text-lg font-semibold text-teal-600 mb-4">Career Paths</h3>
                             <div class="space-y-2">
-                                @foreach(json_decode($pathway->career_paths, true) as $career)
+                                @foreach($careerList as $career)
                                 <div class="bg-teal-50 text-teal-700 px-3 py-2 rounded-lg text-sm font-medium">
                                     {{ $career }}
                                 </div>
@@ -111,9 +123,12 @@
                 </div>
                 <h2 class="text-2xl font-bold text-teal-700 mb-4">Assessment Incomplete</h2>
                 <p class="text-gray-600 mb-6">It looks like your assessment wasn't completed properly. Please try again.</p>
-                <a href="{{ route('assessment.reset') }}" class="bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-colors">
-                    Retake Assessment
-                </a>
+                <form action="{{ route('assessment.reset') }}" method="POST" class="inline-block">
+                    @csrf
+                    <button type="submit" class="bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-colors">
+                        Retake Assessment
+                    </button>
+                </form>
             </div>
         @endif
     </div>
@@ -171,18 +186,4 @@
         </div>
     </div>
 </section>
-
-@php
-    function getClusterInfo($cluster) {
-        $clusters = [
-            'T' => ['color' => 'blue', 'icon' => 'fas fa-code', 'name' => 'Technical Builder'],
-            'C' => ['color' => 'purple', 'icon' => 'fas fa-palette', 'name' => 'Creative Designer'],
-            'B' => ['color' => 'green', 'icon' => 'fas fa-chart-line', 'name' => 'Digital Strategist'],
-            'S' => ['color' => 'red', 'icon' => 'fas fa-shield-alt', 'name' => 'Systems Guardian'],
-            'F' => ['color' => 'yellow', 'icon' => 'fas fa-seedling', 'name' => 'Foundation']
-        ];
-
-        return $clusters[$cluster] ?? ['color' => 'gray', 'icon' => 'fas fa-question', 'name' => 'General'];
-    }
-@endphp
 @endsection

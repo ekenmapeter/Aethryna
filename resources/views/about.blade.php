@@ -1,14 +1,14 @@
 @extends('layouts.aethryna')
 
-@section('title', 'About Aethryna | Empowering Youth Through Digital Skills & Mentorship')
+@section('title', 'About SkillsCo-op | Widening Access to Digital Skills & Meaningful Progression')
 
 @section('content')
 
     <!-- Hero Section -->
     <section class="about-hero">
         <div class="hero-content">
-            <h1>About Aethryna Foundation</h1>
-            <p>Building futures through mentorship, learning, and leadership development</p>
+            <h1>About SkillsCo-op</h1>
+            <p>Widening access to digital skills and meaningful progression for underserved communities</p>
         </div>
         <div class="hero-shapes">
             <div class="shape"></div>
@@ -21,30 +21,30 @@
     <section class="mission">
         <div class="section-title">
             <h2>Our Mission</h2>
-            <p>Empowering the next generation through meaningful connections and transformative experiences</p>
+            <p>Widening access to digital skills and meaningful career progression for underserved communities</p>
         </div>
         <div class="mission-content">
             <div class="mission-text">
                 <h3>Building Futures Together</h3>
-                <p>Aethryna Foundation is a modern youth empowerment nonprofit dedicated to creating pathways to success for young people from all backgrounds. Through our innovative mentorship programs, we connect aspiring youth with experienced professionals who guide them toward achieving their personal and professional goals.</p>
-                <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare youth for the challenges of tomorrow.</p>
+                <p>SkillsCo-op is a community-driven skills cooperative designed to widen access to digital skills and meaningful progression for underserved communities. Through our innovative curriculum, pathways, and delivery architecture, we connect aspiring learners with experienced professionals who guide them toward achieving their personal and professional goals.</p>
+                <p>Our approach combines personalized mentorship with skill-building workshops, trauma-informed learning design, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
                 <div class="mission-stats">
                     <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Youth Empowered</span>
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Specialist Tracks</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">95%</span>
-                        <span class="stat-label">Employment Rate</span>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Tuition Funded</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">£25K</span>
-                        <span class="stat-label">Average Starting Salary</span>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Phase Pathway</span>
                     </div>
                 </div>
             </div>
             <div class="mission-image">
-                <img src="https://plus.unsplash.com/premium_photo-1681494370365-6bc631f820e9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Youth mentorship program">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=870&auto=format&fit=crop" alt="Community learning and collaboration">
             </div>
         </div>
     </section>
@@ -61,21 +61,21 @@
                     <i class="fas fa-hands-helping"></i>
                 </div>
                 <h3>Mentorship</h3>
-                <p>We believe in the power of one-on-one relationships to transform lives and build lasting connections between mentors and mentees.</p>
+                <p>We believe in the power of one-on-one relationships to transform lives and build lasting connections between mentors and learners.</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <h3>Education</h3>
-                <p>Quality education and skill development are fundamental rights. We provide accessible learning opportunities for all young people.</p>
+                <h3>Accessibility</h3>
+                <p>Quality education and skill development are fundamental rights. We provide accessible, fully funded learning opportunities for all.</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
-                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-heart"></i>
                 </div>
-                <h3>Empowerment</h3>
-                <p>We empower youth to take control of their futures, build confidence, and become leaders in their communities and careers.</p>
+                <h3>Dignity & Belonging</h3>
+                <p>Every learner journey is built on evidence, dignity, and belonging. We design trauma-informed, psychologically safe learning experiences.</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
@@ -89,14 +89,14 @@
                     <i class="fas fa-lightbulb"></i>
                 </div>
                 <h3>Innovation</h3>
-                <p>We embrace new approaches and technologies to create better solutions for youth development and career preparation.</p>
+                <p>We embrace AI-driven products, data science, and new technologies to create better solutions for digital skills development.</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
                     <i class="fas fa-balance-scale"></i>
                 </div>
                 <h3>Equity</h3>
-                <p>We are committed to addressing systemic barriers and ensuring equal opportunities for all young people, regardless of background.</p>
+                <p>We are committed to addressing systemic barriers and ensuring equal opportunities for all, regardless of background.</p>
             </div>
         </div>
     </section>
@@ -105,37 +105,58 @@
     <section class="team">
         <div class="section-title">
             <h2>Our Leadership Team</h2>
-            <p>Meet the passionate individuals driving our mission forward</p>
+            <p>Meet the passionate individuals driving the SkillsCo-op mission forward</p>
         </div>
         <div class="team-grid">
+            <!-- Abisola Areola -->
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Executive Director">
+                    <img src="{{ asset('images/team/abisola.jpg') }}" alt="Abisola Areola">
                 </div>
                 <div class="member-info">
-                    <h3>Sarah Johnson</h3>
-                    <p class="member-role">Executive Director</p>
-                    <p class="member-bio">Former tech executive with 15+ years in youth development and digital transformation initiatives.</p>
+                    <h3>Abisola Areola</h3>
+                    <p class="member-role">Founder & Executive Director</p>
+                    <p class="member-credentials">Project Manager &bull; Data Analyst &bull; AI & Digital Transformation</p>
+                    <p class="member-bio">Data analytics and project management professional who designed the entire SkillsCo-op model; curriculum, pathways, and delivery architecture to widen access to digital skills and meaningful progression for underserved communities.</p>
                 </div>
             </div>
+
+            <!-- Farouk Abdulrazaq -->
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Program Director">
+                    <img src="{{ asset('images/team/farouk.jpg') }}" alt="Farouk Abdulrazaq">
                 </div>
                 <div class="member-info">
-                    <h3>Michael Chen</h3>
-                    <p class="member-role">Program Director</p>
-                    <p class="member-bio">Experienced educator and mentor specializing in career development and skill-building programs.</p>
+                    <h3>Farouk Abdulrazaq</h3>
+                    <p class="member-role">Adviser — Data, AI & Impact Technology</p>
+                    <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
+                    <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data and machine learning to improve outcomes for underserved communities.</p>
                 </div>
             </div>
+
+            <!-- Saheed Bello -->
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Partnership Manager">
+                    <img src="{{ asset('images/team/saheed.jpg') }}" alt="Saheed Bello">
                 </div>
                 <div class="member-info">
-                    <h3>Dr. Amanda Rodriguez</h3>
-                    <p class="member-role">Partnership Manager</p>
-                    <p class="member-bio">PhD in Education with extensive experience in corporate partnerships and youth employment programs.</p>
+                    <h3>Saheed Bello</h3>
+                    <p class="member-role">Director of Learner Wellbeing, Safeguarding & Behavioural Design</p>
+                    <p class="member-credentials">MSc Social Psychology &bull; PhD Researcher</p>
+                    <p class="member-bio">Leads the design of trauma-informed, psychologically safe learning experiences across all SkillsCo-op programmes, ensuring every learner journey is built on evidence, dignity, and belonging.</p>
+                </div>
+            </div>
+
+            <!-- Idowu Seun Adetule -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ asset('images/team/idowu.jpg') }}" alt="Idowu Seun Adetule">
+                </div>
+                <div class="member-info">
+                    <h3>Idowu Seun Adetule</h3>
+                    <p class="member-role">Strategic Adviser</p>
+                    <p class="member-credentials">UK Global Tech Talent Awardee &bull; AI & Digital Transformation &bull; B2B SaaS Sales</p>
+                    <p class="member-bio">Over a decade of experience in enterprise technology, Go-To-Market strategy, and AI-driven business growth. Brings expertise in scaling technology ventures to SkillsCo-op's mission.</p>
                 </div>
             </div>
         </div>
@@ -145,48 +166,41 @@
     <section class="history">
         <div class="section-title">
             <h2>Our Story</h2>
-            <p>How Aethryna Foundation came to be</p>
+            <p>How SkillsCo-op came to be</p>
         </div>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2018: The Beginning</h3>
-                    <p>Founded by a group of tech professionals who recognized the digital skills gap among youth in underserved communities.</p>
+                    <h3>The Vision</h3>
+                    <p>SkillsCo-op was born from a recognition that too many talented individuals in underserved communities lacked access to quality digital skills training and meaningful career pathways.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2019: First Programs</h3>
-                    <p>Launched our flagship mentorship program with 50 participants and 25 corporate mentors from leading tech companies.</p>
+                    <h3>The Model</h3>
+                    <p>Our founder Abisola Areola designed the entire SkillsCo-op model — curriculum, pathways, and delivery architecture — drawing on her expertise in data analytics, project management, and digital transformation.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2020: Digital Transformation</h3>
-                    <p>Adapted all programs to virtual delivery during the pandemic, reaching 200+ youth across multiple cities.</p>
+                    <h3>Building the Team</h3>
+                    <p>Assembled a team of experts across data science, social psychology, enterprise technology, and community development to create a holistic approach to skills training.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2021: Expansion</h3>
-                    <p>Expanded to three new cities and launched specialized tracks in web development, digital design, and IT support.</p>
+                    <h3>The Pathway</h3>
+                    <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development, Digital Design, IT Support, and Digital Sales — all fully funded for learners.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2022: Partnership Growth</h3>
-                    <p>Established partnerships with 50+ companies and achieved a 95% employment rate for program graduates.</p>
-                </div>
-                <div class="timeline-marker"></div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>2023: Innovation & Scale</h3>
-                    <p>Launched AI-powered assessment tools and scaled to serve 500+ youth annually across our expanded network.</p>
+                    <h3>Looking Ahead</h3>
+                    <p>Expanding our impact through monthly panel sessions, AI-powered assessment tools, and deeper community partnerships to reach more underserved learners across the UK.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
@@ -197,10 +211,10 @@
     <section class="cta">
         <div class="cta-content">
             <h2>Join Our Mission</h2>
-            <p>Whether you're a young person seeking growth or a professional wanting to mentor, there's a place for you at Aethryna.</p>
+            <p>Whether you're seeking digital skills growth or a professional wanting to mentor, there's a place for you at SkillsCo-op.</p>
             <div class="cta-buttons">
-                <a href="{{ route('register') }}" class="btn btn-primary">Become a Mentee</a>
-                <a href="mailto:mentor@aethryna.org" class="btn btn-outline">Become a Mentor</a>
+                <a href="{{ route('register') }}" class="btn btn-primary">Become a Learner</a>
+                <a href="mailto:hello@skillscoop.org" class="btn btn-outline">Become a Mentor</a>
             </div>
         </div>
     </section>
@@ -328,7 +342,7 @@
         .mission {
             padding: 100px 5%;
             background: var(--ath-light);
-            margin-top: -50px; /* Pull up to join hero flow */
+            margin-top: -50px;
             position: relative;
             z-index: 10;
         }
@@ -374,8 +388,8 @@
 
         .mission-image img {
             width: 100%;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
+            border-radius: var(--ath-radius);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.1);
         }
 
         /* Values Section */
@@ -398,7 +412,7 @@
             border-radius: var(--ath-radius);
             text-align: center;
             transition: var(--ath-trans);
-            box-shadow: var(--shadow);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             position: relative;
             overflow: hidden;
         }
@@ -415,7 +429,7 @@
 
         .value-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
         }
 
         .value-icon {
@@ -465,17 +479,17 @@
             background: white;
             border-radius: var(--ath-radius);
             overflow: hidden;
-            box-shadow: var(--shadow);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             transition: var(--ath-trans);
         }
 
         .team-member:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
         }
 
         .member-image {
-            height: 300px;
+            height: 260px;
             overflow: hidden;
         }
 
@@ -495,7 +509,7 @@
         }
 
         .member-info h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 0.5rem;
             color: var(--ath-deep);
             font-weight: 700;
@@ -504,12 +518,23 @@
         .member-role {
             color: var(--ath-gold);
             font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .member-credentials {
+            color: var(--ath-teal);
+            font-weight: 600;
+            font-size: 0.85rem;
             margin-bottom: 1rem;
         }
 
         .member-bio {
             color: var(--ath-text);
             line-height: 1.6;
+            font-size: 0.95rem;
         }
 
         /* History Section */
@@ -551,7 +576,7 @@
             background: var(--ath-light);
             padding: 2.5rem;
             border-radius: var(--ath-radius);
-            box-shadow: var(--shadow);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             max-width: 420px;
             position: relative;
             margin-left: 60px;
@@ -643,7 +668,7 @@
             }
 
             .team-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             }
 
             .timeline::before {

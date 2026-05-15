@@ -1,6 +1,6 @@
 @extends('layouts.guest')
 
-@section('auth-title', 'Join Aethryna')
+@section('auth-title', 'Join SkillsCo-op')
 @section('auth-subtitle', 'Create your account and start your digital transformation journey')
 
 @section('caption-title', 'Your Future Starts Here')

@@ -1,8 +1,8 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Voices of Change - Aethryna Foundation')
+@section('title', 'Voices of Change - SkillsCo-op')
 
-@section('description', 'Authentic narratives of growth, resilience, and digital transformation from the Aethryna community.')
+@section('description', 'Authentic narratives of growth, resilience, and digital transformation from the SkillsCo-op community.')
 
 @section('content')
 <!-- Stories Immersive Hero -->
@@ -13,17 +13,17 @@
                 <span class="ath-badge">Real Narratives</span>
                 <h1 class="ath-title">Voices of <span class="ath-gradient-text">Transformation.</span></h1>
                 <p>Behind every statistic is a human journey of resilience. These are the stories of individuals who redrew their horizons with us.</p>
-                <div class="hero-scroll-invite">
+                <a href="#story-journal" class="hero-scroll-invite" style="text-decoration: none; color: inherit; cursor: pointer;">
                     <span>Explore the Journal</span>
                     <div class="scroll-dot"></div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Story Journal -->
-<main class="story-journal">
+<main class="story-journal" id="story-journal">
     <div class="ath-container">
         <!-- Story Entry 1 -->
         <article class="journal-entry">
@@ -33,10 +33,10 @@
             </div>
             <div class="entry-story">
                 <span class="entry-num">01</span>
-                <span class="ath-sub">Web Development Track</span>
+                <span class="ath-sub" style="text-align: left; display: block;">Web Development Track</span>
                 <h2>Redefining the Future</h2>
                 <div class="story-text">
-                    <p>"I went from being excluded from school to earning £25k as a junior web developer in 18 months. Aethryna didn't just teach me code - they taught me how to believe in myself."</p>
+                    <p>"I went from being excluded from school to earning £25k as a junior web developer in 18 months. SkillsCo-op didn't just teach me code - they taught me how to believe in myself."</p>
                 </div>
                 <div class="story-author">
                     <strong>Jamie Wilson</strong>
@@ -53,7 +53,7 @@
             </div>
             <div class="entry-story">
                 <span class="entry-num">02</span>
-                <span class="ath-sub">Digital Support Pathway</span>
+                <span class="ath-sub" style="text-align: left; display: block;">Digital Support Pathway</span>
                 <h2>Navigating New Horizons</h2>
                 <div class="story-text">
                     <p>"The mentorship I received completely changed my career trajectory. My mentor helped me navigate professional landscapes that once felt like a foreign language."</p>
@@ -73,10 +73,10 @@
             </div>
             <div class="entry-story">
                 <span class="entry-num">03</span>
-                <span class="ath-sub">Digital Design Track</span>
+                <span class="ath-sub" style="text-align: left; display: block;">Digital Design Track</span>
                 <h2>Art in Architecture</h2>
                 <div class="story-text">
-                    <p>"Starting with zero technical knowledge, I now design digital ecosystems for local businesses. Aethryna's creative community gave me the tools to carve my own path."</p>
+                    <p>"Starting with zero technical knowledge, I now design digital ecosystems for local businesses. SkillsCo-op's creative community gave me the tools to carve my own path."</p>
                 </div>
                 <div class="story-author">
                     <strong>Alex Thompson</strong>
@@ -97,7 +97,7 @@
         <div class="voices-grid">
             <div class="v-card">
                 <i class="fas fa-quote-left"></i>
-                <p>Aethryna gave me the technical backbone I needed to launch my freelance career. Essential for any local creative.</p>
+                <p>SkillsCo-op gave me the technical backbone I needed to launch my freelance career. Essential for any local creative.</p>
                 <div class="v-author">
                     <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson">
                     <div>

@@ -3,8 +3,8 @@
     <div class="nav-container">
         <div class="logo" id="siteLogo">
             <a href="{{ route('home') }}">
-                <img src="{{ asset('images/logo_white.png') }}" alt="Aethryna Foundation" class="default-logo">
-                <img src="{{ asset('images/logo_black.png') }}" alt="Aethryna Foundation" class="scrolled-logo" style="display: none;">
+                <img src="{{ asset('images/logo_white.png') }}" alt="SkillsCo-op" class="default-logo">
+                <img src="{{ asset('images/logo_black.png') }}" alt="SkillsCo-op" class="scrolled-logo" style="display: none;">
             </a>
         </div>
 
@@ -14,6 +14,7 @@
             <a href="{{ route('programs') }}">Programs</a>
             <a href="{{ route('impact') }}">Impact</a>
             <a href="{{ route('stories') }}">Stories</a>
+            <a href="{{ route('sessions') }}">Sessions</a>
         </div>
 
         <div class="nav-buttons">
@@ -40,12 +41,19 @@
 
     <!-- Mobile Navigation Menu -->
     <div class="mobile-nav-menu" id="mobileNavMenu">
+        <!-- Close Button -->
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">
+            <i class="fas fa-times"></i>
+        </button>
+
         <div class="mobile-nav-links">
+            <a href="{{ route('home') }}">Home</a>
             <a href="{{ route('about') }}">About</a>
             <a href="{{ route('pathway') }}">Pathway</a>
             <a href="{{ route('programs') }}">Programs</a>
             <a href="{{ route('impact') }}">Impact</a>
             <a href="{{ route('stories') }}">Stories</a>
+            <a href="{{ route('sessions') }}">Sessions</a>
         </div>
         <div class="mobile-nav-buttons">
             @auth
@@ -84,30 +92,45 @@
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenu');
         const mobileNavMenu = document.getElementById('mobileNavMenu');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+
+        function openMobileMenu() {
+            mobileNavMenu.classList.add('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        }
+
+        function closeMobileMenu() {
+            mobileNavMenu.classList.remove('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
         
         if (mobileMenuBtn && mobileNavMenu) {
-            // Toggle menu on button click
+            // Toggle menu on hamburger click
             mobileMenuBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                mobileNavMenu.classList.toggle('active');
-                
-                // Toggle icon between bars and times (X)
-                const icon = mobileMenuBtn.querySelector('i');
                 if (mobileNavMenu.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
+                    closeMobileMenu();
                 } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
+                    openMobileMenu();
                 }
             });
+
+            // Close menu on X button click
+            if (mobileNavClose) {
+                mobileNavClose.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    closeMobileMenu();
+                });
+            }
 
             // Close menu when clicking links
             mobileNavMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
-                    mobileNavMenu.classList.remove('active');
-                    mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-                    mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                    closeMobileMenu();
                 });
             });
 
@@ -116,9 +139,7 @@
                 if (mobileNavMenu.classList.contains('active') && 
                     !mobileNavMenu.contains(e.target) && 
                     !mobileMenuBtn.contains(e.target)) {
-                    mobileNavMenu.classList.remove('active');
-                    mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-                    mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                    closeMobileMenu();
                 }
             });
         }

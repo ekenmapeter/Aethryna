@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'Our Impact | Aethryna Foundation')
+@section('title', 'Our Impact | SkillsCo-op')
 
 @push('styles')
 <style>
