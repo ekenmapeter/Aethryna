@@ -193,7 +193,7 @@
                         </div>
                         <div class="project-item">
                             <h5>Client Project</h5>
-                            <p>Work on real projects for local businesses and organizations</p>
+                            <p>Work on real projects for local businesses and organisations</p>
                         </div>
                         <div class="project-item">
                             <h5>Capstone Project</h5>
@@ -242,7 +242,7 @@
                             <i class="fas fa-search"></i>
                             <div class="service-content">
                                 <h5>Job Placement</h5>
-                                <p>Direct connections with our partner companies and personalized job matching</p>
+                                <p>Direct connections with our partner companies and personalised job matching</p>
                             </div>
                         </div>
                         <div class="service-item">
