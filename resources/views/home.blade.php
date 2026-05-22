@@ -73,7 +73,7 @@
                     <div class="ath-feature-body">
                             <h4>Building Futures Together</h4>
                             <p>SkillsCo-op is a community-driven skills cooperative dedicated to widening access to digital skills and meaningful career progression for underserved communities. Through our innovative curriculum, pathways, and delivery architecture, we connect aspiring learners with experienced professionals.</p>
-                            <p>Our approach combines personalised mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
+                            <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
                     </div>
                 </div>
                 <div class="ath-about-features">
@@ -81,7 +81,7 @@
                         <div class="ath-feature-icon"><i class="fas fa-hands-helping"></i></div>
                         <div class="ath-feature-body">
                             <h4>Mentorship</h4>
-                            <p>Personalised guidance from industry professionals</p>
+                            <p>Personalized guidance from industry professionals</p>
                         </div>
                     </div>
                     <div class="ath-feature reveal-fade-left" style="--delay: 2">
@@ -211,45 +211,48 @@
         <div class="ath-container">
             <div class="ath-impact-grid">
                 <div class="ath-impact-info reveal-fade-right">
-                    <span class="ath-sub">Why We Exist</span>
-                    <h2>The Opportunity Gap</h2>
-                    <p>Nationally, 12.8% of 16 to 24 year olds are not in education, employment or training. SkillsCo-op exists to change that, starting in the communities that need it most. The numbers below are the goals we are building toward in our first year.</p>
+                    <span class="ath-sub">Proven Results</span>
+                    <h2>Our Growing Impact</h2>
+                    <p>We measure success through the lives we transform and the careers we launch. Every number tells a story of perseverance and growth.</p>
                 </div>
                 <div class="ath-stats-grid">
                     <div class="ath-stat reveal-zoom" style="--delay: 1">
-                        <div class="ath-stat-val counter" data-target="12.8" data-suffix="%">0</div>
-                        <div class="ath-stat-lab">UK Youth Currently NEET</div>
+                        <div class="ath-stat-val counter" data-target="500">0</div>
+                        <div class="ath-stat-lab">Youth Empowered</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 2">
-                        <div class="ath-stat-val counter" data-target="100" data-suffix="%">0</div>
-                        <div class="ath-stat-lab">Funded Places for Learners</div>
+                        <div class="ath-stat-val counter" data-target="95">0</div>
+                        <div class="ath-stat-lab">Success Rate (%)</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 3">
-                        <div class="ath-stat-val counter" data-target="4">0</div>
-                        <div class="ath-stat-lab">Specialist Skills Tracks</div>
+                        <div class="ath-stat-val counter" data-target="25000">0</div>
+                        <div class="ath-stat-lab">Average Salary (£)</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 4">
-                        <div class="ath-stat-val counter" data-target="50" data-suffix="+">0</div>
-                        <div class="ath-stat-lab">Year 1 Learner Goal</div>
+                        <div class="ath-stat-val counter" data-target="50">0</div>
+                        <div class="ath-stat-lab">Partner Companies</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Be Our First Cohort -->
+    <!-- Success Stories -->
     <section class="ath-section ath-stories" id="stories">
         <div class="ath-container">
             <div class="ath-section-header reveal-fade-up">
-                <span class="ath-sub">Be Part of the Story</span>
-                <h2>Join Our First Cohort</h2>
+                <span class="ath-sub">Success Stories</span>
+                <h2>Potential to Professional</h2>
             </div>
             <div class="ath-testimonial reveal-zoom">
                 <div class="ath-testi-box">
-                    <p class="ath-quote">"This is where the first success stories will be written, and one of them could be yours. We are opening places now for our founding cohort of learners and mentors. Step in early and help shape what SkillsCo-op becomes."</p>
-                    <div class="ath-testi-user" style="justify-content: center;">
-                        <a href="#register" class="ath-btn ath-btn-primary">Claim Your Place</a>
-                        <a href="#sessions" class="ath-btn" style="background: transparent; color: var(--ath-deep); border: 2px solid var(--ath-deep);">Become a Mentor</a>
+                    <p class="ath-quote">"SkillsCo-op didn't just teach me coding – they built my confidence and gave me a real career pathway. The mentorship and community support made all the difference."</p>
+                    <div class="ath-testi-user">
+                        <div class="ath-user-avatar">L</div>
+                        <div class="ath-user-info">
+                            <h5>SkillsCo-op Learner</h5>
+                            <p>Web Development Track Graduate</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,7 +266,7 @@
                 <div class="ath-assessment-content">
                     <h3 class="reveal-fade-up" style="color: #fff;">Monthly Panel Sessions</h3>
                     <p class="reveal-fade-up" style="--delay: 1; color: rgba(255,255,255,0.9);">Join our monthly panel discussions with industry experts, mentors, and learners. Network, learn, and grow with the SkillsCo-op community.</p>
-                    <a href="{{ route('sessions') }}" class="ath-btn reveal-fade-up" style="background: #fff; color: var(--ath-deep); font-weight: 800; --delay: 2">View Upcoming Sessions</a>
+                    <a href="{{ route('sessions') }}" class="ath-btn" style="background: #fff; color: var(--ath-deep); font-weight: 800;" class="reveal-fade-up" style="--delay: 2">View Upcoming Sessions</a>
                 </div>
                 <div class="ath-assessment-shapes">
                     <div class="ath-shape-1"></div>
@@ -888,26 +891,22 @@
             function startCounter(el) {
                 if (el.dataset.started) return;
                 el.dataset.started = 'true';
-                const target = parseFloat(el.dataset.target);
-                const decimals = (el.dataset.target.split('.')[1] || '').length;
-                const prefix = el.dataset.prefix || '';
-                const suffix = el.dataset.suffix || '';
+                const target = parseInt(el.dataset.target);
                 let current = 0;
                 const duration = 2000;
                 const step = target / (duration / 16);
-
-                const fmt = (n) => prefix + n.toLocaleString(undefined, {
-                    minimumFractionDigits: decimals,
-                    maximumFractionDigits: decimals
-                }) + suffix;
-
+                
                 const update = () => {
                     current += step;
                     if (current < target) {
-                        el.textContent = fmt(decimals ? parseFloat(current.toFixed(decimals)) : Math.floor(current));
+                        el.textContent = Math.floor(current).toLocaleString();
                         requestAnimationFrame(update);
                     } else {
-                        el.textContent = fmt(target);
+                        if (target === 25000) el.textContent = '£25K';
+                        else if (target === 95) el.textContent = '95%';
+                        else if (target === 50) el.textContent = '50+';
+                        else if (target === 500) el.textContent = '500+';
+                        else el.textContent = target.toLocaleString();
                     }
                 };
                 update();
