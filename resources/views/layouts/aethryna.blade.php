@@ -24,7 +24,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="SkillsCo-op">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="en_GB">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -50,20 +50,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'ath-teal': '#038b89',
-                        'ath-gold': '#ee9d1d',
-                        'ath-deep': '#055860',
+    @production
+        {{-- In production, Tailwind is compiled via Vite (run: npm run build). --}}
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @else
+        {{-- Dev convenience only. Do not rely on the CDN in production. --}}
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'ath-teal': '#038b89',
+                            'ath-gold': '#ee9d1d',
+                            'ath-deep': '#055860',
+                        }
                     }
                 }
             }
-        }
-    </script>
+        </script>
+    @endproduction
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
