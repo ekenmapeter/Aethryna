@@ -102,7 +102,7 @@
                     <div class="grid md:grid-cols-3 gap-4 mb-4">
                         <div class="text-center">
                             <div class="text-2xl mb-2">🎯</div>
-                            <div class="text-sm font-semibold text-teal-700">Personalised Results</div>
+                            <div class="text-sm font-semibold text-teal-700">Personalized Results</div>
                             <div class="text-xs text-gray-600">Get 1-2 pathway recommendations</div>
                         </div>
                         <div class="text-center">
@@ -247,7 +247,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-green-700">Assessment Completed</h4>
-                                    <p class="text-gray-600 text-sm mb-2">Great job! Check your personalised recommendations</p>
+                                    <p class="text-gray-600 text-sm mb-2">Great job! Check your personalized recommendations</p>
                                     <a href="{{ route('assessment.results') }}" class="text-green-600 font-semibold text-sm hover:underline">View Results →</a>
                                 </div>
                             </div>

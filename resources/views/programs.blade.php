@@ -10,7 +10,7 @@
             <div class="programs-hero-grid">
                 <div class="hero-content">
                     <span class="ath-sub">Skill Mastery</span>
-                    <h1>Our Specialised <span class="ath-gradient-text">Pathway</span> Programs</h1>
+                    <h1>Our Specialized <span class="ath-gradient-text">Pathway</span> Programs</h1>
                     <p>Structured learning paths designed for real-world success. Choose the track that defines your future.</p>
                     <div class="hero-actions">
                         <a href="#program-tracks" class="btn btn-primary">Explore Programs <i class="fas fa-arrow-down"></i></a>
@@ -40,7 +40,7 @@
             <div class="section-title">
                 <span class="ath-sub">The Methodology</span>
                 <h2>Choose Your Path to Success</h2>
-                <p>Four specialised tracks tailored to different career goals and interests</p>
+                <p>Four specialized tracks tailored to different career goals and interests</p>
             </div>
             <div class="overview-content">
             <div class="overview-text">
@@ -61,7 +61,7 @@
                 <div class="feature">
                     <i class="fas fa-certificate"></i>
                     <h4>Industry Certifications</h4>
-                    <p>Recognised credentials for your CV</p>
+                    <p>Recognized credentials for your resume</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-briefcase"></i>
@@ -222,7 +222,7 @@
                     <span class="faq-toggle">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>No prior experience is required for any of our tracks. We designed these programs specifically for beginners. Our curriculum builds from the fundamentals up, and our mentors provide personalised support throughout your journey.</p>
+                    <p>No prior experience is required for any of our tracks. We designed these programs specifically for beginners. Our curriculum builds from the fundamentals up, and our mentors provide personalized support throughout your journey.</p>
                 </div>
             </div>
             <div class="faq-item">

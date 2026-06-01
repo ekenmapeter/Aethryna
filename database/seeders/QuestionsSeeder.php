@@ -15,7 +15,7 @@ class QuestionsSeeder extends Seeder
     public function run(): void
     {
         $questions = [
-            // SECTION A: Cognitive Orientation (Questions 1-4)
+            // SECTION A — Cognitive Orientation (Questions 1-4)
             [
                 'question_number' => 1,
                 'section' => 'A',
@@ -46,7 +46,7 @@ class QuestionsSeeder extends Seeder
                 'question_text' => 'How do you feel about technical complexity?',
                 'order' => 3,
                 'answers' => [
-                    ['label' => 'A', 'text' => 'It excites me. I like figuring things out.', 'clusters' => ['T', 'S']],
+                    ['label' => 'A', 'text' => 'It excites me — I like figuring things out.', 'clusters' => ['T', 'S']],
                     ['label' => 'B', 'text' => 'I prefer creativity or interaction over complexity.', 'clusters' => ['C']],
                     ['label' => 'C', 'text' => 'I can handle it, but only if tied to a project or goal.', 'clusters' => ['B']],
                     ['label' => 'D', 'text' => 'I enjoy understanding rules and structures.', 'clusters' => ['S']],
@@ -65,7 +65,7 @@ class QuestionsSeeder extends Seeder
                 ]
             ],
 
-            // SECTION B: Behavioural Traits (Questions 5-8)
+            // SECTION B — Behavioural Traits (Questions 5-8)
             [
                 'question_number' => 5,
                 'section' => 'B',
@@ -115,7 +115,7 @@ class QuestionsSeeder extends Seeder
                 ]
             ],
 
-            // SECTION C: Motivation & Career Aspirations (Questions 9-12)
+            // SECTION C — Motivation & Career Aspirations (Questions 9-12)
             [
                 'question_number' => 9,
                 'section' => 'C',
@@ -165,7 +165,7 @@ class QuestionsSeeder extends Seeder
                 ]
             ],
 
-            // SECTION D: Readiness & Learning Environment (Questions 13-15)
+            // SECTION D — Readiness & Learning Environment (Questions 13-15)
             [
                 'question_number' => 13,
                 'section' => 'D',
@@ -185,8 +185,8 @@ class QuestionsSeeder extends Seeder
                 'order' => 14,
                 'answers' => [
                     ['label' => 'A', 'text' => '8+ hours', 'clusters' => ['T', 'C', 'B', 'S']],
-                    ['label' => 'B', 'text' => '4-7 hours', 'clusters' => ['T', 'B', 'C']],
-                    ['label' => 'C', 'text' => '2-3 hours', 'clusters' => ['B', 'C']],
+                    ['label' => 'B', 'text' => '4–7 hours', 'clusters' => ['T', 'B', 'C']],
+                    ['label' => 'C', 'text' => '2–3 hours', 'clusters' => ['B', 'C']],
                     ['label' => 'D', 'text' => '<2 hours', 'clusters' => ['F']],
                 ]
             ],

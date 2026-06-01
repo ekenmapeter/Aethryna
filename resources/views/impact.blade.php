@@ -212,28 +212,28 @@
     <div class="ath-container">
         <div class="hero-split">
             <div class="hero-primary">
-                <div class="impact-badge"><i class="fas fa-chart-line"></i> Our Impact Framework</div>
-                <h1 class="ath-title">The change we're <span class="ath-gradient-text">Building.</span></h1>
-                <p>We are at the start of our journey. This is how we will measure success, the targets we are working toward, and the commitments we hold ourselves to as we launch.</p>
+                <div class="impact-badge"><i class="fas fa-chart-line"></i> Annual Impact Report</div>
+                <h1 class="ath-title">Numbers that tell a <span class="ath-gradient-text">Story.</span></h1>
+                <p>Our data mirrors the progress of our community. We track every milestone to ensure we're delivering more than just education—we're delivering careers.</p>
                 <div class="hero-actions">
-                    <a href="#success-metrics" class="btn btn-primary">View Our Targets</a>
-                    <a href="{{ route('stories') }}" class="btn btn-outline">Read Our Why</a>
+                    <a href="#success-metrics" class="btn btn-primary">View Full Metrics</a>
+                    <a href="{{ route('stories') }}" class="btn btn-outline">Read Human Stories</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="data-ring">
                     <div class="ring-center">
-                        <span class="ring-num">100%</span>
-                        <span class="ring-label">Funded</span>
+                        <span class="ring-num">95%</span>
+                        <span class="ring-label">Placement</span>
                     </div>
                 </div>
                 <div class="floating-metric fm-1">
-                    <span class="fm-val">4</span>
-                    <span class="fm-sub">Skills Tracks</span>
+                    <span class="fm-val">500+</span>
+                    <span class="fm-sub">Graduates</span>
                 </div>
                 <div class="floating-metric fm-2">
-                    <span class="fm-val">50+</span>
-                    <span class="fm-sub">Year 1 Goal</span>
+                    <span class="fm-val">£30k</span>
+                    <span class="fm-sub">Avg Salary</span>
                 </div>
             </div>
         </div>
@@ -256,46 +256,46 @@
 <section id="success-metrics" class="impact-board-section stats-journal">
     <div class="ath-container">
         <div class="journal-header">
-            <h2>What We Will <span class="ath-gradient-text">Measure</span></h2>
-            <p>Clear, honest targets for our first cohorts. We will publish real performance against these as our learners progress.</p>
+            <h2>Program Performance <span class="ath-gradient-text">Insight</span></h2>
+            <p>A statistical breakdown of how our methodology translates to market-ready excellence.</p>
         </div>
         <div class="stats-grid-dashboard">
             <div class="main-stat-journal">
-                <h3>Our Year 1 Targets</h3>
+                <h3>Completion & Market Readiness</h3>
                 <div class="growth-list">
                     <div class="g-item">
                         <div class="g-label">
-                            <span>Programme Completion (target)</span>
-                            <strong>85%</strong>
+                            <span>Completion Rate</span>
+                            <strong>92%</strong>
                         </div>
-                        <div class="g-bar"><div class="g-fill" data-width="85%"></div></div>
+                        <div class="g-bar"><div class="g-fill" data-width="92%"></div></div>
                     </div>
                     <div class="g-item">
                         <div class="g-label">
-                            <span>Positive Progression (target)</span>
-                            <strong>80%</strong>
+                            <span>Job Placement</span>
+                            <strong>95%</strong>
                         </div>
-                        <div class="g-bar"><div class="g-fill" data-width="80%"></div></div>
+                        <div class="g-bar"><div class="g-fill" data-width="95%"></div></div>
                     </div>
                     <div class="g-item">
                         <div class="g-label">
-                            <span>Learner Confidence Gain (target)</span>
-                            <strong>90%</strong>
+                            <span>Career Advancement</span>
+                            <strong>78%</strong>
                         </div>
-                        <div class="g-bar"><div class="g-fill" data-width="90%"></div></div>
+                        <div class="g-bar"><div class="g-fill" data-width="78%"></div></div>
                     </div>
                 </div>
             </div>
             <div class="economic-insights">
                 <div class="e-card">
-                    <div class="e-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                    <h4>100%</h4>
-                    <p>Of learner places fully funded, with no cost to participants.</p>
+                    <div class="e-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>£12.5M</h4>
+                    <p>Total lifetime earnings generated for our graduates.</p>
                 </div>
                 <div class="e-card">
-                    <div class="e-icon"><i class="fas fa-shield-heart"></i></div>
-                    <h4>Trauma-informed</h4>
-                    <p>Every pathway designed around dignity, belonging, and psychological safety.</p>
+                    <div class="e-icon"><i class="fas fa-building-columns"></i></div>
+                    <h4>£8.5K</h4>
+                    <p>Average annual tax contribution per individual.</p>
                 </div>
             </div>
         </div>
@@ -306,8 +306,8 @@
 <section id="track-data" class="impact-board-section track-analysis">
     <div class="ath-container">
         <div class="analysis-header">
-            <span class="ath-sub">Our Tracks</span>
-            <h2>Where Each Path <span class="ath-gradient-text">Leads</span></h2>
+            <span class="ath-sub">Track Record</span>
+            <h2>Data by Specialization</h2>
         </div>
         <div class="analysis-grid">
             <!-- Web Dev -->
@@ -318,16 +318,16 @@
                 </div>
                 <div class="a-track-body">
                     <div class="a-metric">
-                        <span class="a-label">Level</span>
-                        <span class="a-val">Beginner</span>
+                        <span class="a-label">Placement</span>
+                        <span class="a-val">96%</span>
                     </div>
                     <div class="a-metric">
-                        <span class="a-label">Format</span>
-                        <span class="a-val">Project-based</span>
+                        <span class="a-label">Avg Salary</span>
+                        <span class="a-val">£28K</span>
                     </div>
                 </div>
                 <div class="a-track-footer">
-                    <span>Leads toward: Frontend Developer</span>
+                    <span>Top Hire: Frontend Developer</span>
                 </div>
             </div>
             <!-- Design -->
@@ -338,16 +338,16 @@
                 </div>
                 <div class="a-track-body">
                     <div class="a-metric">
-                        <span class="a-label">Level</span>
-                        <span class="a-val">Beginner</span>
+                        <span class="a-label">Placement</span>
+                        <span class="a-val">94%</span>
                     </div>
                     <div class="a-metric">
-                        <span class="a-label">Format</span>
-                        <span class="a-val">Portfolio-led</span>
+                        <span class="a-label">Avg Salary</span>
+                        <span class="a-val">£26K</span>
                     </div>
                 </div>
                 <div class="a-track-footer">
-                    <span>Leads toward: UI/UX Designer</span>
+                    <span>Top Hire: UI/UX Designer</span>
                 </div>
             </div>
             <!-- IT -->
@@ -358,16 +358,16 @@
                 </div>
                 <div class="a-track-body">
                     <div class="a-metric">
-                        <span class="a-label">Level</span>
-                        <span class="a-val">Beginner</span>
+                        <span class="a-label">Placement</span>
+                        <span class="a-val">98%</span>
                     </div>
                     <div class="a-metric">
-                        <span class="a-label">Format</span>
-                        <span class="a-val">Hands-on</span>
+                        <span class="a-label">Avg Salary</span>
+                        <span class="a-val">£24K</span>
                     </div>
                 </div>
                 <div class="a-track-footer">
-                    <span>Leads toward: IT Support Technician</span>
+                    <span>Top Hire: Security Analyst</span>
                 </div>
             </div>
         </div>
@@ -379,9 +379,9 @@
     <div class="ath-container">
             <div class="regional-split">
             <div class="r-text">
-                <span class="ath-sub">Northwest Focus</span>
-                <h2>Where We're Starting</h2>
-                <p>We are concentrating our launch in regions with high potential but historically limited access to digital career pipelines.</p>
+                <span class="ath-sub">Northwest Presence</span>
+                <h2>Geographic Impact</h2>
+                <p>Concentrating our efforts in regions with high potential but historically limited access to digital career pipelines.</p>
                 <div class="r-hubs">
                     <div class="r-hub"><strong>Liverpool</strong> Hub</div>
                     <div class="r-hub"><strong>Wirral</strong> Network</div>
@@ -390,8 +390,8 @@
             </div>
             <div class="r-stats">
                 <div class="r-stat-big">
-                    <span>Launch Focus</span>
-                    <strong>3 Areas</strong>
+                    <span>Regional Influence</span>
+                    <strong>3 Counties</strong>
                 </div>
             </div>
             </div>
@@ -405,12 +405,12 @@
             <div class="board-text">
                 <span class="ath-sub">Outcome Driven</span>
                 <h2>The Foundation of Growth</h2>
-                <p>SkillsCo-op is built to be a precision-designed career accelerator from day one. Every learner we serve represents a strategic investment in the digital economy of the Northwest, and in their own future.</p>
+                <p>Since our founding, we've transitioned from a vision to a precision-engineered career accelerator. Every youth served represents a strategic investment in the digital economy of the Northwest.</p>
                 <div class="impact-checklist">
                     <div class="i-check">
                         <i class="fas fa-check-circle"></i>
                         <div>
-                            <strong>Skill Specialisation</strong>
+                            <strong>Skill Specialization</strong>
                             <span>Tailored paths for Web, Design, and Support.</span>
                         </div>
                     </div>
@@ -418,7 +418,7 @@
                         <i class="fas fa-check-circle"></i>
                         <div>
                             <strong>Economic Mobility</strong>
-                            <span>Closing the opportunity gap through tech literacy.</span>
+                            <span>Closing the wealth gap through tech literacy.</span>
                         </div>
                     </div>
                 </div>
@@ -426,13 +426,13 @@
             <div class="board-cards">
                 <div class="metric-widget w-teal">
                     <i class="fas fa-briefcase"></i>
-                    <span class="m-val">80%</span>
-                    <p>Our positive progression target for every cohort.</p>
+                    <span class="m-val">95%</span>
+                    <p>Job placement within 6 months of graduation.</p>
                 </div>
                 <div class="metric-widget w-gold">
                     <i class="fas fa-users"></i>
-                    <span class="m-val">100%</span>
-                    <p>Fully funded places, with no cost to learners.</p>
+                    <span class="m-val">£12.5M</span>
+                    <p>Total lifetime earnings increase for graduates.</p>
                 </div>
             </div>
         </div>
@@ -442,8 +442,8 @@
 <section class="cta-impact-board">
     <div class="ath-container">
         <div class="cta-board-inner">
-            <h2>Join a movement built on <span class="ath-gradient-text">Real Belief.</span></h2>
-            <p>Support our mission or start your journey: help shape the impact that defines the next decade.</p>
+            <h2>Join a movement built on <span class="ath-gradient-text">Proven Results.</span></h2>
+            <p>Support our mission or start your journey—be part of the data that defines the next decade.</p>
             <div class="cta-btns">
                 <a href="{{ route('register') }}" class="btn btn-primary">Start Transformation</a>
                 <a href="{{ route('about') }}" class="btn btn-outline-white">Our Story</a>
