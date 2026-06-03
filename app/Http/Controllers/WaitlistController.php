@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\WaitlistEntry;
+use App\Services\EmailOctopusService;
 use Illuminate\Http\Request;
 
 class WaitlistController extends Controller
 {
+    public function __construct(protected EmailOctopusService $emailOctopus)
+    {
+    }
+
     /**
      * Store a new waitlist entry (from footer newsletter form).
      */
@@ -26,13 +31,12 @@ class WaitlistController extends Controller
             ]);
         }
 
-        // TODO: Send confirmation email via Resend once API key is configured
-        // Resend::emails()->send([
-        //     'from' => 'SkillsCo-op <hello@skillscoop.org>',
-        //     'to' => [$validated['email']],
-        //     'subject' => 'Welcome to the SkillsCo-op Waitlist!',
-        //     'html' => '<p>Thank you for joining our waitlist...</p>',
-        // ]);
+        // Sync to EmailOctopus (fails soft: never blocks the signup).
+        $this->emailOctopus->subscribe(
+            $validated['email'],
+            [],
+            ['waitlist', 'footer']
+        );
 
         return redirect()->back()->with('waitlist_success', 'You\'re on the list! We\'ll keep you updated.');
     }

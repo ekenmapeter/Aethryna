@@ -9,10 +9,10 @@
         <div class="ath-container">
             <div class="pathway-hero-grid">
                 <div class="hero-content">
-                    <span class="ath-sub">The Journey</span>
+                    <span class="ath-sub">How It Works</span>
                     <h1>The Digital <span class="ath-gradient-text">Transformation</span> Pathway</h1>
-                    <p>Our proven three-phase approach turns potential into professional success. From foundations to independence.</p>
-                    <a href="#pathway-details" class="btn btn-primary">Explore the Journey <i class="fas fa-arrow-down"></i></a>
+                    <p>Our three-phase approach turns potential into professional success. From foundations to independence.</p>
+                    <a href="#pathway-details" class="btn btn-primary">Explore the Pathway <i class="fas fa-arrow-down"></i></a>
                 </div>
                 <div class="hero-visual">
                     <div class="pathway-diagram">
@@ -42,11 +42,11 @@
             <div class="section-title">
                 <span class="ath-sub">Overview</span>
                 <h2>How It Works</h2>
-                <p>A structured journey from beginner to professional</p>
+                <p>A clear, structured path from beginner to professional</p>
             </div>
             <div class="overview-content">
             <div class="overview-text">
-                <p>Our Digital Transformation Pathway is designed to take you from having little to no digital experience to becoming a confident professional in the tech industry. Through our comprehensive three-phase program, you'll gain practical skills, build a portfolio, and secure your first job in tech.</p>
+                <p>Our Digital Transformation Pathway takes you from little or no digital experience to becoming a confident professional in the tech industry. Through our comprehensive three-phase program, you'll gain practical skills, build a portfolio, and secure your first job in tech.</p>
                 <p>Each phase builds upon the previous one, ensuring you have a solid foundation before moving to more advanced topics. Our experienced mentors and industry partners guide you every step of the way.</p>
             </div>
             <div class="overview-stats">
@@ -55,12 +55,12 @@
                     <span class="stat-label">Months Total</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">95%</span>
+                    <span class="stat-number">100%</span>
                     <span class="stat-label">Completion Rate</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">£25K+</span>
-                    <span class="stat-label">Average Salary</span>
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Specialist Tracks</span>
                 </div>
             </div>
         </div>
@@ -193,11 +193,11 @@
                         </div>
                         <div class="project-item">
                             <h5>Client Project</h5>
-                            <p>Work on real projects for local businesses and organizations</p>
+                            <p>Work on real projects for local businesses and organisations</p>
                         </div>
                         <div class="project-item">
                             <h5>Capstone Project</h5>
-                            <p>Create a comprehensive project demonstrating your full skill set</p>
+                            <p>Create a complete project demonstrating your full skill set</p>
                         </div>
                         <div class="project-item">
                             <h5>Internship</h5>
@@ -215,7 +215,7 @@
             <div class="phase-header">
                 <div class="phase-badge">Phase 3</div>
                 <h2>Economic Independence</h2>
-                <p>Start earning through freelance projects and job placement</p>
+                <p>Build a portfolio through real projects and develop employment readiness</p>
             </div>
             <div class="phase-content">
                 <div class="phase-description">
@@ -241,8 +241,8 @@
                         <div class="service-item">
                             <i class="fas fa-search"></i>
                             <div class="service-content">
-                                <h5>Job Placement</h5>
-                                <p>Direct connections with our partner companies and personalized job matching</p>
+                                <h5>Community Network</h5>
+                                <p>Connections with our partner companies and personalised job matching</p>
                             </div>
                         </div>
                         <div class="service-item">
@@ -262,7 +262,7 @@
                         <div class="service-item">
                             <i class="fas fa-users"></i>
                             <div class="service-content">
-                                <h5>Alumni Network</h5>
+                                <h5>Community Network</h5>
                                 <p>Join our community of successful graduates for ongoing support and networking</p>
                             </div>
                         </div>
@@ -325,7 +325,7 @@
     <section class="pathway-cta">
         <div class="ath-container">
             <div class="cta-content">
-                <h2>Ready to Start Your Journey?</h2>
+                <h2>Ready to take the next step?</h2>
                 <p>Take our 2-minute assessment to discover which track is right for you and begin your transformation today.</p>
                 <div class="cta-buttons">
                     <button class="btn btn-primary" id="startAssessment">Take Assessment</button>

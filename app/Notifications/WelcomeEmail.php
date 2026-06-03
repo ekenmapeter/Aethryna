@@ -35,25 +35,15 @@ class WelcomeEmail extends Notification implements ShouldQueue
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->subject('Welcome to Aethryna! 🎉')
-            ->greeting('Welcome to Aethryna, ' . $notifiable->name . '!')
-            ->line('Thank you for joining our community of digital transformation leaders. We\'re excited to have you on board!')
-            ->line('**What\'s Next?**')
-            ->line('• **Complete Your Profile**: Tell us more about your goals and interests')
-            ->line('• **Take Our Assessment**: Discover your perfect tech career path')
-            ->line('• **Join a Program**: Start your journey with our mentorship programs')
-            ->line('• **Connect with Mentors**: Get guidance from industry professionals')
-            ->action('Start Your Journey', url('/dashboard'))
-            ->line('**Your Success is Our Mission**')
-            ->line('At Aethryna, we believe in your potential. Our programs are designed to help you:')
-            ->line('• Build real-world tech skills')
-            ->line('• Connect with industry mentors')
-            ->line('• Launch your tech career')
-            ->line('• Join a supportive community')
-            ->line('If you have any questions, don\'t hesitate to reach out to our team.')
-            ->salutation('Best regards,')
-            ->salutation('The Aethryna Team')
-            ->salutation('🌟 Empowering Youth Through Digital Skills & Mentorship 🌟');
+            ->subject('Welcome to SkillsCo-op')
+            ->greeting('Hi ' . $notifiable->name . '!')
+            ->line('Thank you for joining SkillsCo-op. You are now part of a community built around widening access to digital skills and meaningful career progression.')
+            ->line('Take our free career assessment to find the track that fits your goals and strengths.')
+            ->line('Explore your learning pathway across Web Development, Digital Design, IT Support, and Digital Sales.')
+            ->line('Register for an upcoming panel session to hear directly from practitioners.')
+            ->action('Go to Your Dashboard', url('/dashboard'))
+            ->line('If you have any questions, reply to this email or contact us at hello@skillscoop.org.')
+            ->salutation('The SkillsCo-op Team');
     }
 
     /**

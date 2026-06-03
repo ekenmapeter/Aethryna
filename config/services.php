@@ -22,6 +22,12 @@ return [
         'key' => env('RESEND_API_KEY'),
     ],
 
+    'emailoctopus' => [
+        'key' => env('EMAILOCTOPUS_API_KEY'),
+        'list_id' => env('EMAILOCTOPUS_LIST_ID'),
+        'base_url' => env('EMAILOCTOPUS_BASE_URL', 'https://emailoctopus.com/api/1.6'),
+    ],
+
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),

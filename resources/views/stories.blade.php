@@ -12,7 +12,7 @@
             <div class="narrative-content reveal-fade-up">
                 <span class="ath-badge">Real Narratives</span>
                 <h1 class="ath-title">Voices of <span class="ath-gradient-text">Transformation.</span></h1>
-                <p>Behind every statistic is a human journey of resilience. These are the stories of individuals who redrew their horizons with us.</p>
+                <p>These are the people SkillsCo-op is built for. Real individuals who redrew their horizons with us.</p>
                 <a href="#story-journal" class="hero-scroll-invite" style="text-decoration: none; color: inherit; cursor: pointer;">
                     <span>Explore the Journal</span>
                     <div class="scroll-dot"></div>
@@ -36,7 +36,7 @@
                 <span class="ath-sub" style="text-align: left; display: block;">Web Development Track</span>
                 <h2>Redefining the Future</h2>
                 <div class="story-text">
-                    <p>"I went from being excluded from school to earning £25k as a junior web developer in 18 months. SkillsCo-op didn't just teach me code - they taught me how to believe in myself."</p>
+                    <p>"I want to show that where you start does not define where you end up. SkillsCo-op didn't just teach me code - they taught me how to believe in myself."</p>
                 </div>
                 <div class="story-author">
                     <strong>Jamie Wilson</strong>
@@ -126,7 +126,7 @@
     <div class="ath-container">
         <div class="cta-card">
             <h2>Your story is waiting to be <span class="ath-gradient-text">written.</span></h2>
-            <p>Ready to start your own transformation journey or empower others as a mentor?</p>
+            <p>Ready to build your skills or support others as a mentor?</p>
             <div class="cta-actions">
                 <a href="{{ route('register') }}" class="btn btn-primary">Join the Program</a>
                 <a href="{{ route('assessment.index') }}" class="btn btn-outline-white">Free Career Assessment</a>

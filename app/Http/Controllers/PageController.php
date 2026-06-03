@@ -4,10 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Pathway;
 use App\Models\SessionRegistration;
+use App\Services\EmailOctopusService;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function __construct(protected EmailOctopusService $emailOctopus)
+    {
+    }
+
     public function home()
     {
         $pathways = Pathway::active()->get();
@@ -57,7 +62,39 @@ class PageController extends Controller
 
         SessionRegistration::create($validated);
 
+        // Sync to EmailOctopus (fails soft: never blocks the registration).
+        $nameParts = preg_split('/\s+/', trim($validated['name']), 2);
+        $this->emailOctopus->subscribe(
+            $validated['email'],
+            [
+                'FirstName' => $nameParts[0] ?? '',
+                'LastName' => $nameParts[1] ?? '',
+            ],
+            ['sessions', $validated['interest_type']]
+        );
+
         return redirect()->route('sessions')
             ->with('success', 'Thank you for registering! We\'ll send you details about our next panel session to your email address.');
+    }
+
+    // ── Legal pages ──────────────────────────────────────────────────────────
+    public function privacy()
+    {
+        return view('legal.privacy');
+    }
+
+    public function terms()
+    {
+        return view('legal.terms');
+    }
+
+    public function cookies()
+    {
+        return view('legal.cookies');
+    }
+
+    public function acceptableUse()
+    {
+        return view('legal.acceptable-use');
     }
 }

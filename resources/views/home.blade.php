@@ -1,6 +1,6 @@
 @extends('layouts.aethryna')
 
-@section('title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')
+@section('title', 'SkillsCo-op | Digital Skills for Real Careers')
 
 @section('content')
 
@@ -16,9 +16,9 @@
             <div class="ath-hero-slider">
                 <!-- Slide 1 -->
                 <div class="ath-hero-content active" data-index="0">
-                    <div class="ath-hero-badge">Empowering Tomorrow's Leaders</div>
+                    <div class="ath-hero-badge">Building Digital Careers</div>
                     <h1 class="ath-title">Rise. Learn. <span class="ath-gradient-text">Become.</span></h1>
-                    <p>Widening access to digital skills and meaningful progression for underserved communities. Your professional journey starts with SkillsCo-op.</p>
+                    <p>Widening access to digital skills and meaningful progression for underserved communities. Your next chapter starts here.</p>
                     <div class="ath-hero-btns">
                         <a href="{{ route('login') }}" class="ath-btn ath-btn-primary">Start Your Journey</a>
                         <a href="{{ route('about') }}" class="ath-btn ath-btn-outline">Learn More</a>
@@ -29,7 +29,7 @@
                 <div class="ath-hero-content" data-index="1">
                     <div class="ath-hero-badge">Bridging the Tech Gap</div>
                     <h1 class="ath-title">Tech. Future. <span class="ath-gradient-text">Mastery.</span></h1>
-                    <p>Equipping the next generation with cutting-edge digital skills to thrive in a global economy. Master Web Development, Design, and more.</p>
+                    <p>Practical, funded digital skills programmes for people who have been locked out of the tech industry. Web, Design, IT Support and more.</p>
                     <div class="ath-hero-btns">
                         <a href="{{ route('programs') }}" class="ath-btn ath-btn-primary">View Programs</a>
                         <a href="{{ route('pathway') }}" class="ath-btn ath-btn-outline">Our Pathway</a>
@@ -66,14 +66,14 @@
             <div class="ath-section-header reveal-fade-up">
                 <span class="ath-sub">Our Vision</span>
                 <h2>About SkillsCo-op</h2>
-                <p>Our mission is to empower the next generation through meaningful connections and transformative experiences.</p>
+                <p>We exist to close the gap between ambition and opportunity.</p>
             </div>
             <div class="ath-about-grid">
                 <div class="ath-about-card reveal-fade-right">
                     <div class="ath-feature-body">
                             <h4>Building Futures Together</h4>
-                            <p>SkillsCo-op is a community-driven skills cooperative dedicated to widening access to digital skills and meaningful career progression for underserved communities. Through our innovative curriculum, pathways, and delivery architecture, we connect aspiring learners with experienced professionals.</p>
-                            <p>Our approach combines personalized mentorship with skill-building workshops, leadership development, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
+                            <p>SkillsCo-op is a community-led digital skills programme. We work with people who face real barriers to employment: NEET young people, career changers, migrants, refugees, and justice-involved individuals. Every place is fully funded.</p>
+                            <p>Our approach combines personalised mentorship with practical, project-based learning and community support designed around dignity and belonging.</p>
                     </div>
                 </div>
                 <div class="ath-about-features">
@@ -81,7 +81,7 @@
                         <div class="ath-feature-icon"><i class="fas fa-hands-helping"></i></div>
                         <div class="ath-feature-body">
                             <h4>Mentorship</h4>
-                            <p>Personalized guidance from industry professionals</p>
+                            <p>Personalised guidance from people already working in the industry</p>
                         </div>
                     </div>
                     <div class="ath-feature reveal-fade-left" style="--delay: 2">
@@ -94,8 +94,8 @@
                     <div class="ath-feature reveal-fade-left" style="--delay: 3">
                         <div class="ath-feature-icon"><i class="fas fa-rocket"></i></div>
                         <div class="ath-feature-body">
-                            <h4>Empowerment</h4>
-                            <p>Building confidence and skills for success</p>
+                            <h4>Confidence</h4>
+                            <p>Building self-belief alongside practical skills</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
     <section class="ath-section ath-pathway" id="pathway">
         <div class="ath-container">
             <div class="ath-section-header reveal-fade-up">
-                <span class="ath-sub">The Journey</span>
+                <span class="ath-sub">How It Works</span>
                 <h2>The Transformation Pathway</h2>
                 <p>A structured three-phase approach that turns potential into professional success</p>
             </div>
@@ -152,7 +152,7 @@
     <div class="ath-brand-banner">
         <div class="ath-container">
             <div class="ath-banner-content reveal-fade-up">
-                <h2>Empowering Tomorrow's Tech Leaders Today</h2>
+                <h2>From where you are to where you want to be</h2>
                 <p>Join a community where potential meets opportunity, and every aspiring professional finds their path to success in the digital world.</p>
             </div>
         </div>
@@ -211,26 +211,26 @@
         <div class="ath-container">
             <div class="ath-impact-grid">
                 <div class="ath-impact-info reveal-fade-right">
-                    <span class="ath-sub">Proven Results</span>
-                    <h2>Our Growing Impact</h2>
-                    <p>We measure success through the lives we transform and the careers we launch. Every number tells a story of perseverance and growth.</p>
+                    <span class="ath-sub">Why We Exist</span>
+                    <h2>The Opportunity Gap</h2>
+                    <p>Nationally, 12.8% of 16 to 24 year olds are not in education, employment or training. SkillsCo-op exists to change that. The figures below show the problem we are here to solve and the goals we are building toward.</p>
                 </div>
                 <div class="ath-stats-grid">
                     <div class="ath-stat reveal-zoom" style="--delay: 1">
-                        <div class="ath-stat-val counter" data-target="500">0</div>
-                        <div class="ath-stat-lab">Youth Empowered</div>
+                        <div class="ath-stat-val counter" data-target="12.8" data-suffix="%">0</div>
+                        <div class="ath-stat-lab">UK Youth Currently NEET</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 2">
-                        <div class="ath-stat-val counter" data-target="95">0</div>
-                        <div class="ath-stat-lab">Success Rate (%)</div>
+                        <div class="ath-stat-val counter" data-target="100" data-suffix="%">0</div>
+                        <div class="ath-stat-lab">Funded Places for Learners</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 3">
-                        <div class="ath-stat-val counter" data-target="25000">0</div>
-                        <div class="ath-stat-lab">Average Salary (£)</div>
+                        <div class="ath-stat-val counter" data-target="4">0</div>
+                        <div class="ath-stat-lab">Specialist Skills Tracks</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 4">
-                        <div class="ath-stat-val counter" data-target="50">0</div>
-                        <div class="ath-stat-lab">Partner Companies</div>
+                        <div class="ath-stat-val counter" data-target="50" data-suffix="+">0</div>
+                        <div class="ath-stat-lab">Year 1 Learner Goal</div>
                     </div>
                 </div>
             </div>
@@ -241,18 +241,15 @@
     <section class="ath-section ath-stories" id="stories">
         <div class="ath-container">
             <div class="ath-section-header reveal-fade-up">
-                <span class="ath-sub">Success Stories</span>
-                <h2>Potential to Professional</h2>
+                <span class="ath-sub">Be Part of the Story</span>
+                <h2>Join Our First Cohort</h2>
             </div>
             <div class="ath-testimonial reveal-zoom">
                 <div class="ath-testi-box">
-                    <p class="ath-quote">"SkillsCo-op didn't just teach me coding – they built my confidence and gave me a real career pathway. The mentorship and community support made all the difference."</p>
-                    <div class="ath-testi-user">
-                        <div class="ath-user-avatar">L</div>
-                        <div class="ath-user-info">
-                            <h5>SkillsCo-op Learner</h5>
-                            <p>Web Development Track Graduate</p>
-                        </div>
+                    <p class="ath-quote">"This is where the first success stories will be written, and one of them could be yours. We are opening places now for our founding cohort of learners and mentors. Step in early and help shape what SkillsCo-op becomes."</p>
+                    <div class="ath-testi-user" style="justify-content:center; gap:16px;">
+                        <a href="{{ route('register') }}" class="ath-btn ath-btn-primary">Claim Your Place</a>
+                        <a href="{{ route('sessions') }}" class="ath-btn" style="background:transparent;color:var(--ath-deep);border:2px solid var(--ath-deep);">Become a Mentor</a>
                     </div>
                 </div>
             </div>
@@ -282,7 +279,7 @@
             <div class="ath-cta-card reveal-zoom">
                 <h2>Ready to Transform Your Future?</h2>
                 <p>Join learners who have discovered their potential and built successful careers in tech through SkillsCo-op.</p>
-                <a href="{{ route('register') }}" class="ath-btn ath-btn-gold">Start Your Journey Today</a>
+                <a href="{{ route('register') }}" class="ath-btn ath-btn-gold">Get Started Today</a>
             </div>
         </div>
     </section>
@@ -891,22 +888,23 @@
             function startCounter(el) {
                 if (el.dataset.started) return;
                 el.dataset.started = 'true';
-                const target = parseInt(el.dataset.target);
+                const target = parseFloat(el.dataset.target);
+                const decimals = (el.dataset.target.split('.')[1] || '').length;
+                const suffix = el.dataset.suffix || '';
                 let current = 0;
                 const duration = 2000;
                 const step = target / (duration / 16);
-                
+                const fmt = (n) => n.toLocaleString(undefined, {
+                    minimumFractionDigits: decimals,
+                    maximumFractionDigits: decimals
+                }) + suffix;
                 const update = () => {
                     current += step;
                     if (current < target) {
-                        el.textContent = Math.floor(current).toLocaleString();
+                        el.textContent = fmt(decimals ? parseFloat(current.toFixed(decimals)) : Math.floor(current));
                         requestAnimationFrame(update);
                     } else {
-                        if (target === 25000) el.textContent = '£25K';
-                        else if (target === 95) el.textContent = '95%';
-                        else if (target === 50) el.textContent = '50+';
-                        else if (target === 500) el.textContent = '500+';
-                        else el.textContent = target.toLocaleString();
+                        el.textContent = fmt(target);
                     }
                 };
                 update();
