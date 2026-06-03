@@ -60,4 +60,25 @@ class PageController extends Controller
         return redirect()->route('sessions')
             ->with('success', 'Thank you for registering! We\'ll send you details about our next panel session to your email address.');
     }
+
+    // ── Legal pages ──────────────────────────────────────────────────────────
+    public function privacy()
+    {
+        return view('legal.privacy');
+    }
+
+    public function terms()
+    {
+        return view('legal.terms');
+    }
+
+    public function cookies()
+    {
+        return view('legal.cookies');
+    }
+
+    public function acceptableUse()
+    {
+        return view('legal.acceptable-use');
+    }
 }
