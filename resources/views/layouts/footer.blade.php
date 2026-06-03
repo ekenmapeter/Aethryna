@@ -1,4 +1,3 @@
-
 <footer class="site-footer">
     <div class="footer-top">
         <div class="footer-container">
@@ -9,13 +8,18 @@
                         <img src="{{ asset('images/logo_white.png') }}" alt="SkillsCo-op">
                     </div>
                     <p class="brand-desc">
-                        Widening access to digital skills and meaningful career progression for underserved communities. Join us in transforming potential into professional excellence.
+                        Widening access to digital skills and meaningful career progression for underserved communities.
+                        Join us in transforming potential into professional excellence.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1VF3yxZ4dR/?mibextid=wwXIfr" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@aethryna?_r=1&_t=ZN-96qSoF24sJ4" class="social-icon"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/company/theskillscoop/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/aethrynafoundation?igsh=MWh1YmpwNGd6Nnc0NQ=="
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -147,7 +151,8 @@
         transform: translateY(-5px);
     }
 
-    .footer-links h4, .footer-contact h4 {
+    .footer-links h4,
+    .footer-contact h4 {
         color: var(--gold);
         font-size: 1.2rem;
         font-weight: 700;
@@ -155,7 +160,8 @@
         position: relative;
     }
 
-    .footer-links h4::after, .footer-contact h4::after {
+    .footer-links h4::after,
+    .footer-contact h4::after {
         content: '';
         position: absolute;
         bottom: -8px;
@@ -213,7 +219,7 @@
 
     .newsletter-label i {
         color: var(--teal);
-        width: 16px; 
+        width: 16px;
         text-align: center;
         font-size: 0.9rem;
     }
@@ -303,6 +309,7 @@
             grid-template-columns: 1fr;
             gap: 3rem;
         }
+
         .bottom-content {
             flex-direction: column;
             gap: 1rem;
