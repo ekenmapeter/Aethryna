@@ -1,7 +1,7 @@
 @extends('layouts.aethryna')
 
 @section('title', 'SkillsCo-op | Terms of Service')
-@section('meta_description', 'SkillsCo-op terms of service. The agreement between you and Aethryna Foundation CIC governing use of the SkillsCo-op platform.')
+@section('meta_description', 'SkillsCo-op terms of service. The agreement between you and Aethryna Digital Skills Co-op CIC governing use of the SkillsCo-op platform.')
 @section('og_title', 'Terms of Service | SkillsCo-op')
 
 @section('content')
@@ -15,7 +15,7 @@
             <div class="legal-meta">
                 <span><i class="fas fa-calendar"></i> Last reviewed: June 2026</span>
                 <span><i class="fas fa-tag"></i> Version 1.0</span>
-                <span><i class="fas fa-building"></i> Aethryna Foundation CIC</span>
+                <span><i class="fas fa-building"></i> Aethryna Digital Skills Co-op CIC</span>
             </div>
         </div>
     </section>
@@ -95,7 +95,7 @@
 
     <section class="legal-section" id="about"><div class="legal-container">
         <span class="legal-badge">Introduction</span><h2>1. About These Terms</h2>
-        <p>These Terms of Service govern your use of the SkillsCo-op website (skillscoop.org) and any services accessible through it. They form a legally binding agreement between you and <strong>Aethryna Foundation CIC</strong>, a Community Interest Company registered in England and Wales (referred to as 'SkillsCo-op', 'we', 'us', or 'our').</p>
+        <p>These Terms of Service govern your use of the SkillsCo-op website (skillscoop.org) and any services accessible through it. They form a legally binding agreement between you and <strong>Aethryna Digital Skills Co-op CIC</strong>, a Community Interest Company registered in England and Wales (referred to as 'SkillsCo-op', 'we', 'us', or 'our').</p>
         <p>By creating an account, registering for a session, or using the platform in any way, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, you must not use our services.</p>
         <p>We may update these Terms from time to time. We will notify registered users by email at least 14 days before a material change takes effect. Continued use after that date constitutes acceptance of the updated Terms.</p>
     </div></section>
@@ -145,7 +145,7 @@
 
     <section class="legal-section" id="ip"><div class="legal-container">
         <span class="legal-badge">Intellectual Property</span><h2>6. Intellectual Property</h2>
-        <p>All platform content, including curriculum materials and assessment tools, is owned by or licensed to Aethryna Foundation CIC. You may use our content for personal learning only. You may not reproduce or distribute it commercially without our prior written permission.</p>
+        <p>All platform content, including curriculum materials and assessment tools, is owned by or licensed to Aethryna Digital Skills Co-op CIC. You may use our content for personal learning only. You may not reproduce or distribute it commercially without our prior written permission.</p>
         <p>By submitting content to the platform, you grant us a non-exclusive, royalty-free licence to use it for delivering and improving our services. You retain ownership of your own work.</p>
     </div></section>
 

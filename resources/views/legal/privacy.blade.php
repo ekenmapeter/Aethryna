@@ -1,7 +1,7 @@
 @extends('layouts.aethryna')
 
 @section('title', 'SkillsCo-op | Privacy Policy')
-@section('meta_description', 'SkillsCo-op privacy policy. How Aethryna Foundation CIC collects, uses and protects your personal data under UK GDPR.')
+@section('meta_description', 'SkillsCo-op privacy policy. How Aethryna Digital Skills Co-op CIC collects, uses and protects your personal data under UK GDPR.')
 @section('og_title', 'Privacy Policy | SkillsCo-op')
 
 @section('content')
@@ -15,7 +15,7 @@
             <div class="legal-meta">
                 <span><i class="fas fa-calendar"></i> Last reviewed: June 2026</span>
                 <span><i class="fas fa-tag"></i> Version 1.1</span>
-                <span><i class="fas fa-building"></i> Aethryna Foundation CIC</span>
+                <span><i class="fas fa-building"></i> Aethryna Digital Skills Co-op CIC</span>
             </div>
         </div>
     </section>
@@ -95,10 +95,10 @@
 
     <section class="legal-section" id="who-we-are"><div class="legal-container">
         <span class="legal-badge">Introduction</span><h2>1. Who We Are</h2>
-        <p>SkillsCo-op is the public-facing brand of <strong>Aethryna Foundation CIC</strong>, a Community Interest Company registered in England and Wales. We provide free, funded digital skills programmes, career assessments, panel sessions, and mentoring to people facing barriers to employment, including NEET young people, justice-involved individuals, migrants, refugees, and career changers.</p>
-        <p>For data protection purposes, Aethryna Foundation CIC is the <strong>data controller</strong> for all personal data collected through skillscoop.org.</p>
+        <p>SkillsCo-op is the public-facing brand of <strong>Aethryna Digital Skills Co-op CIC</strong>, a Community Interest Company registered in England and Wales. We provide free, funded digital skills programmes, career assessments, panel sessions, and mentoring to people facing barriers to employment, including NEET young people, justice-involved individuals, migrants, refugees, and career changers.</p>
+        <p>For data protection purposes, Aethryna Digital Skills Co-op CIC is the <strong>data controller</strong> for all personal data collected through skillscoop.org.</p>
         <div class="legal-info-box">
-            <div class="legal-info-row"><span class="legal-info-label">Data controller</span><span class="legal-info-value">Aethryna Foundation CIC (trading as SkillsCo-op)</span></div>
+            <div class="legal-info-row"><span class="legal-info-label">Data controller</span><span class="legal-info-value">Aethryna Digital Skills Co-op CIC (trading as SkillsCo-op)</span></div>
             <div class="legal-info-row"><span class="legal-info-label">Company number</span><span class="legal-info-value">[CIC company number]</span></div>
             <div class="legal-info-row"><span class="legal-info-label">Registered address</span><span class="legal-info-value">[Registered address], England</span></div>
             <div class="legal-info-row"><span class="legal-info-label">Contact</span><span class="legal-info-value">hello@skillscoop.org</span></div>

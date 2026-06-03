@@ -36,7 +36,7 @@ class WelcomeEmail extends Notification implements ShouldQueue
     {
         return (new MailMessage)
             ->subject('Welcome to SkillsCo-op')
-            ->greeting('Welcome to Aethryna, ' . $notifiable->name . '!')
+            ->greeting('Hi ' . $notifiable->name . '!')
             ->line('Thank you for joining SkillsCo-op. You are now part of a community built around widening access to digital skills and meaningful career progression.')
             ->line('Take our free career assessment to find the track that fits your goals and strengths.')
             ->line('Explore your learning pathway across Web Development, Digital Design, IT Support, and Digital Sales.')
