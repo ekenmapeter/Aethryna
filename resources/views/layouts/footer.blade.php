@@ -79,7 +79,7 @@
             <div class="bottom-content">
                 <p>&copy; {{ date('Y') }} SkillsCo-op. All Rights Reserved.</p>
                 <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
+                    <a href="{{ route('privacy') ?? '#' }}">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                 </div>
             </div>

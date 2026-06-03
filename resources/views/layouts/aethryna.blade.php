@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>@yield('title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')</title>
-    <meta name="title" content="@yield('meta_title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')">
+    <title>@yield('title', 'SkillsCo-op | Digital Skills for Real Careers')</title>
+    <meta name="title" content="@yield('meta_title', 'SkillsCo-op | Digital Skills for Real Careers')">
     <meta name="description" content="@yield('meta_description', 'SkillsCo-op transforms lives through digital skills training, mentorship programs, and career pathways in tech. Join our mission to widen access to digital skills for underserved communities.')">
     <meta name="keywords" content="@yield('meta_keywords', 'digital skills training, tech mentorship, career development, skills cooperative, coding bootcamp, web development, IT support, digital design, underserved communities')">
     <meta name="author" content="SkillsCo-op">
@@ -18,18 +18,18 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('og_title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')">
+    <meta property="og:title" content="@yield('og_title', 'SkillsCo-op | Digital Skills for Real Careers')">
     <meta property="og:description" content="@yield('og_description', 'Transform lives through digital skills training and mentorship programs. Join SkillsCo-op\'s mission to create tech career pathways for underserved communities.')">
     <meta property="og:image" content="@yield('og_image', asset('images/og-image.png'))">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="SkillsCo-op">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="en_GB">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="@yield('twitter_title', 'SkillsCo-op | Empowering Communities Through Digital Skills & Mentorship')">
+    <meta property="twitter:title" content="@yield('twitter_title', 'SkillsCo-op | Digital Skills for Real Careers')">
     <meta property="twitter:description" content="@yield('twitter_description', 'Transform lives through digital skills training and mentorship programs. Join SkillsCo-op\'s mission to create tech career pathways for underserved communities.')">
     <meta property="twitter:image" content="@yield('twitter_image', asset('images/og-image.png'))">
 
