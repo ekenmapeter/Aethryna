@@ -10,7 +10,7 @@
             <div class="programs-hero-grid">
                 <div class="hero-content">
                     <span class="ath-sub">Skill Mastery</span>
-                    <h1>Our Specialized <span class="ath-gradient-text">Pathway</span> Programs</h1>
+                    <h1>Our Specialised <span class="ath-gradient-text">Pathway</span> Programs</h1>
                     <p>Structured learning paths designed for real-world success. Choose the track that defines your future.</p>
                     <div class="hero-actions">
                         <a href="#program-tracks" class="btn btn-primary">Explore Programs <i class="fas fa-arrow-down"></i></a>
@@ -22,7 +22,7 @@
                         <span class="stat-label">Expert Tracks</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">95%</span>
+                        <span class="stat-number">100%</span>
                         <span class="stat-label">Job success</span>
                     </div>
                     <div class="stat">
@@ -40,12 +40,12 @@
             <div class="section-title">
                 <span class="ath-sub">The Methodology</span>
                 <h2>Choose Your Path to Success</h2>
-                <p>Four specialized tracks tailored to different career goals and interests</p>
+                <p>Four specialised tracks designed for different career goals and interests</p>
             </div>
             <div class="overview-content">
             <div class="overview-text">
-                <p>Our Skills Pathway offers four distinct tracks, each designed to provide comprehensive training and real-world experience in high-demand digital careers. Whether you're creative, technical, or customer-focused, there's a track that matches your strengths and interests.</p>
-                <p>Each program combines classroom learning with hands-on projects, mentorship from industry professionals, and guaranteed job placement assistance. You'll graduate with a portfolio of work, industry certifications, and the skills employers are looking for.</p>
+                <p>Our Skills Pathway offers four distinct tracks, each designed to provide practical, thorough training and real-world experience in high-demand digital careers. Whether you're creative, technical, or customer-focused, there's a track that matches your strengths and interests.</p>
+                <p>Each program combines classroom learning with hands-on projects, mentorship from industry professionals, and supported progression into employment assistance. You'll graduate with a portfolio of work, industry certifications, and the skills employers are looking for.</p>
             </div>
             <div class="overview-features">
                 <div class="feature">
@@ -61,12 +61,12 @@
                 <div class="feature">
                     <i class="fas fa-certificate"></i>
                     <h4>Industry Certifications</h4>
-                    <p>Recognized credentials for your resume</p>
+                    <p>Recognised credentials for your CV</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-briefcase"></i>
                     <h4>Job Guarantee</h4>
-                    <p>95% placement rate within 6 months</p>
+                    <p>Fully funded for all learners</p>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@
                     <span class="faq-toggle">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>No prior experience is required for any of our tracks. We designed these programs specifically for beginners. Our curriculum builds from the fundamentals up, and our mentors provide personalized support throughout your journey.</p>
+                    <p>No prior experience is required for any of our tracks. We designed these programs specifically for beginners. Our curriculum builds from the fundamentals up, and our mentors provide personalised support throughout your journey.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -249,7 +249,7 @@
                     <span class="faq-toggle">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Our job placement team works with you to find employment opportunities. We have partnerships with 50+ companies and a 95% placement rate. You'll also have access to ongoing career support and alumni networking.</p>
+                    <p>Our team works with you to identify employment opportunities and prepare you for applications. You will also have access to ongoing career support and our learner community network.</p>
                 </div>
             </div>
             <div class="faq-item">

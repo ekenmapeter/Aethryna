@@ -26,6 +26,7 @@
                 <h2>Monthly Panel Sessions</h2>
                 <p>Engaging discussions on digital skills, career development, and community impact</p>
             </div>
+<<<<<<< HEAD
             <div class="details-grid">
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-microphone-alt"></i></div>
@@ -51,10 +52,27 @@
                     <p>Each session features a deep-dive into one of our learning tracks — Web Dev, Digital Design, IT
                         Support, or Digital Sales.</p>
                 </div>
+=======
+            <div class="detail-card">
+                <div class="detail-icon"><i class="fas fa-comments"></i></div>
+                <h3>Open Q&A</h3>
+                <p>Ask questions directly to panellists and get personalised advice on your digital skills journey and career aspirations.</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Networking</h3>
+                <p>Connect with fellow learners, potential mentors, and industry partners in a welcoming, community-driven environment.</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Skill Spotlights</h3>
+                <p>Each session features a deep-dive into one of our learning tracks: Web Dev, Digital Design, IT Support, or Digital Sales.</p>
+>>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Registration Form -->
     <section id="register-section" class="session-register">
         <div class="ath-container">
@@ -71,6 +89,22 @@
                                 <strong>Frequency</strong>
                                 <span>Monthly — dates announced via email</span>
                             </div>
+=======
+<!-- Registration Form -->
+<section id="register-section" class="session-register">
+    <div class="ath-container">
+        <div class="register-grid">
+            <div class="register-info">
+                <span class="ath-sub">Get Involved</span>
+                <h2>Register for Our Next Session</h2>
+                <p>Our sessions are free and open to everyone. Whether you're a learner, mentor, partner, or simply curious. You're welcome.</p>
+                <div class="session-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>Frequency</strong>
+                            <span>Monthly (dates announced via email)</span>
+>>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-clock"></i>
@@ -79,12 +113,21 @@
                                 <span>90 minutes (including Q&A)</span>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="meta-item">
                             <i class="fas fa-laptop"></i>
                             <div>
                                 <strong>Format</strong>
                                 <span>Virtual (Eventbrite) — link sent after registration</span>
                             </div>
+=======
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-laptop"></i>
+                        <div>
+                            <strong>Format</strong>
+                            <span>Virtual (Zoom), link sent after registration</span>
+>>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-pound-sign"></i>
@@ -119,6 +162,7 @@
                                 @enderror
                             </div>
 
+<<<<<<< HEAD
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
                                 <input type="email" id="email" name="email" value="{{ old('email') }}" required
@@ -127,6 +171,21 @@
                                     <span class="form-error">{{ $message }}</span>
                                 @enderror
                             </div>
+=======
+                        <div class="form-group">
+                            <label for="interest_type">I'm interested as a... *</label>
+                            <select id="interest_type" name="interest_type" required>
+                                <option value="">Select one</option>
+                                <option value="learner" {{ old('interest_type') == 'learner' ? 'selected' : '' }}>Learner: I want to develop digital skills</option>
+                                <option value="mentor" {{ old('interest_type') == 'mentor' ? 'selected' : '' }}>Mentor: I want to guide others</option>
+                                <option value="partner" {{ old('interest_type') == 'partner' ? 'selected' : '' }}>Partner: I represent an organisation</option>
+                                <option value="curious" {{ old('interest_type') == 'curious' ? 'selected' : '' }}>Just Curious: I want to learn more</option>
+                            </select>
+                            @error('interest_type')
+                                <span class="form-error">{{ $message }}</span>
+                            @enderror
+                        </div>
+>>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
 
                             <div class="form-group">
                                 <label for="interest_type">I'm interested as a... *</label>
