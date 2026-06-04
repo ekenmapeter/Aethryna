@@ -98,11 +98,13 @@
 
                 <div class="register-form-wrapper">
                     @if (session('success'))
-                        <div x-data="{ open: true }" x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                        <div x-data="{ open: true }" x-show="open"
+                            class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-100">
                             <div class="bg-white rounded-lg p-6 max-w-md w-full shadow-lg">
                                 <h3 class="text-2xl font-semibold mb-4">You're Registered!</h3>
                                 <p class="mb-6">{{ session('success') }}</p>
-                                <a href="{{ route('home') }}" class="btn btn-primary w-full text-center" x-on:click="open = false">Back to Home</a>
+                                <a href="{{ route('home') }}" class="btn btn-primary w-full text-center"
+                                    x-on:click="open = false">Back to Home</a>
                             </div>
                         </div>
                     @else
