@@ -128,12 +128,6 @@
                                 @enderror
                             </div>
 
-                            @error('interest_type')
-                                <span class="form-error">{{ $message }}</span>
-                            @enderror
-                        </div>
->>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
-
                             <div class="form-group">
                                 <label for="interest_type">I'm interested as a... *</label>
                                 <select id="interest_type" name="interest_type" required>
