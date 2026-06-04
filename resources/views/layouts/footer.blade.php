@@ -60,7 +60,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>United Kingdom</span>
+                        <span>Liverpool, United Kingdom</span>
                     </div>
                     <div class="newsletter">
                         <div class="newsletter-label">
