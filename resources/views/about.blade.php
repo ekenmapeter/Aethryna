@@ -26,17 +26,20 @@
         <div class="mission-content">
             <div class="mission-text">
                 <h3>Building Futures Together</h3>
-<<<<<<< HEAD
                 <p>SkillsCo-op is a community-driven skills cooperative designed to widen access to digital skills and
                     meaningful progression for underserved communities. Through our innovative curriculum, pathways, and
                     delivery architecture, we connect aspiring learners with experienced professionals who guide them toward
                     achieving their personal and professional goals.</p>
                 <p>Our approach combines personalized mentorship with skill-building workshops, trauma-informed learning
                     design, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
-=======
-                <p>SkillsCo-op is a community-driven skills cooperative designed to widen access to digital skills and meaningful progression for underserved communities. Through our structured curriculum, pathways, and delivery architecture, we connect aspiring learners with experienced professionals who guide them toward achieving their personal and professional goals.</p>
-                <p>Our approach combines personalised mentorship with skill-building workshops, trauma-informed learning design, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
->>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
+
+                <p>SkillsCo-op is a community-driven skills cooperative designed to widen access to digital skills and
+                    meaningful progression for underserved communities. Through our structured curriculum, pathways, and
+                    delivery architecture, we connect aspiring learners with experienced professionals who guide them toward
+                    achieving their personal and professional goals.</p>
+                <p>Our approach combines personalised mentorship with skill-building workshops, trauma-informed learning
+                    design, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
+
                 <div class="mission-stats">
                     <div class="stat">
                         <span class="stat-number">4</span>
@@ -145,19 +148,24 @@
                     <img src="{{ asset('images/team/farouk.jpg') }}" alt="Farouk Abdulrazaq">
                 </div>
                 <div class="member-info">
-<<<<<<< HEAD
-                    <h3>Saheed Bello</h3>
-                    <p class="member-role">Director of Learner Wellbeing, Safeguarding & Behavioural Design</p>
-                    <p class="member-credentials">MSc Social Psychology &bull; PhD Researcher</p>
-                    <p class="member-bio">Leads the design of trauma-informed, psychologically safe learning experiences
-                        across all SkillsCo-op programmes, ensuring every learner journey is built on evidence, dignity, and
-                        belonging.</p>
-=======
-                    <h3>Farouk Abdulrazaq</h3>
+                                        <h3>Farouk Abdulrazaq</h3>
                     <p class="member-role">Adviser: Data, AI and Impact Technology</p>
                     <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
-                    <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data and machine learning to improve outcomes for underserved communities.</p>
->>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
+                    <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data and machine learning to improve outcomes for underserved communities.</p> <h3>Saheed Bello</h3>
+                        <p class="member-role">Director of Learner Wellbeing, Safeguarding & Behavioural Design</p>
+                        <p class="member-credentials">MSc Social Psychology &bull; PhD Researcher</p>
+                        <p class="member-bio">Leads the design of trauma-informed, psychologically safe learning experiences
+                            across all SkillsCo-op programmes, ensuring every learner journey is built on evidence, dignity,
+                            and
+                            belonging.</p>
+                        =======
+                        <h3>Farouk Abdulrazaq</h3>
+                        <p class="member-role">Adviser: Data, AI and Impact Technology</p>
+                        <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
+                        <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven
+                            products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using
+                            data and machine learning to improve outcomes for underserved communities.</p>
+                        >>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
                 </div>
             </div>
 
@@ -213,37 +221,23 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>The Model</h3>
-<<<<<<< HEAD
-                    <p>Our founder Abisola Areola designed the entire SkillsCo-op model — curriculum, pathways, and delivery
-                        architecture — drawing on her expertise in data analytics, project management, and digital
-                        transformation.</p>
-=======
-                    <p>Our founder Abisola Areola designed the entire SkillsCo-op model (curriculum, pathways, and delivery architecture), drawing on her expertise in data analytics, project management, and digital transformation.</p>
->>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
+                    <p>Our founder Abisola Areola designed the entire SkillsCo-op model (curriculum, pathways, and
+                        delivery architecture), drawing on her expertise in data analytics, project management, and
+                        digital transformation.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Building the Team</h3>
-<<<<<<< HEAD
-                    <p>Assembled a team of experts across data science, social psychology, enterprise technology, and
-                        community development to create a holistic approach to skills training.</p>
-=======
-                    <p>Assembled a team of experts across data science, social psychology, enterprise technology, and community development to create a integrated approach to skills training.</p>
->>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
+                    <p>Assembled a team of experts across data science, social psychology, enterprise technology, and community development to create a holistic approach to skills training.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>The Pathway</h3>
-<<<<<<< HEAD
-                    <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development,
-                        Digital Design, IT Support, and Digital Sales — all fully funded for learners.</p>
-=======
-                    <p>Launched the three-phase Digital Transformation Pathway with specialised tracks in Web Development, Digital Design, IT Support, and Digital Sales  all fully funded for learners.</p>
->>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
+                    <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development, Digital Design, IT Support, and Digital Sales — all fully funded for learners.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
