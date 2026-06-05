@@ -148,24 +148,10 @@
                     <img src="{{ asset('images/team/farouk.jpg') }}" alt="Farouk Abdulrazaq">
                 </div>
                 <div class="member-info">
-                                        <h3>Farouk Abdulrazaq</h3>
+                    <h3>Farouk Abdulrazaq</h3>
                     <p class="member-role">Adviser: Data, AI and Impact Technology</p>
                     <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
-                    <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data and machine learning to improve outcomes for underserved communities.</p> <h3>Saheed Bello</h3>
-                        <p class="member-role">Director of Learner Wellbeing, Safeguarding & Behavioural Design</p>
-                        <p class="member-credentials">MSc Social Psychology &bull; PhD Researcher</p>
-                        <p class="member-bio">Leads the design of trauma-informed, psychologically safe learning experiences
-                            across all SkillsCo-op programmes, ensuring every learner journey is built on evidence, dignity,
-                            and
-                            belonging.</p>
-                        =======
-                        <h3>Farouk Abdulrazaq</h3>
-                        <p class="member-role">Adviser: Data, AI and Impact Technology</p>
-                        <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
-                        <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven
-                            products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using
-                            data and machine learning to improve outcomes for underserved communities.</p>
-                        >>>>>>> 2960d8a85b638f5ea9525871ce394b8bff52ecb4
+                    <p class="member-bio">Data scientist and health‑tech innovator with experience building AI‑driven products in education and healthcare. Co‑founder of Soraflake, bringing deep expertise in using data and machine learning to improve outcomes for underserved communities.</p>
                 </div>
             </div>
 
@@ -175,14 +161,13 @@
                     <img src="{{ asset('images/team/saheed.jpg') }}" alt="Saheed Bello">
                 </div>
                 <div class="member-info">
-                    <h3>Farouk Abdulrazaq</h3>
+                    <h3>Saheed Bello</h3>
                     <p class="member-role">Adviser — Data, AI & Impact Technology</p>
                     <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
                     <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven
                         products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data
                         and machine learning to improve outcomes for underserved communities.</p>
                 </div>
-
             </div>
 
             <!-- Idowu Seun Adetule -->
