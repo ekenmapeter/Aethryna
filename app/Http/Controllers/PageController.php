@@ -53,7 +53,10 @@ class PageController extends Controller
 
     public function sessions()
     {
-        return view('sessions');
+        $upcoming = \App\Models\PanelSession::upcoming()->with(['speakers', 'media'])->get();
+        $past     = \App\Models\PanelSession::past()->with(['speakers', 'images', 'videos'])->get();
+
+        return view('sessions', compact('upcoming', 'past'));
     }
 
     public function registerSession(Request $request)

@@ -15,8 +15,12 @@
                 <h1 class="ath-title">Sessions & <span class="ath-gradient-text">Events</span></h1>
                 <p>Join our monthly panel discussions with industry experts, mentors, and learners. Network, learn, and grow
                     with the SkillsCo-op community.</p>
-                <a href="#register-section" class="btn btn-primary">Register for Next Session <i
-                        class="fas fa-arrow-down"></i></a>
+                @if($upcoming->isNotEmpty() && $upcoming->first()->eventbrite_url)
+                <a href="{{ $upcoming->first()->eventbrite_url }}" target="_blank" rel="noopener" class="btn btn-primary">
+                    Register on Eventbrite <i class="fas fa-external-link-alt"></i>
+                </a>
+                @endif
+                <a href="#speakers" class="btn btn-outline" style="margin-left:12px;">Meet the Speakers</a>
             </div>
         </div>
     </section>
@@ -66,6 +70,51 @@
                     <h2>Register for Our Next Session</h2>
                     <p>Our sessions are free and open to everyone. Whether you're a learner, mentor, partner, or simply
                         curious - you're welcome.</p>
+                    @if($upcoming->isNotEmpty())
+                    @php $nextSession = $upcoming->first(); @endphp
+                    <div class="session-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Next Session</strong>
+                                <span>{{ $nextSession->event_date->format('l j F Y, g:ia') }} BST</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Duration</strong>
+                                <span>{{ $nextSession->duration }} (including Q&A)</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-laptop"></i>
+                            <div>
+                                <strong>Format</strong>
+                                <span>{{ $nextSession->format }}</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-pound-sign"></i>
+                            <div>
+                                <strong>Cost</strong>
+                                <span>Completely free</span>
+                            </div>
+                        </div>
+                        @if($nextSession->eventbrite_url)
+                        <div class="meta-item">
+                            <i class="fas fa-ticket-alt"></i>
+                            <div>
+                                <strong>Register</strong>
+                                <a href="{{ $nextSession->eventbrite_url }}" target="_blank" rel="noopener"
+                                   style="color:var(--ath-teal);font-weight:600;">
+                                    Eventbrite &rarr;
+                                </a>
+                            </div>
+                        </div>
+                        @endif
+                    </div>
+                    @else
                     <div class="session-meta">
                         <div class="meta-item">
                             <i class="fas fa-calendar-alt"></i>
@@ -76,26 +125,18 @@
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Duration</strong>
-                                <span>90 minutes (including Q&A)</span>
-                            </div>
+                            <div><strong>Duration</strong><span>90 minutes (including Q&A)</span></div>
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-laptop"></i>
-                            <div>
-                                <strong>Format</strong>
-                                <span>Virtual (Eventbrite), link sent after registration</span>
-                            </div>
+                            <div><strong>Format</strong><span>Virtual, link sent after registration</span></div>
                         </div>
                         <div class="meta-item">
                             <i class="fas fa-pound-sign"></i>
-                            <div>
-                                <strong>Cost</strong>
-                                <span>Completely free</span>
-                            </div>
+                            <div><strong>Cost</strong><span>Completely free</span></div>
                         </div>
                     </div>
+                    @endif
                 </div>
 
                 <div class="register-form-wrapper">
@@ -181,6 +222,133 @@
             </div>
         </div>
     </section>
+
+
+    {{-- ═══════════════════════════════════════════════════════════════════ --}}
+    {{-- SPEAKERS SECTION                                                    --}}
+    {{-- ═══════════════════════════════════════════════════════════════════ --}}
+    @if($upcoming->isNotEmpty() && $upcoming->first()->speakers->isNotEmpty())
+    <section id="speakers" class="speakers-section">
+        <div class="ath-container">
+            <div class="section-title">
+                <span class="ath-sub">Panel {{ $upcoming->first()->title }}</span>
+                <h2>{{ $upcoming->first()->tagline }}</h2>
+                <p>Meet the practitioners joining us for Panel 1 on {{ $upcoming->first()->event_date->format('j F Y') }}.</p>
+            </div>
+            <div class="speakers-grid">
+                @foreach($upcoming->first()->speakers as $speaker)
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="{{ $speaker->photoUrl() }}" alt="{{ $speaker->name }}">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>{{ $speaker->name }}</h3>
+                        <p class="speaker-title">{{ $speaker->title }}</p>
+                        @if($speaker->company)
+                        <p class="speaker-company">{{ $speaker->company }}</p>
+                        @endif
+                        @if($speaker->pivot->topic)
+                        <p class="speaker-topic"><i class="fas fa-comment-dots"></i> {{ $speaker->pivot->topic }}</p>
+                        @endif
+                        <p class="speaker-bio">{{ $speaker->bio }}</p>
+                        @if($speaker->linkedin_url)
+                        <a href="{{ $speaker->linkedin_url }}" target="_blank" rel="noopener" class="speaker-linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        @endif
+                    </div>
+                </div>
+                @endforeach
+            </div>
+            @if($upcoming->first()->eventbrite_url)
+            <div style="text-align:center;margin-top:48px;">
+                <a href="{{ $upcoming->first()->eventbrite_url }}" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                    <i class="fas fa-ticket-alt"></i> Register Free on Eventbrite
+                </a>
+            </div>
+            @endif
+        </div>
+    </section>
+    @endif
+
+    {{-- ═══════════════════════════════════════════════════════════════════ --}}
+    {{-- PAST SESSIONS ARCHIVE                                               --}}
+    {{-- ═══════════════════════════════════════════════════════════════════ --}}
+    @if($past->isNotEmpty())
+    <section class="past-sessions">
+        <div class="ath-container">
+            <div class="section-title">
+                <span class="ath-sub">Archive</span>
+                <h2>Past Sessions</h2>
+                <p>Every session recorded and available to watch back.</p>
+            </div>
+            @foreach($past as $pastSession)
+            <div class="past-session-card">
+                <div class="past-session-header">
+                    <div>
+                        <span class="past-badge">{{ $pastSession->event_date->format('F Y') }}</span>
+                        <h3>{{ $pastSession->tagline ?? $pastSession->title }}</h3>
+                        <p>{{ $pastSession->description }}</p>
+                    </div>
+                    @if($pastSession->recording_url)
+                    <a href="{{ $pastSession->recording_url }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                        <i class="fas fa-play-circle"></i> Watch Recording
+                    </a>
+                    @endif
+                </div>
+
+                {{-- Videos --}}
+                @if($pastSession->videos->isNotEmpty())
+                <div class="session-videos">
+                    @foreach($pastSession->videos as $video)
+                    <div class="video-embed-wrap">
+                        <iframe src="{{ $video->embedUrl() }}"
+                            title="{{ $video->caption ?? $pastSession->title }}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        @if($video->caption)
+                        <p class="media-caption">{{ $video->caption }}</p>
+                        @endif
+                    </div>
+                    @endforeach
+                </div>
+                @endif
+
+                {{-- Speakers --}}
+                @if($pastSession->speakers->isNotEmpty())
+                <div class="past-speakers">
+                    <p class="past-speakers-label">Speakers</p>
+                    <div class="past-speakers-row">
+                        @foreach($pastSession->speakers as $s)
+                        <div class="past-speaker-chip">
+                            <img src="{{ $s->photoUrl() }}" alt="{{ $s->name }}">
+                            <div>
+                                <strong>{{ $s->name }}</strong>
+                                <span>{{ $s->title }}{{ $s->company ? ', ' . $s->company : '' }}</span>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                @endif
+
+                {{-- Photos --}}
+                @if($pastSession->images->isNotEmpty())
+                <div class="session-photos">
+                    @foreach($pastSession->images as $img)
+                    <div class="session-photo">
+                        <img src="{{ $img->url }}" alt="{{ $img->caption ?? $pastSession->title }}" loading="lazy">
+                        @if($img->caption)<p class="media-caption">{{ $img->caption }}</p>@endif
+                    </div>
+                    @endforeach
+                </div>
+                @endif
+            </div>
+            @endforeach
+        </div>
+    </section>
+    @endif
 
     @push('styles')
         <style>
@@ -542,6 +710,51 @@
                 .register-form {
                     padding: 35px 25px;
                 }
+            }
+
+            /* ── Speakers ── */
+            .speakers-section { padding: 80px 0; background: #f8fafb; }
+            .speakers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 32px; margin-top: 48px; }
+            .speaker-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 16px rgba(3,139,137,0.08); display: flex; gap: 24px; padding: 28px; align-items: flex-start; transition: box-shadow 0.3s; }
+            .speaker-card:hover { box-shadow: 0 6px 28px rgba(3,139,137,0.15); }
+            .speaker-photo img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--ath-teal, #038b89); flex-shrink: 0; }
+            .speaker-info h3 { font-size: 1.15rem; font-weight: 700; color: #055860; margin: 0 0 4px; }
+            .speaker-title { font-size: 0.9rem; color: #038b89; font-weight: 600; margin: 0 0 2px; }
+            .speaker-company { font-size: 0.85rem; color: #6b7480; margin: 0 0 6px; }
+            .speaker-topic { font-size: 0.85rem; color: #ee9d1d; font-weight: 600; margin: 0 0 8px; }
+            .speaker-topic i { margin-right: 4px; }
+            .speaker-bio { font-size: 0.88rem; color: #404952; line-height: 1.65; margin: 0 0 10px; }
+            .speaker-linkedin { font-size: 0.85rem; color: #038b89; text-decoration: none; font-weight: 600; }
+            .speaker-linkedin:hover { color: #055860; }
+            .btn-lg { padding: 16px 40px; font-size: 1.05rem; }
+
+            /* ── Past Sessions ── */
+            .past-sessions { padding: 80px 0; }
+            .past-session-card { background: #fff; border-radius: 16px; border: 1px solid #d4e8e8; padding: 36px; margin-bottom: 32px; }
+            .past-session-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 24px; flex-wrap: wrap; }
+            .past-badge { display: inline-block; background: #e8f4f4; color: #038b89; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 8px; }
+            .past-session-header h3 { font-size: 1.25rem; font-weight: 700; color: #055860; margin: 0 0 8px; }
+            .past-session-header p { color: #404952; font-size: 0.95rem; line-height: 1.6; margin: 0; }
+            .btn-sm { padding: 8px 18px; font-size: 0.88rem; white-space: nowrap; }
+            .session-videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; margin-bottom: 24px; }
+            .video-embed-wrap iframe { width: 100%; aspect-ratio: 16/9; border-radius: 10px; }
+            .media-caption { font-size: 0.82rem; color: #6b7480; margin: 6px 0 0; text-align: center; }
+            .past-speakers { margin-bottom: 24px; }
+            .past-speakers-label { font-size: 0.8rem; font-weight: 700; color: #6b7480; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+            .past-speakers-row { display: flex; flex-wrap: wrap; gap: 12px; }
+            .past-speaker-chip { display: flex; align-items: center; gap: 10px; background: #f8fafb; border: 1px solid #d4e8e8; border-radius: 50px; padding: 6px 16px 6px 6px; }
+            .past-speaker-chip img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
+            .past-speaker-chip strong { font-size: 0.85rem; color: #055860; display: block; }
+            .past-speaker-chip span { font-size: 0.78rem; color: #6b7480; }
+            .session-photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+            .session-photo img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+
+            @media (max-width: 640px) {
+                .speakers-grid { grid-template-columns: 1fr; }
+                .speaker-card { flex-direction: column; }
+                .speaker-photo img { width: 80px; height: 80px; }
+                .past-session-header { flex-direction: column; }
+                .session-videos { grid-template-columns: 1fr; }
             }
         </style>
     @endpush
