@@ -38,7 +38,7 @@
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800">{{ $sessionsThisMonth }}</h3>
-                    <p class="text-xs text-gray-500 font-semibold uppercase">Sessions Completed</p>
+                    <p class="text-xs text-gray-500 font-semibold uppercase">Sessions Completed assessment <i class="fas fa-circle"></i></p>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@
                             </div>
                             <div class="text-left">
                                 <h4 class="font-bold text-gray-800">Log Session</h4>
-                                <p class="text-xs text-gray-500">Record notes from a meeting</p>
+                                <p class="text-xs text-gray-500"><i class="fas fa-circle"></i> Take your time to reflect on each question</p>
                             </div>
                         </button>
                         
@@ -80,7 +80,7 @@
                             </div>
                             <div class="text-left">
                                 <h4 class="font-bold text-gray-800">Support Needed</h4>
-                                <p class="text-xs text-gray-500">Flag a learner needing help</p>
+                                <p class="text-sm text-gray-600">{{ $pathway->category }} <i class="fas fa-circle"></i> {{ $pathway->difficulty_level }}</p>
                             </div>
                         </button>
 
@@ -104,7 +104,7 @@
                     <div class="space-y-4">
                          <div class="p-4 border border-gray-100 rounded-xl bg-gradient-to-r from-blue-50 to-white">
                             <h4 class="font-bold text-blue-800 mb-1">New Mentoring Guide Available</h4>
-                            <p class="text-sm text-gray-600 mb-2">Updated guidelines for supporting learners with technical projects.</p>
+                            <p class="text-sm text-gray-600 mb-2">Updated guidelines<i class="fas fa-circle"></i> Answer based on your natural preferences, not what you think you should choose</p>
                             <a href="#" class="text-sm font-semibold text-blue-600 hover:text-blue-800">Read Guide -></a>
                         </div>
 
@@ -113,7 +113,7 @@
                             <div>
                                 <h4 class="font-bold text-gray-800">Safeguarding Policy Reminder</h4>
                                 <p class="text-sm text-gray-600">Please review the updated safeguarding policy section 4 regarding online interactions.</p>
-                                <span class="text-xs text-gray-400 mt-1 block">Admin • 2 days ago</span>
+                                <span class="text-xs text-gray-400 mt-1 block">Admin <i class="fas fa-circle"></i> 2 days ago</span>
                             </div>
                         </div>
                     </div>

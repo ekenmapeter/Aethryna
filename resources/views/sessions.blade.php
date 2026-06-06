@@ -48,7 +48,7 @@
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Skill Spotlights</h3>
-                    <p>Each session features a deep-dive into one of our learning tracks — Web Dev, Digital Design, IT
+                    <p>Each session features a deep-dive into one of our learning tracks - Web Dev, Digital Design, IT
                         Support, or Digital Sales.</p>
                 </div>
             </div>
@@ -63,13 +63,13 @@
                     <span class="ath-sub">Get Involved</span>
                     <h2>Register for Our Next Session</h2>
                     <p>Our sessions are free and open to everyone. Whether you're a learner, mentor, partner, or simply
-                        curious — you're welcome.</p>
+                        curious - you're welcome.</p>
                     <div class="session-meta">
                         <div class="meta-item">
                             <i class="fas fa-calendar-alt"></i>
                             <div>
                                 <strong>Frequency</strong>
-                                <span>Monthly — dates announced via email</span>
+                                <span>Monthly - dates announced via email</span>
                             </div>
                         </div>
                         <div class="meta-item">
@@ -83,7 +83,7 @@
                             <i class="fas fa-laptop"></i>
                             <div>
                                 <strong>Format</strong>
-                                <span>Virtual (Eventbrite) — link sent after registration</span>
+                                <span>Virtual (Eventbrite) - link sent after registration</span>
                             </div>
                         </div>
                         <div class="meta-item">
@@ -135,13 +135,13 @@
                                 <select id="interest_type" name="interest_type" required>
                                     <option value="">Select one</option>
                                     <option value="learner" {{ old('interest_type') == 'learner' ? 'selected' : '' }}>
-                                        Learner — I want to develop digital skills</option>
-                                    <option value="mentor" {{ old('interest_type') == 'mentor' ? 'selected' : '' }}>Mentor —
+                                        Learner - I want to develop digital skills</option>
+                                    <option value="mentor" {{ old('interest_type') == 'mentor' ? 'selected' : '' }}>Mentor -
                                         I want to guide others</option>
                                     <option value="partner" {{ old('interest_type') == 'partner' ? 'selected' : '' }}>
-                                        Partner — I represent an organisation</option>
+                                        Partner - I represent an organisation</option>
                                     <option value="curious" {{ old('interest_type') == 'curious' ? 'selected' : '' }}>Just
-                                        Curious — I want to learn more</option>
+                                        Curious - I want learn more</option>
                                 </select>
                                 @error('interest_type')
                                     <span class="form-error">{{ $message }}</span>

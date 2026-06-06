@@ -226,7 +226,7 @@
                 <div class="timeline-content">
                     <h3>The Pathway</h3>
                     <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development,
-                        Digital Design, IT Support, and Digital Sales — all fully funded for learners.</p>
+                        Digital Design, IT Support, and Digital Sales - all fully funded for learners.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
