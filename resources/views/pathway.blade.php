@@ -2,6 +2,9 @@
 
 @section('title', 'Digital Transformation Pathway | SkillsCo-op')
 
+@section('meta_description', 'Our three-phase Digital Transformation Pathway takes learners from digital foundations to independent employment. Fully funded for all participants. Start with a free assessment.')
+@section('og_description', 'Our three-phase Digital Transformation Pathway takes learners from digital foundations to independent employment. Fully funded for all participants. Start with a free assessment.')
+
 @section('content')
 
     <!-- Hero Section -->
@@ -46,17 +49,17 @@
             </div>
             <div class="overview-content">
             <div class="overview-text">
-                <p>Our Digital Transformation Pathway takes you from little or no digital experience to becoming a confident professional in the tech industry. Through our comprehensive three-phase program, you'll gain practical skills, build a portfolio, and secure your first job in tech.</p>
+                <p>Our Digital Transformation Pathway takes you from little or no digital experience to becoming a confident professional in the tech industry. Through our three-phase programme, you'll gain practical skills, build a portfolio, and secure your first job in tech.</p>
                 <p>Each phase builds upon the previous one, ensuring you have a solid foundation before moving to more advanced topics. Our experienced mentors and industry partners guide you every step of the way.</p>
             </div>
             <div class="overview-stats">
                 <div class="stat">
-                    <span class="stat-number">12-18</span>
-                    <span class="stat-label">Months Total</span>
+                    <span class="stat-number">12 to 18</span>
+                    <span class="stat-label">Months</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">100%</span>
-                    <span class="stat-label">Completion Rate</span>
+                    <span class="stat-label">Funded Places</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">4</span>
@@ -242,7 +245,7 @@
                             <i class="fas fa-search"></i>
                             <div class="service-content">
                                 <h5>Community Network</h5>
-                                <p>Connections with our partner companies and personalised job matching</p>
+                                <p>Connections with organisations in our network and personalised job search support</p>
                             </div>
                         </div>
                         <div class="service-item">
@@ -262,8 +265,8 @@
                         <div class="service-item">
                             <i class="fas fa-users"></i>
                             <div class="service-content">
-                                <h5>Community Network</h5>
-                                <p>Join our community of successful graduates for ongoing support and networking</p>
+                                <h5>Ongoing Mentoring</h5>
+                                <p>Continue working with your mentor after programme completion for career guidance and networking</p>
                             </div>
                         </div>
                     </div>
@@ -280,40 +283,14 @@
                 <h2>Pathway Impact</h2>
                 <p>Real journeys from our program graduates</p>
             </div>
-            <div class="stories-grid">
-                <div class="story-card">
-                    <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Success story">
-                    </div>
+            <div class="stories-grid" style="grid-template-columns: 1fr;">
+                <div class="story-card" style="text-align: center; padding: 40px 32px;">
                     <div class="story-content">
-                        <h3>From Beginner to Web Developer</h3>
-                        <p>"I started with zero computer skills. After completing the pathway, I landed a job as a junior web developer. The mentors were incredible!"</p>
-                        <div class="story-author">
-                            Maria G. <span>Web Developer at TechStart</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Success story">
-                    </div>
-                    <div class="story-content">
-                        <h3>Digital Design Career Launch</h3>
-                        <p>"The design track gave me the skills and confidence to pursue my passion. Now I'm a UX designer and loving every day!"</p>
-                        <div class="story-author">
-                            James L. <span>UX Designer at CreativeCo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Success story">
-                    </div>
-                    <div class="story-content">
-                        <h3>IT Support to Management</h3>
-                        <p>"Started in IT support and now manage a team. The pathway taught me not just technical skills, but leadership and problem-solving."</p>
-                        <div class="story-author">
-                            David K. <span>IT Manager at GlobalTech</span>
+                        <h3>Your story starts here.</h3>
+                        <p>"This is where our first success stories will be written. We are opening places now for our founding cohort of learners and mentors. Step in early and help shape what SkillsCo-op becomes."</p>
+                        <div class="story-author" style="justify-content: center; margin-top: 24px; gap: 16px; display: flex; flex-wrap: wrap;">
+                            <a href="{{ route('register') }}" class="btn btn-primary">Claim Your Place</a>
+                            <a href="{{ route('sessions') }}" class="btn btn-outline">Become a Mentor</a>
                         </div>
                     </div>
                 </div>
