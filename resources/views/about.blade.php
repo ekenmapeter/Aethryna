@@ -148,10 +148,12 @@
                     <img src="{{ asset('images/team/farouk.jpg') }}" alt="Farouk Abdulrazaq">
                 </div>
                 <div class="member-info">
-                    <h3>Farouk Abdulrazaq</h3>
-                    <p class="member-role">Adviser: Data, AI and Impact Technology</p>
-                    <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
-                    <p class="member-bio">Data scientist and health‑tech innovator with experience building AI‑driven products in education and healthcare. Co‑founder of Soraflake, bringing deep expertise in using data and machine learning to improve outcomes for underserved communities.</p>
+                    <h3>Saheed Bello</h3>
+                    <p class="member-role">Director of learner wellbeing, safeguarding & behavioural design</p>
+                    <p class="member-credentials">MSc Social Psychology PhD Researcher</p>
+                    <p class="member-bio">Leads the design of trauma-informed, psychologically safe learning experiences
+                        across all SkillsCo-op programmes, ensuring every learner journey is built on evidence, dignity, and
+                        belonging.</p>
                 </div>
             </div>
 
@@ -161,12 +163,12 @@
                     <img src="{{ asset('images/team/saheed.jpg') }}" alt="Saheed Bello">
                 </div>
                 <div class="member-info">
-                    <h3>Saheed Bello</h3>
-                    <p class="member-role">Adviser — Data, AI & Impact Technology</p>
-                    <p class="member-credentials">MSc Data Science &bull; STEM Ambassador</p>
-                    <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven
-                        products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data
-                        and machine learning to improve outcomes for underserved communities.</p>
+                    <h3>Strategic adviser</h3>
+                    <p class="member-role">UK Global Tech Talent Awardee</p>
+                    <p class="member-credentials">AI & Digital Transformation B2B SaaS Sales</p>
+                    <p class="member-bio">Over a decade of experience in enterprise technology, Go-To-Market strategy, and
+                        AI-driven business growth. Brings expertise in scaling technology ventures to SkillsCo-op's mission.
+                    </p>
                 </div>
             </div>
 
@@ -176,12 +178,12 @@
                     <img src="{{ asset('images/team/idowu.jpg') }}" alt="Idowu Seun Adetule">
                 </div>
                 <div class="member-info">
-                    <h3>Idowu Seun Adetule</h3>
-                    <p class="member-role">Strategic Adviser</p>
-                    <p class="member-credentials">UK Global Tech Talent Awardee &bull; AI & Digital Transformation &bull;
-                        B2B SaaS Sales</p>
-                    <p class="member-bio">Over a decade of experience in enterprise technology, Go-To-Market strategy, and
-                        AI-driven business growth. Brings expertise in scaling technology ventures to SkillsCo-op's mission.
+                    <h3>Farouk Adams</h3>
+                    <p class="member-role">Adviser - data, AI & impact technology</p>
+                    <p class="member-credentials">MSc Data Science - STEM Ambassador</p>
+                    <p class="member-bio">Data scientist and health-tech innovator with experience building AI-driven
+                        products in education and healthcare. Co-founder of Soraflake, bringing deep expertise in using data
+                        and machine learning to improve outcomes for underserved communities.
                     </p>
                 </div>
             </div>
@@ -215,14 +217,16 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Building the Team</h3>
-                    <p>Assembled a team of experts across data science, social psychology, enterprise technology, and community development to create a holistic approach to skills training.</p>
+                    <p>Assembled a team of experts across data science, social psychology, enterprise technology, and
+                        community development to create a holistic approach to skills training.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>The Pathway</h3>
-                    <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development, Digital Design, IT Support, and Digital Sales — all fully funded for learners.</p>
+                    <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development,
+                        Digital Design, IT Support, and Digital Sales — all fully funded for learners.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
