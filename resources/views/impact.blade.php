@@ -2,6 +2,9 @@
 
 @section('title', 'Our Impact | SkillsCo-op')
 
+@section('meta_description', 'See how SkillsCo-op measures success. Honest targets, real commitments, and the national context that drives our mission to close the digital opportunity gap.')
+@section('og_description', 'See how SkillsCo-op measures success. Honest targets, real commitments, and the national context that drives our mission to close the digital opportunity gap.')
+
 @push('styles')
 <style>
 :root {
@@ -295,7 +298,7 @@
                 <div class="e-card">
                     <div class="e-icon"><i class="fas fa-building-columns"></i></div>
                     <h4>Trauma-informed</h4>
-                    <p>Average annual tax contribution per individual.</p>
+                    <p>Every programme is designed around dignity, psychological safety, and belonging.</p>
                 </div>
             </div>
         </div>
@@ -379,7 +382,7 @@
     <div class="ath-container">
             <div class="regional-split">
             <div class="r-text">
-                <span class="ath-sub">Northwest Presence</span>
+                <span class="ath-sub">Where We Are Starting</span>
                 <h2>Geographic Impact</h2>
                 <p>Concentrating our efforts in regions with high potential but historically limited access to digital career pipelines.</p>
                 <div class="r-hubs">
@@ -390,8 +393,8 @@
             </div>
             <div class="r-stats">
                 <div class="r-stat-big">
-                    <span>Regional Influence</span>
-                    <strong>3 Counties</strong>
+                    <span>Launch Areas</span>
+                    <strong>3 Regions</strong>
                 </div>
             </div>
             </div>
@@ -445,7 +448,7 @@
             <h2>Join a movement built on <span class="ath-gradient-text">Real Belief.</span></h2>
             <p>Support our mission or be part of the community that defines the next decade.</p>
             <div class="cta-btns">
-                <a href="{{ route('register') }}" class="btn btn-primary">Start Transformation</a>
+                <a href="{{ route('register') }}" class="btn btn-primary">Get Started</a>
                 <a href="{{ route('about') }}" class="btn btn-outline-white">Our Story</a>
             </div>
         </div>

@@ -2,6 +2,9 @@
 
 @section('title', 'Sessions & Events | SkillsCo-op')
 
+@section('meta_description', 'Join our free monthly panel sessions with industry professionals, mentors, and learners. Register for the next SkillsCo-op Sessions event. Open to everyone.')
+@section('og_description', 'Join our free monthly panel sessions with industry professionals, mentors, and learners. Register for the next SkillsCo-op Sessions event. Open to everyone.')
+
 @section('content')
 
     <!-- Hero Section -->
@@ -36,8 +39,8 @@
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-comments"></i></div>
                     <h3>Open Q&A</h3>
-                    <p>Ask questions directly to panelists and get personalized advice on your digital skills journey and
-                        career aspirations.</p>
+                    <p>Ask questions directly to panelists and get personalised advice on your digital skills and career options.
+                        </p>
                 </div>
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-handshake"></i></div>
@@ -48,8 +51,7 @@
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Skill Spotlights</h3>
-                    <p>Each session features a deep-dive into one of our learning tracks - Web Dev, Digital Design, IT
-                        Support, or Digital Sales.</p>
+                    <p>Each session features a closer look into one of our learning tracks: Web Development, Digital Design, IT Support, or Digital Sales.</p>
                 </div>
             </div>
         </div>
@@ -69,7 +71,7 @@
                             <i class="fas fa-calendar-alt"></i>
                             <div>
                                 <strong>Frequency</strong>
-                                <span>Monthly - dates announced via email</span>
+                                <span>Monthly (dates announced via email)</span>
                             </div>
                         </div>
                         <div class="meta-item">
@@ -83,7 +85,7 @@
                             <i class="fas fa-laptop"></i>
                             <div>
                                 <strong>Format</strong>
-                                <span>Virtual (Eventbrite) - link sent after registration</span>
+                                <span>Virtual (Eventbrite), link sent after registration</span>
                             </div>
                         </div>
                         <div class="meta-item">
@@ -135,13 +137,12 @@
                                 <select id="interest_type" name="interest_type" required>
                                     <option value="">Select one</option>
                                     <option value="learner" {{ old('interest_type') == 'learner' ? 'selected' : '' }}>
-                                        Learner - I want to develop digital skills</option>
-                                    <option value="mentor" {{ old('interest_type') == 'mentor' ? 'selected' : '' }}>Mentor -
-                                        I want to guide others</option>
+                                        Learner: I want to develop digital skills</option>
+                                    <option value="mentor" {{ old('interest_type') == 'mentor' ? 'selected' : '' }}>Mentor: I want to guide others</option>
                                     <option value="partner" {{ old('interest_type') == 'partner' ? 'selected' : '' }}>
-                                        Partner - I represent an organisation</option>
+                                        Partner: I represent an organisation</option>
                                     <option value="curious" {{ old('interest_type') == 'curious' ? 'selected' : '' }}>Just
-                                        Curious - I want learn more</option>
+                                        Just Curious: I want to learn more</option>
                                 </select>
                                 @error('interest_type')
                                     <span class="form-error">{{ $message }}</span>

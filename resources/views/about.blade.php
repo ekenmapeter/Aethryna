@@ -2,6 +2,9 @@
 
 @section('title', 'About SkillsCo-op | Widening Access to Digital Skills & Meaningful Progression')
 
+@section('meta_description', 'Meet the team behind SkillsCo-op and learn how Aethryna Digital Skills Co-op CIC is widening access to digital careers for underserved communities across the UK.')
+@section('og_description', 'Meet the team behind SkillsCo-op and learn how Aethryna Digital Skills Co-op CIC is widening access to digital careers for underserved communities across the UK.')
+
 @section('content')
 
     <!-- Hero Section -->
@@ -26,13 +29,6 @@
         <div class="mission-content">
             <div class="mission-text">
                 <h3>Building Futures Together</h3>
-                <p>SkillsCo-op is a community-driven skills cooperative designed to widen access to digital skills and
-                    meaningful progression for underserved communities. Through our innovative curriculum, pathways, and
-                    delivery architecture, we connect aspiring learners with experienced professionals who guide them toward
-                    achieving their personal and professional goals.</p>
-                <p>Our approach combines personalized mentorship with skill-building workshops, trauma-informed learning
-                    design, and community engagement opportunities that prepare learners for the challenges of tomorrow.</p>
-
                 <p>SkillsCo-op is a community-driven skills cooperative designed to widen access to digital skills and
                     meaningful progression for underserved communities. Through our structured curriculum, pathways, and
                     delivery architecture, we connect aspiring learners with experienced professionals who guide them toward
@@ -163,7 +159,7 @@
                     <img src="{{ asset('images/team/saheed.jpg') }}" alt="Saheed Bello">
                 </div>
                 <div class="member-info">
-                    <h3>Strategic adviser</h3>
+                    <h3>Seun Adetule</h3>
                     <p class="member-role">UK Global Tech Talent Awardee</p>
                     <p class="member-credentials">AI & Digital Transformation B2B SaaS Sales</p>
                     <p class="member-bio">Over a decade of experience in enterprise technology, Go-To-Market strategy, and
@@ -218,15 +214,15 @@
                 <div class="timeline-content">
                     <h3>Building the Team</h3>
                     <p>Assembled a team of experts across data science, social psychology, enterprise technology, and
-                        community development to create a holistic approach to skills training.</p>
+                        community development to create an integrated approach to skills training.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>The Pathway</h3>
-                    <p>Launched the three-phase Digital Transformation Pathway with specialized tracks in Web Development,
-                        Digital Design, IT Support, and Digital Sales - all fully funded for learners.</p>
+                    <p>Launched the three-phase Digital Transformation Pathway with specialised tracks in Web Development,
+                        Digital Design, IT Support, and Digital Sales, all fully funded for learners.</p>
                 </div>
                 <div class="timeline-marker"></div>
             </div>

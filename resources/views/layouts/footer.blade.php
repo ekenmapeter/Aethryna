@@ -9,7 +9,7 @@
                     </div>
                     <p class="brand-desc">
                         Widening access to digital skills and meaningful career progression for underserved communities.
-                        Join us in transforming potential into professional excellence.
+                        Join us in widening access to digital careers.
                     </p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/share/1VF3yxZ4dR/?mibextid=wwXIfr" class="social-icon"><i
