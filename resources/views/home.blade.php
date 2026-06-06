@@ -2,6 +2,9 @@
 
 @section('title', 'SkillsCo-op | Digital Skills for Real Careers')
 
+@section('meta_description', 'Funded digital skills programmes for people facing barriers to employment. Web Development, Digital Design, IT Support and more. Based in Liverpool, open across the UK.')
+@section('og_description', 'Funded digital skills programmes for people facing barriers to employment. Web Development, Digital Design, IT Support and more. Based in Liverpool, open across the UK.')
+
 @section('content')
 
     <!-- Hero Section -->
@@ -38,9 +41,9 @@
 
                 <!-- Slide 3 -->
                 <div class="ath-hero-content" data-index="2">
-                    <div class="ath-hero-badge">Building Community</div>
+                    <div class="ath-hero-badge">Mentorship & Community</div>
                     <h1 class="ath-title">Connect. Lead. <span class="ath-gradient-text">Impact.</span></h1>
-                    <p>Building a community of mentored professionals who create lasting change. Mentorship that transforms potential into excellence.</p>
+                    <p>One-to-one guidance from people already working in the industry, in a community built around belonging and mutual support.</p>
                     <div class="ath-hero-btns">
                         <a href="{{ route('stories') }}" class="ath-btn ath-btn-primary">Success Stories</a>
                         <a href="{{ route('impact') }}" class="ath-btn ath-btn-outline">Explore Impact</a>
@@ -136,7 +139,7 @@
                 </div>
                 <div class="ath-step-card ath-highlight reveal-fade-up" style="--delay: 2">
                     <div class="ath-step-num">02</div>
-                    <h4>Skill Specialization</h4>
+                    <h4>Skill Specialisation</h4>
                     <p>Choose your track: Web Development, Digital Design, IT Support, or Digital Sales. 6-12 months of project-based learning.</p>
                 </div>
                 <div class="ath-step-card reveal-fade-up" style="--delay: 3">
@@ -277,7 +280,7 @@
     <section class="ath-cta-section">
         <div class="ath-container">
             <div class="ath-cta-card reveal-zoom">
-                <h2>Ready to Transform Your Future?</h2>
+                <h2>Ready to get started?</h2>
                 <p>Join learners who have discovered their potential and built successful careers in tech through SkillsCo-op.</p>
                 <a href="{{ route('register') }}" class="ath-btn ath-btn-gold">Get Started Today</a>
             </div>
@@ -883,6 +886,14 @@
             }, observerOptions);
 
             document.querySelectorAll('.reveal-fade, .reveal-fade-up, .reveal-fade-right, .reveal-fade-left, .reveal-zoom').forEach(el => revealObserver.observe(el));
+
+            // Fire counters that are already visible on load without needing scroll
+            document.querySelectorAll('.counter').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    startCounter(el);
+                }
+            });
 
             // Counter Logic
             function startCounter(el) {

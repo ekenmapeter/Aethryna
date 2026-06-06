@@ -2,6 +2,9 @@
 
 @section('title', 'Skills Pathway Programs | SkillsCo-op')
 
+@section('meta_description', 'Explore SkillsCo-op specialised learning tracks including Web Development, Digital Design, IT Support, Data Analytics and more. All places fully funded for eligible participants.')
+@section('og_description', 'Explore SkillsCo-op specialised learning tracks including Web Development, Digital Design, IT Support, Data Analytics and more. All places fully funded for eligible participants.')
+
 @section('content')
 
     <!-- Hero Section -->
@@ -23,7 +26,7 @@
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Job success</span>
+                        <span class="stat-label">Funded Places</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
@@ -65,8 +68,8 @@
                 </div>
                 <div class="feature">
                     <i class="fas fa-briefcase"></i>
-                    <h4>Job Guarantee</h4>
-                    <p>Fully funded for all learners</p>
+                    <h4>Fully Funded</h4>
+                    <p>Every place is free for eligible participants</p>
                 </div>
             </div>
         </div>
@@ -77,7 +80,7 @@
         <div class="ath-container">
             <div class="section-title">
                 <span class="ath-sub">Our Offerings</span>
-                <h2>Program Specializations</h2>
+                <h2>Programme Specialisations</h2>
                 <p>Industry-standard training across high-growth domains</p>
             </div>
             <div class="tracks-grid">
@@ -121,8 +124,8 @@
                     </div>
                     <div class="track-footer">
                         <div class="track-cta-info">
-                            <span class="salary-label">Enrolling Now</span>
-                            <span class="salary">Next Cohort: March</span>
+                            <span class="salary-label">Applications Open</span>
+                            <span class="salary">Cohort dates announced by email</span>
                         </div>
                         <a href="{{ route('assessment.index') }}" class="btn btn-primary btn-sm">Join Track</a>
                     </div>
@@ -155,7 +158,7 @@
                     </div>
                     <div class="track-footer">
                         <div class="track-cta-info">
-                            <span class="salary-label">Enrolling Now</span>
+                            <span class="salary-label">Applications Open</span>
                             <span class="salary">Limited Seats</span>
                         </div>
                         <a href="{{ route('assessment.index') }}" class="btn btn-primary btn-sm">Join Track</a>

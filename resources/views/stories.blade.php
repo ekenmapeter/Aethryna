@@ -2,6 +2,9 @@
 
 @section('title', 'Voices of Change - SkillsCo-op')
 
+@section('meta_description', 'Meet the people SkillsCo-op is built for. Stories of individuals building new careers in tech, and an open invitation to be part of our founding cohort.')
+@section('og_description', 'Meet the people SkillsCo-op is built for. Stories of individuals building new careers in tech, and an open invitation to be part of our founding cohort.')
+
 @section('description', 'Authentic narratives of growth, resilience, and digital transformation from the SkillsCo-op community.')
 
 @section('content')
@@ -11,8 +14,8 @@
         <div class="hero-narrative">
             <div class="narrative-content reveal-fade-up">
                 <span class="ath-badge">Real Narratives</span>
-                <h1 class="ath-title">Voices of <span class="ath-gradient-text">Transformation.</span></h1>
-                <p>These are the people SkillsCo-op is built for. Real individuals who redrew their horizons with us.</p>
+                <h1 class="ath-title">Voices of <span class="ath-gradient-text">SkillsCo-op.</span></h1>
+                <p>These are the people SkillsCo-op is built for. Real individuals who are building something new with us.</p>
                 <a href="#story-journal" class="hero-scroll-invite" style="text-decoration: none; color: inherit; cursor: pointer;">
                     <span>Explore the Journal</span>
                     <div class="scroll-dot"></div>
@@ -76,7 +79,7 @@
                 <span class="ath-sub" style="text-align: left; display: block;">Digital Design Track</span>
                 <h2>Art in Architecture</h2>
                 <div class="story-text">
-                    <p>"Starting with zero technical knowledge, I now design digital ecosystems for local businesses. SkillsCo-op's creative community gave me the tools to carve my own path."</p>
+                    <p>"Starting with zero technical knowledge, I now take on freelance web design projects for local businesses. SkillsCo-op's creative community gave me the tools to carve my own path."</p>
                 </div>
                 <div class="story-author">
                     <strong>Alex Thompson</strong>
@@ -108,7 +111,7 @@
             </div>
             <div class="v-card">
                 <i class="fas fa-quote-left"></i>
-                <p>The program bridge the gap between curiosity and career. I'm now leading a team of 15 in IT Support.</p>
+                <p>The programme helped me bridge the gap between curiosity and career.</p>
                 <div class="v-author">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Marcus Williams">
                     <div>
