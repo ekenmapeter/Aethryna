@@ -84,4 +84,10 @@ Route::get('/terms',           [PageController::class, 'terms'])->name('terms');
 Route::get('/cookies',         [PageController::class, 'cookies'])->name('cookies');
 Route::get('/acceptable-use',  [PageController::class, 'acceptableUse'])->name('acceptable-use');
 
-require __DIR__.'/auth.php';
+    // LinkedIn OAuth routes
+    Route::get('/auth/linkedin', [App\Http\Controllers\LinkedInController::class, 'redirectToProvider'])
+        ->name('login.linkedin');
+    Route::get('/auth/linkedin/callback', [App\Http\Controllers\LinkedInController::class, 'handleProviderCallback'])
+        ->name('login.linkedin.callback');
+
+    require __DIR__.'/auth.php';
