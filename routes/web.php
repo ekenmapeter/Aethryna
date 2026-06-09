@@ -90,4 +90,10 @@ Route::get('/acceptable-use',  [PageController::class, 'acceptableUse'])->name('
     Route::get('/auth/linkedin/callback', [App\Http\Controllers\LinkedInController::class, 'handleProviderCallback'])
         ->name('login.linkedin.callback');
 
-    require __DIR__.'/auth.php';
+    // Google OAuth routes
+Route::get('/auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToProvider'])
+    ->name('login.google');
+Route::get('/auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleProviderCallback'])
+    ->name('login.google.callback');
+
+require __DIR__.'/auth.php';
