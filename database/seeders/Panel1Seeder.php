@@ -41,10 +41,10 @@ class Panel1Seeder extends Seeder
                 'sort_order'   => 1,
             ],
             [
-                'name'         => 'Frances "Frankie" Agba',
+                'name'         => 'Frances Agba',
                 'title'        => 'AI Governance Practitioner and Computer Science Educator',
                 'company'      => null,
-                'bio'          => 'Frances Agba (Frankie) is a Computer Science Educator and AI Governance Practitioner. Her work focuses on AI governance architecture, risk and assurance, and policy, with a particular emphasis on institutional accountability for communities underserved by mainstream AI frameworks. She is currently conducting active research on English-centric AI safety alignment failures across Nigerian languages.',
+                'bio'          => 'Frances Agba is a Computer Science Educator and AI Governance Practitioner. Her work focuses on AI governance architecture, risk and assurance, and policy, with a particular emphasis on institutional accountability for communities underserved by mainstream AI frameworks. She is currently conducting active research on English-centric AI safety alignment failures across Nigerian languages.',
                 'photo_path'   => 'images/speakers/frankie-agba.jpg',
                 'linkedin_url' => null,
                 'topic'        => 'AI governance, ethics, and responsible practice',
