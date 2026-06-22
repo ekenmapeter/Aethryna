@@ -25,5 +25,10 @@ class DatabaseSeeder extends Seeder
             PathwaysSeeder::class,
             QuestionsSeeder::class,
         ]);
+
+        // Seed panel sessions and speakers
+        $this->call([
+            Panel1Seeder::class,
+        ]);
     }
 }
