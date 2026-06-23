@@ -2,8 +2,8 @@
 
 @section('title', 'SkillsCo-op | Digital Skills for Real Careers')
 
-@section('meta_description', 'Funded digital skills programmes for people facing barriers to employment. Web Development, Digital Design, IT Support and more. Based in Liverpool, open across the UK.')
-@section('og_description', 'Funded digital skills programmes for people facing barriers to employment. Web Development, Digital Design, IT Support and more. Based in Liverpool, open across the UK.')
+@section('meta_description', 'Funded digital skills programmes for people facing barriers to employment. Project and Product Delivery, Data and AI Analytics, Digital Design and Marketing, and IT Support. AI tools embedded throughout. Based in Liverpool, open across the UK.')
+@section('og_description', 'Funded digital skills programmes for people facing barriers to employment. Project and Product Delivery, Data and AI Analytics, Digital Design and Marketing, and IT Support. AI tools embedded throughout. Based in Liverpool, open across the UK.')
 
 @section('content')
 
@@ -23,8 +23,8 @@
                     <h1 class="ath-title">Rise. Learn. <span class="ath-gradient-text">Become.</span></h1>
                     <p>Widening access to digital skills and meaningful progression for underserved communities. Your next chapter starts here.</p>
                     <div class="ath-hero-btns">
-                        <a href="{{ route('login') }}" class="ath-btn ath-btn-primary">Start Your Journey</a>
-                        <a href="{{ route('about') }}" class="ath-btn ath-btn-outline">Learn More</a>
+                        <a href="{{ route('register') }}" class="ath-btn ath-btn-primary">Join the founding cohort</a>
+                        <a href="{{ route('partners') }}" class="ath-btn ath-btn-outline">Partner with us</a>
                     </div>
                 </div>
 
@@ -32,10 +32,10 @@
                 <div class="ath-hero-content" data-index="1">
                     <div class="ath-hero-badge">Bridging the Tech Gap</div>
                     <h1 class="ath-title">Tech. Future. <span class="ath-gradient-text">Mastery.</span></h1>
-                    <p>Practical, funded digital skills programmes for people who have been locked out of the tech industry. Web, Design, IT Support and more.</p>
+                    <p>Practical, funded digital skills programmes for people who have been locked out of the tech industry. Four pilot tracks, AI tools embedded throughout.</p>
                     <div class="ath-hero-btns">
-                        <a href="{{ route('programs') }}" class="ath-btn ath-btn-primary">View Programs</a>
-                        <a href="{{ route('pathway') }}" class="ath-btn ath-btn-outline">Our Pathway</a>
+                        <a href="{{ route('pathway') }}" class="ath-btn ath-btn-primary">Explore our pathway</a>
+                        <a href="{{ route('programs') }}" class="ath-btn ath-btn-outline">See our tracks</a>
                     </div>
                 </div>
 
@@ -45,8 +45,8 @@
                     <h1 class="ath-title">Connect. Lead. <span class="ath-gradient-text">Impact.</span></h1>
                     <p>One-to-one guidance from people already working in the industry, in a community built around belonging and mutual support.</p>
                     <div class="ath-hero-btns">
-                        <a href="{{ route('stories') }}" class="ath-btn ath-btn-primary">Success Stories</a>
-                        <a href="{{ route('impact') }}" class="ath-btn ath-btn-outline">Explore Impact</a>
+                        <a href="{{ route('sessions') }}" class="ath-btn ath-btn-primary">Become a mentor</a>
+                        <a href="{{ route('stories') }}" class="ath-btn ath-btn-outline">Read our stories</a>
                     </div>
                 </div>
             </div>
@@ -77,6 +77,7 @@
                             <h4>Building Futures Together</h4>
                             <p>SkillsCo-op is a community-led digital skills programme. We work with people who face real barriers to employment: NEET young people, career changers, migrants, refugees, and justice-involved individuals. Every place is fully funded.</p>
                             <p>Our approach combines personalised mentorship with practical, project-based learning and community support designed around dignity and belonging.</p>
+                            <p>Every Skills Co-op learner becomes confident with AI tools, regardless of their pathway. We teach AI as a working tool, with the discipline to check what it produces and the judgement to override it when needed. This is what modern digital work looks like, and it is what employers are now looking for.</p>
                     </div>
                 </div>
                 <div class="ath-about-features">
@@ -106,13 +107,45 @@
         </div>
     </section>
 
+    <!-- Who Is This For? -->
+    <section class="ath-section" style="background: var(--ath-light);" id="who-is-this-for">
+        <div class="ath-container">
+            <div class="ath-section-header reveal-fade-up">
+                <h2>Who is this for?</h2>
+                <p>Four kinds of learner, all welcome.</p>
+            </div>
+            <div class="ath-grid-3" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="ath-about-card reveal-fade-up" style="--delay: 1; padding: 35px;">
+                    <h4 style="color: var(--ath-deep); margin-bottom: 12px;">If you are a young person not in work or training</h4>
+                    <p style="color: var(--ath-muted); line-height: 1.6; margin-bottom: 20px;">You are not behind. You are getting started. Our Foundation route is built for confidence first, skill second.</p>
+                    <a href="{{ route('pathway') }}" class="ath-link">Find your route <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ath-about-card reveal-fade-up" style="--delay: 2; padding: 35px;">
+                    <h4 style="color: var(--ath-deep); margin-bottom: 12px;">If you are a career changer</h4>
+                    <p style="color: var(--ath-muted); line-height: 1.6; margin-bottom: 20px;">You have transferable skills already. We help you build the digital ones you need, in a cohort of people doing the same.</p>
+                    <a href="{{ route('pathway') }}" class="ath-link">Find your route <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ath-about-card reveal-fade-up" style="--delay: 3; padding: 35px;">
+                    <h4 style="color: var(--ath-deep); margin-bottom: 12px;">If you are a refugee, migrant, or asylum seeker</h4>
+                    <p style="color: var(--ath-muted); line-height: 1.6; margin-bottom: 20px;">Language support, flexible scheduling, and a community that understands what you have already navigated to get here.</p>
+                    <a href="{{ route('pathway') }}" class="ath-link">Find your route <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ath-about-card reveal-fade-up" style="--delay: 4; padding: 35px;">
+                    <h4 style="color: var(--ath-deep); margin-bottom: 12px;">If you are post-prison or in the justice system</h4>
+                    <p style="color: var(--ath-muted); line-height: 1.6; margin-bottom: 20px;">We work with partners across the gate. Skills training, a real placement, and a community that does not ask what you did to be here.</p>
+                    <a href="{{ route('pathway') }}" class="ath-link">Find your route <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Interactive Assessment Box -->
     <section class="ath-section ath-interactive">
         <div class="ath-container">
             <div class="ath-assessment-box reveal-zoom">
                 <div class="ath-assessment-content">
-                    <h3 class="reveal-fade-up">Discover Your Digital Future</h3>
-                    <p class="reveal-fade-up" style="--delay: 1">Take our 2-minute assessment to match with the perfect tech career path and mentorship program tailored to your unique strengths.</p>
+                    <h3 class="reveal-fade-up">Discover Your Path</h3>
+                    <p class="reveal-fade-up" style="--delay: 1">Take our 2-minute assessment to match with the right track for our pilot cohort.</p>
                     <button class="ath-btn ath-btn-primary reveal-fade-up" style="--delay: 2" id="assessmentToolBtn">Start Free Assessment</button>
                 </div>
                 <div class="ath-assessment-shapes">
@@ -128,24 +161,24 @@
         <div class="ath-container">
             <div class="ath-section-header reveal-fade-up">
                 <span class="ath-sub">How It Works</span>
-                <h2>The Transformation Pathway</h2>
-                <p>A structured three-phase approach that turns potential into professional success</p>
+                <h2>The Skills Co-op Pathway</h2>
+                <p>A structured 25-week journey, with three points where you earn a certificate and a portfolio. Every step builds on the last.</p>
             </div>
             <div class="ath-grid-3">
                 <div class="ath-step-card reveal-fade-up" style="--delay: 1">
                     <div class="ath-step-num">01</div>
-                    <h4>Digital Foundations</h4>
-                    <p>3-6 months of building confidence, basic digital literacy, and growth mindset. Perfect for beginners with limited tech exposure.</p>
+                    <h4>Foundations (Weeks 0-4)</h4>
+                    <p>A welcoming start. You set goals, build your first portfolio piece, and lay the groundwork for digital confidence. At the end of week 4, you earn your Foundation Certificate.</p>
                 </div>
                 <div class="ath-step-card ath-highlight reveal-fade-up" style="--delay: 2">
                     <div class="ath-step-num">02</div>
-                    <h4>Skill Specialisation</h4>
-                    <p>Choose your track: Web Development, Digital Design, IT Support, or Digital Sales. 6-12 months of project-based learning.</p>
+                    <h4>Specialised Training (Weeks 5-12)</h4>
+                    <p>Eight weeks of hands-on learning in your chosen track, with AI tools embedded throughout. Real exercises, weekly demos, and three portfolio pieces. At the end of week 12, you earn your Specialised Training Certificate.</p>
                 </div>
                 <div class="ath-step-card reveal-fade-up" style="--delay: 3">
                     <div class="ath-step-num">03</div>
-                    <h4>Economic Independence</h4>
-                    <p>Start earning through freelance projects and job placement. Ongoing mentorship and career advancement support.</p>
+                    <h4>Project Period (Weeks 13-24)</h4>
+                    <p>Twelve weeks working in a cross-pathway team on a real brief from an employer or community partner. You ship something real, present it, and earn your full Skills Co-op Certificate. From here: employment, freelancing, or building your own thing.</p>
                 </div>
             </div>
         </div>
@@ -156,7 +189,7 @@
         <div class="ath-container">
             <div class="ath-banner-content reveal-fade-up">
                 <h2>From where you are to where you want to be</h2>
-                <p>Join a community where potential meets opportunity, and every aspiring professional finds their path to success in the digital world.</p>
+                <p>Three certificates. One cohort. A community for life.</p>
             </div>
         </div>
     </div>
@@ -166,45 +199,38 @@
         <div class="ath-container">
             <div class="ath-section-header reveal-fade-up">
                 <span class="ath-sub">Choose Your Path</span>
-                <h2>Our Skills Pathway</h2>
-                <p>Structured learning paths designed for real-world excellence</p>
+                <h2>Our Pilot Tracks</h2>
+                <p>Four learning tracks for our first cohort, each designed for real entry-level digital roles. More tracks open with our second cohort in late 2027.</p>
             </div>
-            <div class="ath-grid-3">
-                @forelse($pathways as $index => $pathway)
-                    @php
-                        $icon = 'fa-laptop-code'; // Default icon
-                        if (stripos($pathway->name, 'Design') !== false) $icon = 'fa-palette';
-                        if (stripos($pathway->name, 'Development') !== false || stripos($pathway->name, 'Web') !== false) $icon = 'fa-code';
-                        if (stripos($pathway->name, 'Support') !== false || stripos($pathway->name, 'IT') !== false) $icon = 'fa-tools';
-                        if (stripos($pathway->name, 'Sales') !== false || stripos($pathway->name, 'Marketing') !== false) $icon = 'fa-bullhorn';
-                    @endphp
-                    <div class="ath-prog-item reveal-fade-up" style="--delay: {{ $index + 1 }}">
-                        <div class="ath-prog-icon"><i class="fas {{ $icon }}"></i></div>
-                        <h3>{{ $pathway->name }}</h3>
-                        <p>{{ $pathway->description }}</p>
-                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                @empty
-                    <!-- Fallback items if database is empty -->
-                    <div class="ath-prog-item reveal-fade-up" style="--delay: 1">
-                        <div class="ath-prog-icon"><i class="fas fa-code"></i></div>
-                        <h3>Web Development</h3>
-                        <p>Master HTML, CSS, JavaScript and build real websites. Perfect for creative problem-solvers who want to build the digital world.</p>
-                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="ath-prog-item reveal-fade-up" style="--delay: 2">
-                        <div class="ath-prog-icon"><i class="fas fa-palette"></i></div>
-                        <h3>Digital Design</h3>
-                        <p>Learn UI/UX design, branding, and visual communication. Create stunning digital experiences that users love.</p>
-                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="ath-prog-item reveal-fade-up" style="--delay: 3">
-                        <div class="ath-prog-icon"><i class="fas fa-tools"></i></div>
-                        <h3>IT Support</h3>
-                        <p>Develop troubleshooting skills, customer service, and technical support expertise. High-demand roles with clear career paths.</p>
-                        <a href="{{ route('assessment.index') }}" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                @endforelse
+            <div class="ath-grid-3" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 1">
+                    <div class="ath-prog-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Project and Product Delivery</h3>
+                    <p>Organise and deliver digital work. Stakeholder communication, requirements, planning, and AI-assisted delivery. Roles: Project Coordinator, Business Analyst, Junior PM.</p>
+                    <a href="{{ route('programs') }}#project-delivery" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 2">
+                    <div class="ath-prog-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data and AI Analytics</h3>
+                    <p>Work with numbers, evidence, and insight. SQL, spreadsheets, visualisation, and AI-assisted analysis with built-in verification. Roles: Data Analyst, Insight Analyst, AI Operations Analyst.</p>
+                    <a href="{{ route('programs') }}#data-analytics" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 3">
+                    <div class="ath-prog-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Digital Design and Marketing</h3>
+                    <p>Create content, brand, and audience. Design fundamentals, content strategy, social, email, and analytics. AI-assisted creative work, used responsibly. Roles: Digital Marketer, UX Designer, Content Producer.</p>
+                    <a href="{{ route('programs') }}#design-marketing" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ath-prog-item reveal-fade-up" style="--delay: 4">
+                    <div class="ath-prog-icon"><i class="fas fa-tools"></i></div>
+                    <h3>IT Support and Operations</h3>
+                    <p>A fast, accessible route into digital work. Operating systems, troubleshooting, ticketing, user support, and AI-assisted support workflows. Roles: First-line IT Support, Service Desk Analyst, IT Operations.</p>
+                    <a href="{{ route('programs') }}#it-support" class="ath-link">Explore Track <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="ath-coming-soon-block reveal-fade-up" style="margin-top: 50px; text-align: center; background: #fff; padding: 35px 40px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); border: 1px solid rgba(3,139,137,0.1);">
+                <h4 style="color: var(--ath-deep); font-size: 1.2rem; margin-bottom: 10px;">More tracks coming with Cohort 2</h4>
+                <p style="color: var(--ath-muted); margin: 0;">Software Development, Cyber Security, Cloud and DevOps, and Tech Sales and Customer Success will launch with our second cohort.</p>
             </div>
         </div>
     </section>
@@ -216,24 +242,28 @@
                 <div class="ath-impact-info reveal-fade-right">
                     <span class="ath-sub">Why We Exist</span>
                     <h2>The Opportunity Gap</h2>
-                    <p>Nationally, 12.8% of 16 to 24 year olds are not in education, employment or training. SkillsCo-op exists to change that. The figures below show the problem we are here to solve and the goals we are building toward.</p>
+                    <p>Nationally, 12.8% of 16 to 24 year olds are not in education, employment or training. Skills Co-op exists to change that, starting in the communities that need it most.</p>
                 </div>
                 <div class="ath-stats-grid">
                     <div class="ath-stat reveal-zoom" style="--delay: 1">
                         <div class="ath-stat-val counter" data-target="12.8" data-suffix="%">0</div>
-                        <div class="ath-stat-lab">UK Youth Currently NEET</div>
+                        <div class="ath-stat-lab">Of UK 16-24 year olds currently NEET</div>
+                        <div class="ath-stat-note">Office for National Statistics, 2025</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 2">
                         <div class="ath-stat-val counter" data-target="100" data-suffix="%">0</div>
-                        <div class="ath-stat-lab">Funded Places for Learners</div>
+                        <div class="ath-stat-lab">Of Skills Co-op places funded</div>
+                        <div class="ath-stat-note">Free at the point of use for underserved learners</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 3">
                         <div class="ath-stat-val counter" data-target="4">0</div>
-                        <div class="ath-stat-lab">Specialist Skills Tracks</div>
+                        <div class="ath-stat-lab">Specialist tracks in our pilot cohort</div>
+                        <div class="ath-stat-note">Eight tracks at full launch, with two more in development</div>
                     </div>
                     <div class="ath-stat reveal-zoom" style="--delay: 4">
-                        <div class="ath-stat-val counter" data-target="50" data-suffix="+">0</div>
-                        <div class="ath-stat-lab">Year 1 Learner Goal</div>
+                        <div class="ath-stat-val counter" data-target="30">0</div>
+                        <div class="ath-stat-lab">Learner places in our founding cohort</div>
+                        <div class="ath-stat-note">Cohort 1 launches January 2027</div>
                     </div>
                 </div>
             </div>
@@ -255,6 +285,19 @@
                         <a href="{{ route('sessions') }}" class="ath-btn" style="background:transparent;color:var(--ath-deep);border:2px solid var(--ath-deep);">Become a Mentor</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner CTA -->
+    <section class="ath-section" style="background: var(--ath-light); padding: 60px 0;">
+        <div class="ath-container">
+            <div class="ath-partner-cta reveal-zoom" style="background: #fff; border-radius: var(--ath-radius); padding: 60px 50px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border-left: 5px solid var(--ath-teal); display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+                <div>
+                    <h3 style="color: var(--ath-deep); font-size: 1.7rem; font-weight: 800; margin-bottom: 12px;">Are you an employer or community-sector partner?</h3>
+                    <p style="color: var(--ath-muted); margin: 0; max-width: 600px; line-height: 1.7;">Skills Co-op partners give our teams real briefs, host paid micro-placements, and shape what we deliver. Light commitment, real return.</p>
+                </div>
+                <a href="{{ route('partners') }}" class="ath-btn ath-btn-primary" style="white-space: nowrap; flex-shrink: 0;">Partner with us</a>
             </div>
         </div>
     </section>
@@ -767,6 +810,7 @@
         
         .ath-stat-val { font-size: 3.5rem; font-weight: 800; color: var(--ath-teal); margin-bottom: 10px; line-height: 1; }
         .ath-stat-lab { font-weight: 600; color: var(--ath-muted); letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; }
+        .ath-stat-note { font-size: 0.78rem; color: var(--ath-muted); margin-top: 6px; opacity: 0.8; line-height: 1.4; }
 
         /* Stories with Enhanced UI */
         .ath-testi-box {

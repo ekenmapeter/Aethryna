@@ -15,6 +15,7 @@
             <a href="{{ route('impact') }}">Impact</a>
             <a href="{{ route('stories') }}">Stories</a>
             <a href="{{ route('sessions') }}">Sessions</a>
+            <a href="{{ route('partners') }}">Partner with us</a>
         </div>
 
         <div class="nav-buttons">
@@ -54,6 +55,7 @@
             <a href="{{ route('impact') }}">Impact</a>
             <a href="{{ route('stories') }}">Stories</a>
             <a href="{{ route('sessions') }}">Sessions</a>
+            <a href="{{ route('partners') }}">Partner with us</a>
         </div>
         <div class="mobile-nav-buttons">
             @auth

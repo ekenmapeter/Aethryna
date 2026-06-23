@@ -78,6 +78,10 @@ Route::prefix('assessment')->name('assessment.')->group(function () {
     Route::post('/reset', [AssessmentController::class, 'reset'])->name('reset');
 });
 
+// ── Partners ──────────────────────────────────────────────────────────────────
+Route::get('/partners', [PageController::class, 'partners'])->name('partners');
+Route::post('/partners/enquiry', [PageController::class, 'partnerEnquiry'])->name('partners.enquiry');
+
 // ── Legal pages ──────────────────────────────────────────────────────────────
 Route::get('/privacy',         [PageController::class, 'privacy'])->name('privacy');
 Route::get('/terms',           [PageController::class, 'terms'])->name('terms');

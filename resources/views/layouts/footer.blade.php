@@ -40,10 +40,10 @@
                 <div class="footer-links">
                     <h4>Learning Tracks</h4>
                     <ul>
-                        <li><a href="{{ route('programs') }}#web-dev">Web Development</a></li>
-                        <li><a href="{{ route('programs') }}#digital-design">Digital Design</a></li>
-                        <li><a href="{{ route('programs') }}#it-support">IT Support</a></li>
-                        <li><a href="{{ route('programs') }}#digital-sales">Digital Sales</a></li>
+                        <li><a href="{{ route('programs') }}#project-product">Project and Product Delivery</a></li>
+                        <li><a href="{{ route('programs') }}#data-ai">Data and AI Analytics</a></li>
+                        <li><a href="{{ route('programs') }}#digital-design">Digital Design and Marketing</a></li>
+                        <li><a href="{{ route('programs') }}#it-support">IT Support and Operations</a></li>
                     </ul>
                 </div>
 

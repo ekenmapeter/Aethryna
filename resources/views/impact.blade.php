@@ -215,9 +215,9 @@
     <div class="ath-container">
         <div class="hero-split">
             <div class="hero-primary">
-                <div class="impact-badge"><i class="fas fa-chart-line"></i> Our Impact Framework</div>
-                <h1 class="ath-title">The change we are <span class="ath-gradient-text">Building.</span></h1>
-                <p>We are at the start of our journey. This is how we will measure success and the targets we are working toward as we launch.</p>
+                <div class="impact-badge"><i class="fas fa-chart-line"></i> Outcomes Framework</div>
+                <h1 class="ath-title">How we will measure <span class="ath-gradient-text">what matters.</span></h1>
+                <p>We publish our outcomes framework before we publish outcomes. That is the point. Accountability starts before the first learner enrols, not after.</p>
                 <div class="hero-actions">
                     <a href="#success-metrics" class="btn btn-primary">View Full Metrics</a>
                     <a href="{{ route('stories') }}" class="btn btn-outline">Read Human Stories</a>
@@ -235,8 +235,8 @@
                     <span class="fm-sub">Skills Tracks</span>
                 </div>
                 <div class="floating-metric fm-2">
-                    <span class="fm-val">50+</span>
-                    <span class="fm-sub">Year 1 Goal</span>
+                    <span class="fm-val">30</span>
+                    <span class="fm-sub">Cohort 1 places</span>
                 </div>
             </div>
         </div>
@@ -259,8 +259,26 @@
 <section id="success-metrics" class="impact-board-section stats-journal">
     <div class="ath-container">
         <div class="journal-header">
-            <h2>What We Will <span class="ath-gradient-text">Measure</span></h2>
-            <p>Clear, honest targets for our first cohorts. We will publish real results as our learners progress.</p>
+            <h2>Three dimensions. One honest <span class="ath-gradient-text">framework.</span></h2>
+            <p>We measure impact across three dimensions: breadth (how many people we reach and from which backgrounds), depth (the skill and confidence gain during the programme), and durability (where people are six months after they leave). All three matter. We will publish all three.</p>
+        </div>
+        <!-- Outcomes Framework cards -->
+        <div class="framework-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px;">
+            <div class="fw-card" style="background:#fff;border:2px solid rgba(3,139,137,0.15);border-radius:24px;padding:36px;">
+                <div style="width:44px;height:44px;background:rgba(3,139,137,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--ath-teal);font-size:1.2rem;margin-bottom:16px;"><i class="fas fa-expand-arrows-alt"></i></div>
+                <h3 style="font-size:1.2rem;color:var(--ath-deep);font-weight:800;margin-bottom:8px;">Breadth</h3>
+                <p style="color:var(--ath-muted);line-height:1.7;margin:0;">How many people we reach and from which backgrounds. We track the proportion of learners who are NEET, from refugee or migrant backgrounds, or returning after a period of prison or serious illness.</p>
+            </div>
+            <div class="fw-card" style="background:#fff;border:2px solid rgba(3,139,137,0.15);border-radius:24px;padding:36px;">
+                <div style="width:44px;height:44px;background:rgba(238,157,29,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--ath-gold);font-size:1.2rem;margin-bottom:16px;"><i class="fas fa-layer-group"></i></div>
+                <h3 style="font-size:1.2rem;color:var(--ath-deep);font-weight:800;margin-bottom:8px;">Depth</h3>
+                <p style="color:var(--ath-muted);line-height:1.7;margin:0;">The skill and confidence gain during the programme. Measured by portfolio quality assessments, end-of-programme self-efficacy scores, and certificate completion rates across all three stages.</p>
+            </div>
+            <div class="fw-card" style="background:#fff;border:2px solid rgba(3,139,137,0.15);border-radius:24px;padding:36px;">
+                <div style="width:44px;height:44px;background:rgba(5,88,96,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--ath-deep);font-size:1.2rem;margin-bottom:16px;"><i class="fas fa-clock"></i></div>
+                <h3 style="font-size:1.2rem;color:var(--ath-deep);font-weight:800;margin-bottom:8px;">Durability</h3>
+                <p style="color:var(--ath-muted);line-height:1.7;margin:0;">Where people are six months after they leave. Employment status, earnings trajectory, and sustained community engagement. We follow up because the programme does not end on the last day.</p>
+            </div>
         </div>
         <div class="stats-grid-dashboard">
             <div class="main-stat-journal">
@@ -312,65 +330,85 @@
             <span class="ath-sub">Track Record</span>
             <h2>Where Each Track Leads</h2>
         </div>
-        <div class="analysis-grid">
-            <!-- Web Dev -->
+        <div class="analysis-grid" style="grid-template-columns: repeat(2, 1fr);">
+            <!-- Project and Product Delivery -->
             <div class="analysis-card">
                 <div class="a-track-head">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Project and Product Delivery</h3>
                 </div>
                 <div class="a-track-body">
                     <div class="a-metric">
-                        <span class="a-label">Level</span>
-                        <span class="a-val">Beginner</span>
+                        <span class="a-label">Depth measure</span>
+                        <span class="a-val">Project portfolio</span>
                     </div>
                     <div class="a-metric">
-                        <span class="a-label">Format</span>
-                        <span class="a-val">Project-based</span>
+                        <span class="a-label">Durability target</span>
+                        <span class="a-val">Junior PM or coordinator role</span>
                     </div>
                 </div>
                 <div class="a-track-footer">
-                    <span>Leads toward: Frontend Developer</span>
+                    <span>AI tools embedded: planning, documentation, sprint facilitation</span>
                 </div>
             </div>
-            <!-- Design -->
+            <!-- Data and AI Analytics -->
             <div class="analysis-card">
                 <div class="a-track-head">
-                    <i class="fas fa-palette"></i>
-                    <h3>Digital Design</h3>
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Data and AI Analytics</h3>
                 </div>
                 <div class="a-track-body">
                     <div class="a-metric">
-                        <span class="a-label">Level</span>
-                        <span class="a-val">Beginner</span>
+                        <span class="a-label">Depth measure</span>
+                        <span class="a-val">Dashboard and analysis portfolio</span>
                     </div>
                     <div class="a-metric">
-                        <span class="a-label">Format</span>
-                        <span class="a-val">Portfolio-led</span>
+                        <span class="a-label">Durability target</span>
+                        <span class="a-val">Junior analyst or data support role</span>
                     </div>
                 </div>
                 <div class="a-track-footer">
-                    <span>Leads toward: UI/UX Designer</span>
+                    <span>AI tools embedded: data wrangling, insight generation, visualisation</span>
                 </div>
             </div>
-            <!-- IT -->
+            <!-- Digital Design and Marketing -->
             <div class="analysis-card">
                 <div class="a-track-head">
-                    <i class="fas fa-tools"></i>
-                    <h3>IT Support</h3>
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Digital Design and Marketing</h3>
                 </div>
                 <div class="a-track-body">
                     <div class="a-metric">
-                        <span class="a-label">Level</span>
-                        <span class="a-val">Beginner</span>
+                        <span class="a-label">Depth measure</span>
+                        <span class="a-val">Creative and campaign portfolio</span>
                     </div>
                     <div class="a-metric">
-                        <span class="a-label">Format</span>
-                        <span class="a-val">Hands-on</span>
+                        <span class="a-label">Durability target</span>
+                        <span class="a-val">Digital marketing or design assistant role</span>
                     </div>
                 </div>
                 <div class="a-track-footer">
-                    <span>Leads toward: IT Support Technician</span>
+                    <span>AI tools embedded: content creation, campaign strategy, brand assets</span>
+                </div>
+            </div>
+            <!-- IT Support and Operations -->
+            <div class="analysis-card">
+                <div class="a-track-head">
+                    <i class="fas fa-headset"></i>
+                    <h3>IT Support and Operations</h3>
+                </div>
+                <div class="a-track-body">
+                    <div class="a-metric">
+                        <span class="a-label">Depth measure</span>
+                        <span class="a-val">Support documentation portfolio</span>
+                    </div>
+                    <div class="a-metric">
+                        <span class="a-label">Durability target</span>
+                        <span class="a-val">IT support technician or service desk role</span>
+                    </div>
+                </div>
+                <div class="a-track-footer">
+                    <span>AI tools embedded: troubleshooting guides, process automation, ticketing</span>
                 </div>
             </div>
         </div>
@@ -413,15 +451,15 @@
                     <div class="i-check">
                         <i class="fas fa-check-circle"></i>
                         <div>
-                            <strong>Skill Specialisation</strong>
-                            <span>Specialised paths for Web, Design, and Support.</span>
+                            <strong>Four specialised tracks</strong>
+                            <span>Project Delivery, Data and AI, Digital Design and Marketing, and IT Support and Operations.</span>
                         </div>
                     </div>
                     <div class="i-check">
                         <i class="fas fa-check-circle"></i>
                         <div>
-                            <strong>Economic Mobility</strong>
-                            <span>Closing the opportunity gap through tech literacy.</span>
+                            <strong>Durability over completion rates</strong>
+                            <span>We track where people are six months after they leave, not just whether they finish.</span>
                         </div>
                     </div>
                 </div>
