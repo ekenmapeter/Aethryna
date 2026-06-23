@@ -92,6 +92,30 @@ event(new SessionRegistered());
             ->with('success', "Thank you for registering! We'll send you details about our next panel session to your email address.");
     }
 
+    // ── Partners ─────────────────────────────────────────────────────────────
+    public function partners()
+    {
+        return view('partners');
+    }
+
+    public function partnerEnquiry(Request $request)
+    {
+        $validated = $request->validate([
+            'organisation' => 'required|string|max:255',
+            'contact_name' => 'required|string|max:255',
+            'email'        => 'required|email|max:255',
+            'brief_type'   => 'required|string|max:255',
+            'message'      => 'required|string|max:3000',
+        ]);
+
+        Mail::raw(
+            "New partner enquiry\n\nOrganisation: {$validated['organisation']}\nContact: {$validated['contact_name']}\nEmail: {$validated['email']}\nBrief type: {$validated['brief_type']}\n\n{$validated['message']}",
+            fn ($m) => $m->to('hello@skillscoop.org')->subject("Partner enquiry from {$validated['organisation']}")
+        );
+
+        return redirect()->route('partners')->with('enquiry_sent', true);
+    }
+
     // ── Legal pages ──────────────────────────────────────────────────────────
     public function privacy()
     {
