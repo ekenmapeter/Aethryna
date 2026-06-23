@@ -7,8 +7,8 @@
     <!-- Primary Meta Tags -->
     <title>@yield('title', 'SkillsCo-op | Digital Skills for Real Careers')</title>
     <meta name="title" content="@yield('meta_title', 'SkillsCo-op | Digital Skills for Real Careers')">
-    <meta name="description" content="@yield('meta_description', 'SkillsCo-op transforms lives through digital skills training, mentorship programs, and career pathways in tech. Join our mission to widen access to digital skills for underserved communities.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'digital skills training, tech mentorship, career development, skills cooperative, coding bootcamp, web development, IT support, digital design, underserved communities')">
+    <meta name="description" content="@yield('meta_description', 'SkillsCo-op is a funded 25-week digital skills programme for people facing barriers to employment. Four pilot tracks: Project and Product Delivery, Data and AI Analytics, Digital Design and Marketing, and IT Support and Operations. Based in Liverpool, open across the UK.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'digital skills training, funded programme, Liverpool, career change, NEET, IT support, digital design, data analytics, project management, AI skills, underserved communities')">
     <meta name="author" content="SkillsCo-op">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="@yield('og_title', 'SkillsCo-op | Digital Skills for Real Careers')">
-    <meta property="og:description" content="@yield('og_description', 'Transform lives through digital skills training and mentorship programs. Join SkillsCo-op\'s mission to create tech career pathways for underserved communities.')">
+    <meta property="og:description" content="@yield('og_description', 'A funded 25-week programme with AI tools embedded throughout. Four tracks, three certificates, one cohort. Applications open for January 2027.')">
     <meta property="og:image" content="@yield('og_image', asset('images/og-image.png'))">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -30,7 +30,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
     <meta property="twitter:title" content="@yield('twitter_title', 'SkillsCo-op | Digital Skills for Real Careers')">
-    <meta property="twitter:description" content="@yield('twitter_description', 'Transform lives through digital skills training and mentorship programs. Join SkillsCo-op\'s mission to create tech career pathways for underserved communities.')">
+    <meta property="twitter:description" content="@yield('twitter_description', 'A funded 25-week programme with AI tools embedded throughout. Four tracks, three certificates, one cohort. Applications open for January 2027.')">
     <meta property="twitter:image" content="@yield('twitter_image', asset('images/og-image.png'))">
 
     <!-- Additional SEO Meta Tags -->
